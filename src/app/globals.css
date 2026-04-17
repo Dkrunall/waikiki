@@ -4,14 +4,14 @@
   --background: #FCEFD4;
   --foreground: #510909;
   --brand-maroon: #510909;
-  --brand-magenta: #CC3366;
+  --brand-magenta: #510909;
   --brand-green: #61CE70;
 }
 
 @theme {
   --color-brand-beige: #FCEFD4;
   --color-brand-maroon: #510909;
-  --color-brand-magenta: #CC3366;
+  --color-brand-magenta: #510909;
   --color-brand-green: #61CE70;
   --color-brand-black: #1A1A1A;
   

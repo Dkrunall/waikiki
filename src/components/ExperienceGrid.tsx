@@ -48,9 +48,8 @@ export default function ExperienceGrid() {
                src="/gallery/tropical-detail.jpg" 
                alt="Waikiki Essence" 
                fill
-               className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+               className="object-cover transition-all duration-1000"
              />
-             <div className="absolute inset-0 bg-brand-maroon/5 mix-blend-multiply" />
           </motion.div>
         </div>
 
@@ -76,13 +75,12 @@ export default function ExperienceGrid() {
                 </p>
                 
                 {/* Authentic Imagery */}
-                <div className="mt-auto relative h-48 sm:h-56 lg:h-64 w-full rounded-2xl overflow-hidden border border-brand-maroon/10 group-hover:border-white/20 shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
+                <div className="mt-auto relative h-48 sm:h-56 lg:h-64 w-full rounded-2xl overflow-hidden border border-brand-maroon/10 group-hover:border-white/20 shadow-xl transition-all duration-700">
                    <img 
                      src={exp.image} 
                      alt={exp.title} 
                      className="object-cover w-full h-full transform group-hover:scale-110 transition-transform duration-1000"
                    />
-                   <div className="absolute inset-0 bg-brand-maroon/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
               </div>
             </motion.div>

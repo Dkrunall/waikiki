@@ -61,7 +61,7 @@ export default function InteractiveMenu() {
           <motion.div 
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="hidden lg:block relative w-72 h-44 rounded-2xl overflow-hidden border border-brand-maroon/10 shadow-lg grayscale hover:grayscale-0 transition-all duration-700 flex-shrink-0"
+            className="hidden lg:block relative w-72 h-44 rounded-2xl overflow-hidden border border-brand-maroon/10 shadow-lg transition-all duration-700 flex-shrink-0"
           >
              <Image 
                src="/gallery/tropical-detail.jpg" 
@@ -156,7 +156,6 @@ export default function InteractiveMenu() {
                     className="object-cover"
                     priority
                   />
-                  <div className="absolute inset-0 bg-brand-maroon/5 mix-blend-multiply" />
                 </div>
                 {/* Decorative Frame */}
                 <div className="absolute top-0 right-0 p-4 sm:p-8">

@@ -29,7 +29,7 @@ export default function AtmosphereGallery() {
               src="/gallery/venue-1.jpg" 
               alt="Waikiki Atmosphere - The Sanctuary" 
               fill 
-              className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="object-cover transition-all duration-700"
             />
             <div className="absolute inset-0 border-[1px] border-white/20 m-3 sm:m-4 pointer-events-none" />
             <div className="absolute top-4 sm:top-8 left-4 sm:left-8">

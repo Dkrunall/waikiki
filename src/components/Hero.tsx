@@ -60,14 +60,14 @@ export default function Hero() {
         
         {/* Left Wing - Poster & Captain Anchor - desktop only */}
         <div className="hidden lg:block lg:col-span-3 h-[500px] relative group">
-          <div className="absolute inset-0 border border-brand-maroon/10 rounded-3xl overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl">
+          <div className="absolute inset-0 border border-brand-maroon/10 rounded-3xl overflow-hidden transition-all duration-700 shadow-2xl">
              <Image 
                src="/brand-poster.png" 
                alt="Waikiki Brand" 
                fill 
                className="object-cover opacity-90 transition-transform duration-1000 group-hover:scale-110"
              />
-             <div className="absolute inset-0 bg-brand-maroon/10 mix-blend-multiply" />
+             <div className="absolute inset-0 bg-brand-maroon/10" />
           </div>
           
           <motion.div

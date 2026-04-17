@@ -39,7 +39,7 @@ export default function StickyActions() {
           </div>
           
           {/* Book A Table — grows to fill remaining space on mobile */}
-          <button className="flex-1 sm:flex-none bg-brand-magenta text-white font-sans text-[10px] uppercase tracking-[0.2em] px-6 sm:px-10 py-4 rounded-full hover:bg-white hover:text-brand-maroon transition-all flex items-center justify-center gap-2">
+          <button className="flex-1 sm:flex-none bg-brand-beige text-brand-maroon font-sans text-[10px] uppercase tracking-[0.2em] px-6 sm:px-10 py-4 rounded-full hover:bg-white transition-all flex items-center justify-center gap-2">
             <Calendar size={13} />
             <span>Book A Table</span>
           </button>

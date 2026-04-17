@@ -30,7 +30,7 @@ export default function WeeklyBeats() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            className="relative h-56 sm:h-72 lg:h-80 w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-beige/10 grayscale hover:grayscale-0 transition-all duration-1000 shadow-2xl"
+            className="relative h-56 sm:h-72 lg:h-80 w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-beige/10 transition-all duration-1000 shadow-2xl"
           >
              <Image 
                src="/gallery/nightlife-crowd.jpg" 
@@ -38,8 +38,8 @@ export default function WeeklyBeats() {
                fill
                className="object-cover transform hover:scale-110 transition-transform duration-1000"
              />
-             <div className="absolute inset-0 bg-brand-maroon/20 mix-blend-multiply" />
           </motion.div>
+
 
           <p className="font-sans text-sm uppercase tracking-widest opacity-60 leading-relaxed max-w-xs">
             Experience the heartbeat of Andheri's most exclusive tropical getaway. 

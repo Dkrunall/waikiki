@@ -46,7 +46,7 @@ export default function LoadingSplash() {
               transition={{ delay: 0.5, duration: 0.8, ease: "easeOut" }}
               className="font-serif text-3xl sm:text-4xl md:text-6xl tracking-tighter uppercase italic text-center"
             >
-              The <span className="text-brand-magenta">Experience</span>
+              The <span className="text-brand-beige">Experience</span>
             </motion.h2>
           </div>
 
@@ -55,7 +55,7 @@ export default function LoadingSplash() {
             initial={{ width: 0 }}
             animate={{ width: "200px" }}
             transition={{ delay: 1, duration: 1, ease: "easeInOut" }}
-            className="h-[1px] bg-brand-magenta mt-6"
+            className="h-[1px] bg-brand-beige/30 mt-6"
           />
           
           <motion.p
