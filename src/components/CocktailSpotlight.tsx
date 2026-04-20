@@ -23,10 +23,10 @@ export default function CocktailSpotlight() {
             viewport={{ once: true }}
             className="relative h-[600px] border border-brand-beige/20 overflow-hidden"
           >
-            <Image 
-              src="/images/cocktail.jpg" 
-              alt="Signature Tiki Cocktail" 
-              fill 
+            <Image
+              src="/new/Waikiki_035.jpg"
+              alt="Waikiki butterfly mosaic bar — best cocktail bar Andheri East Mumbai"
+              fill
               className="object-cover"
             />
             <div className="absolute inset-0 bg-black/20" />
@@ -39,9 +39,8 @@ export default function CocktailSpotlight() {
           {/* Right Column: Text & Secondary Image */}
           <div className="flex flex-col justify-between space-y-12">
             <div className="space-y-6">
-              <p className="font-sans text-sm md:text-lg uppercase tracking-widest leading-relaxed opacity-90 text-brand-beige">
-                Pull up a stool at our breathtaking Tiki bar. Designed to transport you to an island paradise, 
-                our cocktails are hand-crafted adventures in a glass.
+              <p className="font-sans text-sm md:text-lg tracking-wide leading-relaxed opacity-90 text-brand-beige">
+                Pull up a stool at Waikiki&apos;s breathtaking Tiki bar, a striking focal point combining captivating architecture with the artistry of our professional bartenders. The best cocktail bar in Andheri East, where signature tropical cocktails pair perfectly with bites from Chef Kai&apos;s kitchen. Guest DJs set the tone each evening, making Waikiki the best bar in Mumbai for an elevated night out.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {["Island Grog", "Zombie", "Luau Punch", "Hula Haze"].map((drink) => (
@@ -60,10 +59,10 @@ export default function CocktailSpotlight() {
               viewport={{ once: true }}
               className="relative h-64 border border-brand-beige/20 overflow-hidden"
             >
-              <Image 
-                src="/images/tiki-bar.png" 
-                alt="Waikiki Tiki Bar" 
-                fill 
+              <Image
+                src="/new/Waikiki_012.jpg"
+                alt="Waikiki tiki bar interior — signature cocktails Mumbai"
+                fill
                 className="object-cover"
               />
             </motion.div>

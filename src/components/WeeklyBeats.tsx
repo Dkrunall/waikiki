@@ -33,17 +33,16 @@ export default function WeeklyBeats() {
             className="relative h-56 sm:h-72 lg:h-80 w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-beige/10 transition-all duration-1000 shadow-2xl"
           >
              <Image 
-               src="/gallery/nightlife-crowd.jpg" 
-               alt="Waikiki Nightlife" 
+               src="/new/Waikiki_008.jpg"
+               alt="Waikiki rooftop bar at night — best nightlife Andheri East Mumbai"
                fill
                className="object-cover transform hover:scale-110 transition-transform duration-1000"
              />
           </motion.div>
 
 
-          <p className="font-sans text-sm uppercase tracking-widest opacity-60 leading-relaxed max-w-xs">
-            Experience the heartbeat of Andheri's most exclusive tropical getaway. 
-            Curated rhythms from the city's finest.
+          <p className="font-sans text-sm tracking-wide opacity-60 leading-relaxed max-w-xs">
+            Guest DJs spinning nightly with special weekend sets. Waikiki is the best restaurant and bar in Mumbai for those seeking an evening filled with excitement, culinary flair and unforgettable nightlife in Andheri.
           </p>
         </div>
 

@@ -74,7 +74,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
              </div>
              <div className="space-y-2">
                <span className="font-sans text-[9px] uppercase tracking-widest opacity-40">Contact</span>
-               <p className="font-sans text-[10px] sm:text-xs uppercase tracking-widest">+91 88288 22222</p>
+               <a href="tel:+918150000345" className="font-sans text-[10px] sm:text-xs uppercase tracking-widest hover:text-brand-magenta transition-colors">+91 81500 00345</a>
              </div>
              <div className="hidden sm:block col-span-2 text-right">
                <span className="font-sans text-[9px] uppercase tracking-widest opacity-40">© 2026 Waikiki Experience</span>

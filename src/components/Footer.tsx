@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
 
             <p className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-sm">
-              Escape to a tropical sanctuary in the heart of Mumbai. Exotic flavors, craft cocktails, and the spirit of Aloha.
+              Mumbai&apos;s best Hawaiian tiki bar &amp; restaurant — exotic sushi, Pan-Asian cuisine, Polynesian cocktails, and electrifying late-night DJ vibes in Andheri East.
             </p>
 
             <div className="space-y-4">
@@ -73,19 +73,19 @@ export default function Footer() {
             <div className="space-y-6">
               <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">Contact</p>
               <div className="space-y-6">
-                <a href="tel:+918828822222" className="group block space-y-2">
+                <a href="tel:+918150000345" className="group block space-y-2">
                   <div className="flex items-center text-brand-beige/60 group-hover:text-white transition-colors">
                     <Phone className="w-4 h-4 mr-2" />
                     <span className="font-sans text-[10px] uppercase tracking-widest">Call Us</span>
                   </div>
-                  <p className="font-sans text-sm tracking-widest">+91 88288 22222</p>
+                  <p className="font-sans text-sm tracking-wide">+91 81500 00345</p>
                 </a>
-                <a href="mailto:hello@waikiki.in" className="group block space-y-2">
+                <a href="mailto:mumbaiwaikiki@gmail.com" className="group block space-y-2">
                   <div className="flex items-center text-brand-beige/60 group-hover:text-white transition-colors">
                     <Mail className="w-4 h-4 mr-2" />
                     <span className="font-sans text-[10px] uppercase tracking-widest">Email</span>
                   </div>
-                  <p className="font-sans text-sm tracking-widest">HELLO@WAIKIKI.IN</p>
+                  <p className="font-sans text-sm tracking-wide">mumbaiwaikiki@gmail.com</p>
                 </a>
               </div>
             </div>
@@ -97,12 +97,13 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 mr-2" />
                   <span className="font-sans text-[10px] uppercase tracking-widest">Location</span>
                 </div>
-                <p className="font-sans text-sm tracking-widest leading-relaxed">
-                  ANDHERI EAST,<br />
-                  MUMBAI, MAHARASHTRA
+                <p className="font-sans text-sm tracking-wide leading-relaxed">
+                  Hotel Peninsula Grand,<br />
+                  Saki Naka, Andheri East,<br />
+                  Mumbai 400072
                 </p>
                 <p className="font-sans text-[10px] text-brand-beige/30 pt-2 tracking-widest">
-                  19°07'13.7"N 72°52'23.6"E
+                  TUE–SUN · 6 PM – 3 AM
                 </p>
               </div>
             </div>

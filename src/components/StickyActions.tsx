@@ -31,7 +31,7 @@ export default function StickyActions() {
             </button>
 
             <a 
-              href="tel:+918828822222"
+              href="tel:+918150000345"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/5 text-brand-beige hover:bg-brand-magenta transition-colors flex-shrink-0"
             >
               <Phone size={16} />

@@ -46,7 +46,7 @@ export default function Hero() {
         >
           <div className="h-[1px] w-8 sm:w-12 bg-brand-maroon/20" />
           <span className="font-sans text-[8px] sm:text-[9px] uppercase tracking-[0.4em] sm:tracking-[0.5em] text-brand-maroon/60">
-            Est. 2024 — Mumbai
+            Est. 2024, Mumbai
           </span>
           <div className="h-[1px] w-8 sm:w-12 bg-brand-maroon/20" />
         </motion.div>
@@ -121,10 +121,25 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.8 }}
-            className="font-sans text-[10px] sm:text-xs md:text-sm max-w-xs sm:max-w-sm mx-auto text-brand-maroon/60 leading-relaxed uppercase tracking-[0.15em] sm:tracking-[0.2em] font-light"
+            className="font-sans text-[10px] sm:text-xs md:text-sm max-w-xs sm:max-w-sm mx-auto text-brand-maroon/60 leading-relaxed tracking-[0.15em] sm:tracking-[0.2em] font-light"
           >
-            A high-energy Hawaiian Tiki getaway in the heart of Mumbai. Exotic cocktails, Pan-Asian flavors, and late-night rhythms.
+            A venue like no other. Mumbai&apos;s best Hawaiian restaurant &amp; tiki bar in Andheri East. Immersive island experience with Pan-Asian cuisine, exotic cocktails &amp; late-night DJ energy.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.0 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 pt-2"
+          >
+            <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-brand-maroon/40">
+              Tue – Sun &nbsp;·&nbsp; 6 PM – 3 AM
+            </span>
+            <span className="hidden sm:block h-3 w-px bg-brand-maroon/20" />
+            <span className="font-sans text-[9px] uppercase tracking-[0.35em] text-brand-maroon/40">
+              Hotel Peninsula Grand, Andheri East
+            </span>
+          </motion.div>
         </div>
 
         {/* Right Wing - Cocktail Photography - desktop only */}
@@ -159,12 +174,12 @@ export default function Hero() {
       {/* Background Decorative Margin Details */}
       <div className="absolute left-10 bottom-12 hidden xl:block opacity-30">
          <span className="vertical-text font-sans text-[9px] uppercase tracking-[1em] text-brand-maroon transform rotate-180">
-            JUNGLE ESCAPISM
+            Jungle Escapism
          </span>
       </div>
       <div className="absolute right-10 bottom-12 hidden xl:block opacity-30">
          <span className="vertical-text font-sans text-[9px] uppercase tracking-[1em] text-brand-maroon">
-            TIKI CULTURE
+            Tiki Culture
          </span>
       </div>
     </section>

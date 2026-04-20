@@ -7,31 +7,31 @@ import Image from "next/image";
 const MENU_DATA = {
   Culinary: {
     tag: "Pan-Asian & Polynesian",
-    description: "A journey through tropical flavors and Mediterranean craft.",
-    image: "/illustration-sushi.png",
+    description: "Chef Kai's seasonal creations — from tropical sushi and poke bowls to raw seafood and grilled meats with vibrant Hawaiian spices.",
+    image: "/food/SSP-08.jpg",
     items: [
-      { name: "Chef's Signature Sushi", price: "₹1250", desc: "Hand-crafted with the finest catches of the day.", image: "/illustration-sushi.png" },
-      { name: "Tropical Poke Bowl", price: "₹850", desc: "Fresh tuna, avocado, and house-made ponzu.", image: "/illustration-culinary.png" },
-      { name: "Miso Glazed Black Cod", price: "₹1850", desc: "Slow-cooked to perfection over robata coals.", image: "/illustration-sushi.png" }
+      { name: "Chef's Signature Sushi", price: "₹1250", desc: "Hand-crafted with the finest catches of the day.", image: "/food/SSP-08.jpg" },
+      { name: "Tropical Poke Bowl", price: "₹850", desc: "Fresh tuna, avocado, and house-made ponzu.", image: "/food/SSP-32.jpg" },
+      { name: "Miso Glazed Black Cod", price: "₹1850", desc: "Slow-cooked to perfection over robata coals.", image: "/food/SSP-41.jpg" }
     ],
   },
   Cocktails: {
     tag: "Tiki Mixology",
-    description: "Hand-crafted adventures designed to transport you to an island paradise.",
-    image: "/cocktail-primary.png",
+    description: "Hand-crafted tiki cocktails designed to transport you to an island paradise. The best cocktail bar in Andheri East.",
+    image: "/food/SSP-36.jpg",
     items: [
-      { name: "Shark Attack", price: "₹950", desc: "A high-energy blend in our signature shark vessel.", image: "/gallery/shark-mug.png" },
-      { name: "Tiki Skully", price: "₹850", desc: "Deep jungle flavors served in an iconic skull mug.", image: "/gallery/skull-mug.png" },
-      { name: "Tropical Owl", price: "₹1100", desc: "Wise flavors and exotic botanicals in handcrafted ceramic.", image: "/gallery/owl-mug.png" }
+      { name: "Shark Attack", price: "₹950", desc: "A high-energy blend in our signature shark vessel.", image: "/food/SSP-04.jpg" },
+      { name: "Tiki Skully", price: "₹850", desc: "Deep jungle flavors served in an iconic skull mug.", image: "/food/SSP-21.jpg" },
+      { name: "Tropical Owl", price: "₹1100", desc: "Wise flavors and exotic botanicals in handcrafted ceramic.", image: "/food/SSP-22.jpg" }
     ],
   },
   Nightlife: {
     tag: "The Jungle Vibe",
-    description: "Late-night rhythms, lush jungle escapism, and the spirit of Aloha.",
-    image: "/beach-captain-alt.png",
+    description: "Late-night rhythms, lush jungle escapism, and the spirit of Aloha. The best nightlife in Andheri East, Mumbai.",
+    image: "/new/Waikiki_008.jpg",
     items: [
-      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/beach-captain-alt.png" },
-      { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/brand-poster.png" }
+      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/new/Waikiki_028.jpg" },
+      { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/food/SSP-35.jpg" }
     ],
   },
 };
@@ -51,9 +51,8 @@ export default function InteractiveMenu() {
               Taste <br />
               <span className="italic text-brand-magenta">Paradise</span>
             </h2>
-            <p className="font-sans text-xs sm:text-sm uppercase tracking-widest text-brand-maroon/60 leading-relaxed max-w-md">
-              A curated selection of Pan-Asian signatures and craft Tiki cocktails. 
-              Designed for the adventurous palate.
+            <p className="font-sans text-xs sm:text-sm tracking-wide text-brand-maroon/60 leading-relaxed max-w-md">
+              A curated selection of Pan-Asian signatures and craft Tiki cocktails, designed for the adventurous palate.
             </p>
           </div>
           
@@ -63,9 +62,9 @@ export default function InteractiveMenu() {
             whileInView={{ opacity: 1, scale: 1 }}
             className="hidden lg:block relative w-72 h-44 rounded-2xl overflow-hidden border border-brand-maroon/10 shadow-lg transition-all duration-700 flex-shrink-0"
           >
-             <Image 
-               src="/gallery/tropical-detail.jpg" 
-               alt="Tropical Detail" 
+             <Image
+               src="/food/SSP-01.jpg"
+               alt="Waikiki Pan-Asian food spread — best restaurant Andheri East Mumbai"
                fill
                className="object-cover transform hover:scale-110 transition-transform duration-1000"
              />
@@ -110,7 +109,7 @@ export default function InteractiveMenu() {
                   <span className="font-sans text-xs uppercase tracking-[0.5em] text-brand-magenta">
                     {MENU_DATA[activeTab].tag}
                   </span>
-                  <p className="font-sans text-sm text-brand-maroon/70 uppercase tracking-widest max-w-sm">
+                  <p className="font-sans text-sm text-brand-maroon/70 tracking-wide max-w-sm">
                     {MENU_DATA[activeTab].description}
                   </p>
                 </div>

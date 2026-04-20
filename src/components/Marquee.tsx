@@ -42,7 +42,7 @@ export default function Marquee({ text, speed = 50, reverse = false, className =
       className={`overflow-hidden whitespace-nowrap border-y border-brand-maroon/20 py-2 ${className}`}
     >
       <div ref={contentRef} className="inline-block">
-        <span className="inline-block px-4 font-serif text-2xl uppercase tracking-widest text-brand-maroon">
+        <span className="inline-block px-4 font-serif text-2xl tracking-widest text-brand-maroon">
           {text} &nbsp; • &nbsp; {text} &nbsp; • &nbsp; {text} &nbsp; • &nbsp; {text} &nbsp; • &nbsp; 
           {text} &nbsp; • &nbsp; {text} &nbsp; • &nbsp; {text} &nbsp; • &nbsp; {text} &nbsp; • &nbsp;
         </span>
