@@ -14,19 +14,16 @@ const TIME_SLOTS = ["6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30
 export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
   const [form, setForm] = useState({ name: "", phone: "", date: "", time: "", guests: "2", notes: "" });
   const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) {
     setForm(f => ({ ...f, [e.target.name]: e.target.value }));
   }
 
-  async function handleSubmit(e: React.FormEvent) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setLoading(true);
     const msg = `*New Table Booking — Waikiki*\n\n*Name:* ${form.name}\n*Phone:* ${form.phone}\n*Date:* ${form.date}\n*Time:* ${form.time}\n*Guests:* ${form.guests}\n*Notes:* ${form.notes || "None"}`;
     const url = `https://wa.me/918150000345?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
-    setLoading(false);
     setSubmitted(true);
   }
 
@@ -137,8 +134,8 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
                       <textarea name="notes" value={form.notes} onChange={handleChange} rows={2} placeholder="Dietary requirements, occasion, seating preference…" className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-sm placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/40 transition-colors resize-none" />
                     </div>
 
-                    <button type="submit" disabled={loading} className="w-full bg-brand-maroon text-brand-beige font-sans text-[10px] uppercase tracking-[0.4em] py-4 hover:bg-brand-magenta transition-colors disabled:opacity-60 flex items-center justify-center gap-3">
-                      {loading ? <span className="animate-pulse">Confirming…</span> : <><Calendar size={12} /> Confirm Reservation</>}
+                    <button type="submit" className="w-full bg-brand-maroon text-brand-beige font-sans text-[10px] uppercase tracking-[0.4em] py-4 hover:bg-brand-magenta transition-colors flex items-center justify-center gap-3">
+                      <Calendar size={12} /> Confirm Reservation
                     </button>
 
                     <p className="text-center font-sans text-[9px] text-brand-maroon/40 tracking-wide">
