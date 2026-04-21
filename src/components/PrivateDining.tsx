@@ -122,7 +122,7 @@ export default function PrivateDining() {
             {/* Main image */}
             <div className="relative h-[380px] sm:h-[520px] lg:h-[680px] overflow-hidden border border-brand-maroon/15 shadow-2xl">
               <Image
-                src="/new/Waikiki_014.jpg"
+                src="/pdr.jpg"
                 alt="Waikiki Private Dining and Events Mumbai"
                 fill
                 className="object-cover"

@@ -24,7 +24,7 @@ export default function CocktailSpotlight() {
             className="relative h-[600px] border border-brand-beige/20 overflow-hidden"
           >
             <Image
-              src="/new/Waikiki_035.jpg"
+              src="/picanate.jpg"
               alt="Waikiki butterfly mosaic bar — best cocktail bar Andheri East Mumbai"
               fill
               className="object-cover"

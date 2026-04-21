@@ -53,8 +53,24 @@ export default function AboutWaikiki() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-maroon/60 via-transparent to-transparent" />
+
+                {/* 6 PM Highlight Overlay */}
+                <div className="absolute bottom-8 right-8 pointer-events-none z-10">
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className="text-right"
+                  >
+                    <span className="block font-serif text-2xl sm:text-xl italic text-white drop-shadow-[0_10px_20px_rgba(0,0,0,0.4)] leading-none">6 PM</span>
+                    <span className="block font-sans text-[10px] sm:text-[8px] uppercase tracking-[0.4em] text-white/80 drop-shadow-[0_2px_10px_rgba(0,0,0,0.3)] mt-1">Opens Nightly</span>
+                  </motion.div>
+                </div>
+
                 {/* Inner frame */}
                 <div className="absolute inset-[10px] border border-brand-beige/10 pointer-events-none" />
+
                 {/* Bottom caption */}
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="h-px w-8 bg-brand-magenta mb-3" />
@@ -62,26 +78,6 @@ export default function AboutWaikiki() {
                   <p className="font-serif text-xl italic text-white">Hawaii in the heart of the city.</p>
                 </div>
               </div>
-
-              {/* Floating accent image */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-                className="absolute -bottom-6 -right-4 sm:-right-6 w-28 h-36 sm:w-36 sm:h-44 overflow-hidden border-2 border-brand-maroon shadow-2xl"
-              >
-                <Image
-                  src="/new/Waikiki_040.jpg"
-                  alt="Waikiki tropical interior"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute bottom-0 inset-x-0 bg-brand-maroon/80 px-3 py-2 text-center">
-                  <span className="font-serif text-lg italic text-white leading-none">6 PM</span>
-                  <span className="block font-sans text-[8px] uppercase tracking-[0.3em] text-white/50">Opens Nightly</span>
-                </div>
-              </motion.div>
             </motion.div>
           </div>
 

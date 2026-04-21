@@ -14,7 +14,7 @@ export default function WeeklyBeats() {
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 bg-brand-maroon text-brand-beige overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
-        
+
         {/* Left Side: Header & Authentic Imagery */}
         <div className="lg:col-span-4 space-y-8 sm:space-y-12">
           <div className="space-y-3 sm:space-y-4">
@@ -24,20 +24,20 @@ export default function WeeklyBeats() {
               <span className="italic text-brand-magenta">BEATS</span>
             </h2>
           </div>
-          
+
           {/* Authentic Nightlife Imagery */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             className="relative h-56 sm:h-72 lg:h-80 w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-beige/10 transition-all duration-1000 shadow-2xl"
           >
-             <Image 
-               src="/new/Waikiki_008.jpg"
-               alt="Waikiki rooftop bar at night — best nightlife Andheri East Mumbai"
-               fill
-               className="object-cover transform hover:scale-110 transition-transform duration-1000"
-             />
+            <Image
+              src="/thebar.jpg"
+              alt="Waikiki rooftop bar at night — best nightlife Andheri East Mumbai"
+              fill
+              className="object-cover transform hover:scale-110 transition-transform duration-1000"
+            />
           </motion.div>
 
 
@@ -70,7 +70,7 @@ export default function WeeklyBeats() {
                   <span className="font-sans text-[10px] uppercase tracking-[0.3em] opacity-50">{event.artist}</span>
                 </div>
               </div>
-              
+
               <div className="flex items-center space-x-6 sm:space-x-12 pl-[72px] sm:pl-0">
                 <span className="font-sans text-xs uppercase tracking-[0.2em]">{event.time}</span>
                 <button className="border border-brand-beige/20 px-6 sm:px-8 py-2 sm:py-3 font-sans text-[10px] uppercase tracking-[0.4em] hover:bg-brand-magenta hover:border-brand-magenta transition-all">
