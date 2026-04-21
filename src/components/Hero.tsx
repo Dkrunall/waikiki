@@ -123,7 +123,7 @@ export default function Hero() {
             transition={{ delay: 0.8 }}
             className="font-sans text-[10px] sm:text-xs md:text-sm max-w-xs sm:max-w-sm mx-auto text-brand-maroon/60 leading-relaxed tracking-[0.15em] sm:tracking-[0.2em] font-light"
           >
-            A venue like no other. Mumbai&apos;s best Hawaiian restaurant &amp; tiki bar in Andheri East. Immersive island experience with Pan-Asian cuisine, exotic cocktails &amp; late-night DJ energy.
+            Where Hawaii meets Mumbai. An island-inspired escape in Andheri East, celebrating Polynesian flavours, hand-crafted tiki cocktails, and late-night rhythms under a lush jungle canopy.
           </motion.p>
 
           <motion.div

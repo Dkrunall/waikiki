@@ -27,9 +27,9 @@ export default function AboutWaikiki() {
           viewport={{ once: true }}
           className="flex items-center gap-4 mb-12 sm:mb-16"
         >
-          <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-magenta">Our Story</span>
+          <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/50">Our Story</span>
           <div className="flex-1 h-px bg-brand-beige/10" />
-          <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/30">Est. 2024 — Peninsula Hospitality Group</span>
+          <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/30">Est. 2024, Mumbai</span>
         </motion.div>
 
         {/* Main grid */}
@@ -97,7 +97,7 @@ export default function AboutWaikiki() {
             >
               A Venue Like
               <br />
-              <span className="italic text-brand-magenta">No Other</span>
+              <span className="italic text-brand-beige/70">No Other</span>
             </motion.h2>
 
             <motion.div
@@ -113,7 +113,7 @@ export default function AboutWaikiki() {
 
               {/* Pull-quote accent */}
               <div className="flex gap-4 py-2">
-                <div className="w-px bg-brand-magenta flex-shrink-0" />
+                <div className="w-px bg-brand-beige/25 flex-shrink-0" />
                 <p className="font-serif text-base sm:text-lg italic text-brand-beige/60 leading-relaxed">
                   Drawing inspiration from Waikiki&apos;s lush jungles and serene vistas, celebrating two distinct ambiances that reflect the beauty and spirit of the Hawaiian islands.
                 </p>
@@ -134,7 +134,7 @@ export default function AboutWaikiki() {
             >
               {STATS.map((item) => (
                 <div key={item.label} className="px-5 py-4 sm:px-6 sm:py-5 space-y-1">
-                  <span className="block font-serif text-2xl sm:text-3xl italic text-brand-magenta">{item.stat}</span>
+                  <span className="block font-serif text-2xl sm:text-3xl italic text-brand-beige">{item.stat}</span>
                   <span className="block font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/35">{item.label}</span>
                 </div>
               ))}
