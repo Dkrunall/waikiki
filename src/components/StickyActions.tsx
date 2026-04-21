@@ -5,14 +5,17 @@ import { Calendar, Phone, Menu } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 import MenuOverlay from "./MenuOverlay";
+import BookingForm from "./BookingForm";
 
 
 export default function StickyActions() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
     <>
       <MenuOverlay isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+      <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
       
       <motion.div
         initial={{ y: 100, opacity: 0 }}
@@ -39,7 +42,7 @@ export default function StickyActions() {
           </div>
           
           {/* Book A Table — grows to fill remaining space on mobile */}
-          <button className="flex-1 sm:flex-none bg-brand-beige text-brand-maroon font-sans text-[10px] uppercase tracking-[0.2em] px-6 sm:px-10 py-4 rounded-full hover:bg-white transition-all flex items-center justify-center gap-2">
+          <button onClick={() => setIsBookingOpen(true)} className="flex-1 sm:flex-none bg-brand-beige text-brand-maroon font-sans text-[10px] uppercase tracking-[0.2em] px-6 sm:px-10 py-4 rounded-full hover:bg-white transition-all flex items-center justify-center gap-2">
             <Calendar size={13} />
             <span>Book A Table</span>
           </button>
