@@ -28,9 +28,10 @@ const MENU_DATA = {
   Nightlife: {
     tag: "The Jungle Vibe",
     description: "Late-night rhythms, lush jungle escapism, and the spirit of Aloha. The best nightlife in Andheri East, Mumbai.",
-    image: "/new/Waikiki_008.jpg",
+    image: "/night-life/1.JPG",
+    gallery: ["/night-life/1.JPG", "/night-life/2.JPG", "/night-life/3.JPG", "/night-life/4.JPG", "/night-life/5.JPG", "/night-life/6.JPG", "/night-life/7.JPG", "/night-life/8.JPG"],
     items: [
-      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/new/Waikiki_028.jpg" },
+      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/night-life/1.JPG" },
       { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/food/SSP-35.jpg" }
     ],
   },
@@ -42,7 +43,7 @@ export default function InteractiveMenu() {
   return (
     <section id="menu" className="py-16 sm:py-24 px-4 sm:px-6 bg-brand-beige border-t border-brand-maroon/10">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 lg:gap-12 mb-12 sm:mb-20">
           <div className="space-y-4 sm:space-y-6">
@@ -55,19 +56,19 @@ export default function InteractiveMenu() {
               A curated selection of Pan-Asian signatures and craft Tiki cocktails, designed for the adventurous palate.
             </p>
           </div>
-          
+
           {/* Tropical Detail Image - desktop only */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             className="hidden lg:block relative w-72 h-44 rounded-2xl overflow-hidden border border-brand-maroon/10 shadow-lg transition-all duration-700 flex-shrink-0"
           >
-             <Image
-               src="/food/SSP-01.jpg"
-               alt="Waikiki Pan-Asian food spread — best restaurant Andheri East Mumbai"
-               fill
-               className="object-cover transform hover:scale-110 transition-transform duration-1000"
-             />
+            <Image
+              src="/food/SSP-01.jpg"
+              alt="Waikiki Pan-Asian food spread — best restaurant Andheri East Mumbai"
+              fill
+              className="object-cover transform hover:scale-110 transition-transform duration-1000"
+            />
           </motion.div>
         </div>
 
@@ -77,9 +78,8 @@ export default function InteractiveMenu() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`font-sans text-xs uppercase tracking-[0.4em] transition-all relative py-3 sm:py-4 whitespace-nowrap flex-shrink-0 ${
-                activeTab === tab ? "text-brand-magenta" : "text-brand-maroon/40"
-              }`}
+              className={`font-sans text-xs uppercase tracking-[0.4em] transition-all relative py-3 sm:py-4 whitespace-nowrap flex-shrink-0 ${activeTab === tab ? "text-brand-magenta" : "text-brand-maroon/40"
+                }`}
             >
               {tab}
               {activeTab === tab && (
@@ -139,31 +139,55 @@ export default function InteractiveMenu() {
           {/* Large Image Showcase */}
           <div className="lg:col-span-7 order-1 lg:order-2">
             <AnimatePresence mode="wait">
-              <motion.div
-                key={activeTab}
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 1.05 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                className="relative aspect-[4/3] w-full border border-brand-maroon/10 p-2 sm:p-4"
-              >
-                <div className="relative w-full h-full overflow-hidden">
-                  <Image
-                    src={MENU_DATA[activeTab].image}
-                    alt={activeTab}
-                    fill
-                    className="object-cover"
-                    priority
-                  />
-                </div>
-                {/* Decorative Frame */}
-                <div className="absolute top-0 right-0 p-4 sm:p-8">
-                   <div className="w-8 h-8 sm:w-12 sm:h-12 border-t border-r border-brand-magenta" />
-                </div>
-                <div className="absolute bottom-0 left-0 p-4 sm:p-8">
-                   <div className="w-8 h-8 sm:w-12 sm:h-12 border-b border-l border-brand-magenta" />
-                </div>
-              </motion.div>
+              {activeTab === "Nightlife" ? (
+                <motion.div
+                  key="nightlife-gallery"
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="grid grid-cols-2 sm:grid-cols-4 gap-2"
+                >
+                  {(MENU_DATA.Nightlife.gallery ?? []).map((src, i) => (
+                    <motion.div
+                      key={i}
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: i * 0.07 }}
+                      className="relative aspect-square overflow-hidden border border-brand-maroon/10 group"
+                    >
+                      <Image src={src} alt={`Nightlife ${i + 1}`} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
+                      <div className="absolute inset-0 bg-brand-maroon/20 group-hover:bg-transparent transition-colors duration-500" />
+
+                    </motion.div>
+                  ))}
+                </motion.div>
+              ) : (
+                <motion.div
+                  key={activeTab}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 1.05 }}
+                  transition={{ duration: 0.8, ease: "easeOut" }}
+                  className="relative aspect-[4/3] w-full border border-brand-maroon/10 p-2 sm:p-4"
+                >
+                  <div className="relative w-full h-full overflow-hidden">
+                    <Image
+                      src={MENU_DATA[activeTab].image}
+                      alt={activeTab}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+                  </div>
+                  <div className="absolute top-0 right-0 p-4 sm:p-8">
+                    <div className="w-8 h-8 sm:w-12 sm:h-12 border-t border-r border-brand-magenta" />
+                  </div>
+                  <div className="absolute bottom-0 left-0 p-4 sm:p-8">
+                    <div className="w-8 h-8 sm:w-12 sm:h-12 border-b border-l border-brand-magenta" />
+                  </div>
+                </motion.div>
+              )}
             </AnimatePresence>
           </div>
         </div>

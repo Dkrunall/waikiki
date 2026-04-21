@@ -19,7 +19,7 @@ const SPACES = [
     subtitle: "Best Pan-Asian Restaurant Andheri",
     description:
       "First-floor formal dining with air conditioning and lush tropical views. Chef Kai's Pan-Asian and Polynesian menu shines in this serene, beautifully designed setting.",
-    image: "/gallery/sushi-platter.jpg",
+    image: "/new/Waikiki_028.jpg",
     tag: "Dining",
   },
   {

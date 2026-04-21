@@ -23,7 +23,9 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
-    await new Promise(r => setTimeout(r, 1000));
+    const msg = `*New Table Booking — Waikiki*\n\n*Name:* ${form.name}\n*Phone:* ${form.phone}\n*Date:* ${form.date}\n*Time:* ${form.time}\n*Guests:* ${form.guests}\n*Notes:* ${form.notes || "None"}`;
+    const url = `https://wa.me/918150000345?text=${encodeURIComponent(msg)}`;
+    window.open(url, "_blank");
     setLoading(false);
     setSubmitted(true);
   }

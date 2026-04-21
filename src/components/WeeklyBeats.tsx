@@ -26,19 +26,26 @@ export default function WeeklyBeats() {
           </div>
 
           {/* Authentic Nightlife Imagery */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative h-56 sm:h-72 lg:h-80 w-full rounded-2xl sm:rounded-3xl overflow-hidden border border-brand-beige/10 transition-all duration-1000 shadow-2xl"
-          >
-            <Image
-              src="/thebar.jpg"
-              alt="Waikiki rooftop bar at night — best nightlife Andheri East Mumbai"
-              fill
-              className="object-cover transform hover:scale-110 transition-transform duration-1000"
-            />
-          </motion.div>
+          <div className="grid grid-cols-2 gap-2">
+            {["/night-life/2.JPG", "/night-life/3.JPG", "/night-life/4.JPG", "/night-life/5.JPG"].map((src, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="relative aspect-square overflow-hidden border border-brand-beige/10 group"
+              >
+                <Image
+                  src={src}
+                  alt={`Waikiki nightlife ${i + 1}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                <span className="absolute bottom-2 left-2 font-serif text-xl italic text-white/30 leading-none select-none">{i + 1}</span>
+              </motion.div>
+            ))}
+          </div>
 
 
           <p className="font-sans text-sm tracking-wide opacity-60 leading-relaxed max-w-xs">
