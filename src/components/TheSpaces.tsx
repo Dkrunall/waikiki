@@ -10,7 +10,7 @@ const SPACES = [
     subtitle: "Best Bar in Andheri East",
     description:
       "Step into Waikiki's vibrant ground-floor lounge, a high-energy tropical sanctuary where island spirit meets Mumbai nightlife. The perfect start to your evening.",
-    image: "/thebar.jpg",
+    image: "/lounge.jpg",
     tag: "Lounge",
   },
   {
@@ -19,7 +19,7 @@ const SPACES = [
     subtitle: "Best Pan-Asian Restaurant Andheri",
     description:
       "First-floor formal dining with air conditioning and lush tropical views. Chef Kai's Pan-Asian and Polynesian menu shines in this serene, beautifully designed setting.",
-    image: "/lounge.jpg",
+    image: "/gallery/sushi-platter.jpg",
     tag: "Dining",
   },
   {
