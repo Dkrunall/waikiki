@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const EVENTS = [
-  { day: "FRI", date: "APR 21", title: "Jungle Rhythms", artist: "DJ KRUNAL", time: "9:00 PM" },
-  { day: "SAT", date: "APR 22", title: "Island Echoes", artist: "DJ AMYSA", time: "10:00 PM" },
-  { day: "SUN", date: "APR 23", title: "Aloha Sundowner", artist: "AKASH V", time: "5:00 PM" },
-  { day: "WED", date: "APR 26", title: "Mid-Week Escape", artist: "RESIDENT DJ", time: "8:00 PM" },
+  { day: "FRI", date: "APR 21", title: "Jungle Beats", artist: "Guest & Resident DJ", time: "9:00 PM" },
+  { day: "SAT", date: "APR 22", title: "Waikiki Luau", artist: "Guest & Resident DJ", time: "10:00 PM" },
+  { day: "SUN", date: "APR 23", title: "Aloha Sundowner", artist: "Resident DJ", time: "5:00 PM" },
+  { day: "WED", date: "APR 26", title: "Bounza", artist: "Games & Bar Nights", time: "8:00 PM" },
 ];
 
 export default function WeeklyBeats() {

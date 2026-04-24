@@ -11,7 +11,7 @@ const STATS = [
 
 export default function AboutWaikiki() {
   return (
-    <section id="about" className="relative bg-brand-maroon text-brand-beige overflow-hidden">
+    <section id="about" className="relative bg-brand-maroon text-brand-beige overflow-hidden pb-8 sm:pb-0">
 
       {/* Decorative background tiki pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none">

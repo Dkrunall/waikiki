@@ -83,6 +83,7 @@ export default function TheSpaces() {
                   src={space.image}
                   alt={space.title}
                   fill
+                  sizes="(max-width: 640px) 100vw, 50vw"
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
                 />
                 {/* Gradient overlay */}

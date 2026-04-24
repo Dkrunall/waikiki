@@ -68,6 +68,7 @@ export default function AtmosphereGallery() {
                 src={img.src}
                 alt={img.alt}
                 fill
+                sizes={i === 0 ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
                 className="object-cover group-hover:scale-105 transition-transform duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-maroon/50 via-transparent to-transparent" />

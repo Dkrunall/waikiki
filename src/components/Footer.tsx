@@ -93,10 +93,16 @@ export default function Footer() {
             <div className="space-y-6 col-span-2 md:col-span-1">
               <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">Find Us</p>
               <div className="space-y-2">
-                <div className="flex items-center text-brand-beige/60">
+                <a
+                  href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRuZbZFnyec7Me9-oLpRFyVZ&daddr=1st+Floor,+Hotel+Peninsula+Grand+Metro+Station,+near+Saki+Naka,+Lokmanya+Tilak+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400072"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center text-brand-beige/60 hover:text-white transition-colors"
+                >
                   <MapPin className="w-4 h-4 mr-2" />
-                  <span className="font-sans text-[10px] uppercase tracking-widest">Location</span>
-                </div>
+                  <span className="font-sans text-[10px] uppercase tracking-widest">Get Directions</span>
+                  <ArrowUpRight className="w-3 h-3 ml-1 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </a>
                 <p className="font-sans text-sm tracking-wide leading-relaxed">
                   Hotel Peninsula Grand,<br />
                   Saki Naka, Andheri East,<br />
@@ -113,12 +119,14 @@ export default function Footer() {
         {/* Footer Bottom / Massive Brand Anchor */}
         <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
           <div className="flex space-x-8">
-            {["Instagram", "Facebook", "Twitter"].map((social) => (
-              <a key={social} href="#" className="flex items-center space-x-2 text-brand-beige/40 hover:text-white transition-colors group">
-                <span className="font-sans text-[10px] uppercase tracking-widest">{social}</span>
-                <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-              </a>
-            ))}
+            <a href="https://www.instagram.com/waikiki.mumbai/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-brand-beige/40 hover:text-white transition-colors group">
+              <span className="font-sans text-[10px] uppercase tracking-widest">Instagram</span>
+              <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
+            <a href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRuZbZFnyec7Me9-oLpRFyVZ&daddr=1st+Floor,+Hotel+Peninsula+Grand+Metro+Station,+near+Saki+Naka,+Lokmanya+Tilak+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400072" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-brand-beige/40 hover:text-white transition-colors group">
+              <span className="font-sans text-[10px] uppercase tracking-widest">Map</span>
+              <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            </a>
           </div>
           <div className="text-center md:text-right">
             <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">

@@ -5,6 +5,25 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 const MENU_DATA = {
+  Nightlife: {
+    tag: "The Jungle Vibe",
+    description: "Late-night rhythms, lush jungle escapism, and the spirit of Aloha. The best nightlife in Andheri East, Mumbai.",
+    image: "/night-life/1.JPG",
+    gallery: ["/night-life/1.JPG", "/night-life/2.JPG", "/night-life/3.JPG", "/night-life/4.JPG", "/night-life/5.JPG", "/night-life/6.JPG", "/night-life/7.JPG", "/night-life/8.JPG"],
+    items: [
+      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/night-life/1.JPG" },
+      { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/food/SSP-35.jpg" }
+    ],
+  },
+  "Rush Hours": {
+    tag: "Buy One Get One Free",
+    description: "Waikiki Rush Hours — BOGO on all alcoholic beverages. Sun–Thu throughout the night, Fri & Sat till 11 PM. T&C apply.",
+    image: "/rushhours.jpeg",
+    items: [
+      { name: "Sun – Thu", price: "All Night", desc: "Buy one get one free on all alcoholic beverages throughout the night.", image: "/rushhours.jpeg" },
+      { name: "Fri & Sat", price: "Till 11 PM", desc: "Rush hour offer valid on all alcoholic beverages till 11 PM.", image: "/rushhours.jpeg" },
+    ],
+  },
   Culinary: {
     tag: "Pan-Asian & Polynesian",
     description: "Chef Kai's seasonal creations — from tropical sushi and poke bowls to raw seafood and grilled meats with vibrant Hawaiian spices.",
@@ -20,25 +39,16 @@ const MENU_DATA = {
     description: "Hand-crafted tiki cocktails designed to transport you to an island paradise. The best cocktail bar in Andheri East.",
     image: "/food/SSP-36.jpg",
     items: [
-      { name: "Shark Attack", price: "₹950", desc: "A high-energy blend in our signature shark vessel.", image: "/food/SSP-04.jpg" },
-      { name: "Tiki Skully", price: "₹850", desc: "Deep jungle flavors served in an iconic skull mug.", image: "/food/SSP-21.jpg" },
-      { name: "Tropical Owl", price: "₹1100", desc: "Wise flavors and exotic botanicals in handcrafted ceramic.", image: "/food/SSP-22.jpg" }
-    ],
-  },
-  Nightlife: {
-    tag: "The Jungle Vibe",
-    description: "Late-night rhythms, lush jungle escapism, and the spirit of Aloha. The best nightlife in Andheri East, Mumbai.",
-    image: "/night-life/1.JPG",
-    gallery: ["/night-life/1.JPG", "/night-life/2.JPG", "/night-life/3.JPG", "/night-life/4.JPG", "/night-life/5.JPG", "/night-life/6.JPG", "/night-life/7.JPG", "/night-life/8.JPG"],
-    items: [
-      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/night-life/1.JPG" },
-      { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/food/SSP-35.jpg" }
+      { name: "Island Grog", price: "₹950", desc: "A bold island blend of aged rum, citrus and tropical spice.", image: "/drinks/Island Grog.jpg" },
+      { name: "Zombie", price: "₹1100", desc: "The legendary tiki classic — three rums, passion fruit and absinthe.", image: "/drinks/Zombie.jpg" },
+      { name: "Luau Punch", price: "₹850", desc: "Light and festive — pineapple, coconut and a splash of grenadine.", image: "/drinks/Luau Punch.jpg" },
+      { name: "Hula Haze Negroni", price: "₹1100", desc: "A Hawaiian twist on the Negroni with hibiscus-infused Campari.", image: "/drinks/Hula Haze Negroni.jpg" }
     ],
   },
 };
 
 export default function InteractiveMenu() {
-  const [activeTab, setActiveTab] = useState<keyof typeof MENU_DATA>("Culinary");
+  const [activeTab, setActiveTab] = useState<keyof typeof MENU_DATA>("Nightlife");
 
   return (
     <section id="menu" className="py-16 sm:py-24 px-4 sm:px-6 bg-brand-beige border-t border-brand-maroon/10">
@@ -126,9 +136,6 @@ export default function InteractiveMenu() {
                       <span className="font-serif text-xl sm:text-2xl italic group-hover:text-brand-magenta transition-colors">
                         {item.name}
                       </span>
-                      <span className="font-sans text-[10px] tracking-widest opacity-40 flex-shrink-0 ml-4">
-                        {item.price}
-                      </span>
                     </motion.div>
                   ))}
                 </div>
@@ -161,6 +168,23 @@ export default function InteractiveMenu() {
 
                     </motion.div>
                   ))}
+                </motion.div>
+              ) : activeTab === "Rush Hours" ? (
+                <motion.div
+                  key="rush-hours"
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="relative w-full max-w-sm mx-auto border border-brand-maroon/10 overflow-hidden"
+                >
+                  <Image
+                    src="/rushhours.jpeg"
+                    alt="Waikiki Rush Hours — Buy One Get One Free"
+                    width={600}
+                    height={900}
+                    className="w-full h-auto object-contain"
+                  />
                 </motion.div>
               ) : (
                 <motion.div

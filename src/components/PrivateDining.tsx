@@ -26,7 +26,7 @@ const OFFERINGS = [
 
 export default function PrivateDining() {
   return (
-    <section id="private-dining" className="py-16 sm:py-28 px-4 sm:px-6 bg-brand-beige border-t border-brand-maroon/20 overflow-hidden">
+    <section id="private-dining" className="py-16 sm:py-28 px-4 sm:px-6 pb-12 sm:pb-20 bg-brand-beige border-t border-brand-maroon/20 overflow-hidden">
       <div className="max-w-7xl mx-auto">
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
@@ -147,7 +147,7 @@ export default function PrivateDining() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
-              className="absolute -bottom-5 -left-4 sm:-left-6 bg-brand-maroon text-brand-beige px-5 py-4 shadow-2xl"
+              className="absolute bottom-4 left-4 sm:left-6 bg-brand-maroon text-brand-beige px-5 py-4 shadow-2xl"
             >
               <span className="block font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/40 mb-1">Contact</span>
               <span className="block font-serif text-sm italic text-brand-beige/90">mumbaiwaikiki@gmail.com</span>
