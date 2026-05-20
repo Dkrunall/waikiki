@@ -11,6 +11,15 @@ import Marquee from "@/components/Marquee";
 
 const POSTS = [
   {
+    slug: "/best-bar-in-mumbai",
+    title: "Best Bar in Mumbai for Nights You’ll Never Want to End",
+    excerpt:
+      "Discover Waikiki, the Best bar in Mumbai for cocktails, nightlife, rooftop vibes, and late-night parties in Andheri East Mumbai.",
+    image: "/new/Waikiki_033.jpg",
+    tag: "Nightlife Guide",
+    readTime: "5 min read",
+  },
+  {
     slug: "/restaurants-in-andheri-east-mumbai",
     title: "Your Next Favorite Dining Spot in Mumbai Might Be in Andheri East",
     excerpt:
