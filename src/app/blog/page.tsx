@@ -11,6 +11,15 @@ import Marquee from "@/components/Marquee";
 
 const POSTS = [
   {
+    slug: "/restaurants-in-andheri-east-mumbai",
+    title: "Your Next Favorite Dining Spot in Mumbai Might Be in Andheri East",
+    excerpt:
+      "Explore Waikiki, one of the top Restaurants in Andheri East for Japanese cuisine, cocktails, nightlife, and premium dining experiences in Mumbai.",
+    image: "/new/Waikiki_013.jpg",
+    tag: "Dining Guide",
+    readTime: "5 min read",
+  },
+  {
     slug: "/best-restaurants-in-andheri-east",
     title: "Best Restaurants in Andheri East: Where to Dine, Drink & Experience the Best of Mumbai",
     excerpt:
