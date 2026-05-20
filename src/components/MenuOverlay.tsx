@@ -14,7 +14,9 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
     { name: "Experience", href: "#experience" },
     { name: "Menu", href: "#menu" },
     { name: "Gallery", href: "#gallery" },
-    { name: "Location", href: "#location" }
+    { name: "Location", href: "#location" },
+    { name: "Blog", href: "/blog" },
+    { name: "Book a Table", href: "/book-a-table" },
   ];
 
   return (
@@ -57,11 +59,10 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                 transition={{ delay: 0.25 + i * 0.08 }}
                 className="font-serif text-[13vw] sm:text-[10vw] md:text-[8vw] lg:text-[5.5vw] xl:text-[4.5vw] leading-[1.05] tracking-tighter uppercase group flex items-center gap-3"
               >
-                <span className="text-brand-magenta/40 font-sans text-xs sm:text-sm tabular-nums">0{i + 1}</span>
-                <span className="group-hover:text-brand-magenta transition-colors duration-300">
+                <span className="group-hover:text-white transition-colors duration-300">
                   {item.name}
                 </span>
-                <span className="italic text-brand-magenta ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] xl:text-[3vw]">→</span>
+                <span className="italic text-white ml-1 opacity-0 group-hover:opacity-100 transition-opacity text-[8vw] sm:text-[6vw] md:text-[5vw] lg:text-[4vw] xl:text-[3vw]">→</span>
               </motion.a>
             ))}
           </div>

@@ -14,16 +14,20 @@
   --color-brand-magenta: #510909;
   --color-brand-green: #61CE70;
   --color-brand-black: #1A1A1A;
-  
+
   --font-serif: var(--font-fraunces), serif;
   --font-sans: var(--font-inter), sans-serif;
-
 
   --animate-marquee: marquee 30s linear infinite;
 
   @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -35,35 +39,26 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, select, textarea, button {
+input,
+select,
+textarea,
+button {
   touch-action: manipulation;
 }
 
-/* Prevent iOS zoom on input focus — font-size must be >= 16px */
-input, select, textarea {
+/* Prevent iOS zoom on input focus */
+input,
+select,
+textarea {
   font-size: 16px;
 }
 
-/* Framed Grid Utilities */
-.framed-border {
-  border: 1px solid var(--brand-green);
+/* Vertical text utility used in Hero */
+.vertical-text {
+  writing-mode: vertical-rl;
 }
 
-.framed-border-red {
-  border: 1px solid var(--brand-red);
-}
-
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  background: var(--brand-red);
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-}
-
+/* Grain overlay — inline SVG, no external network request */
 body::after {
   content: "";
   position: fixed;
@@ -74,7 +69,7 @@ body::after {
   pointer-events: none;
   z-index: 9999;
   opacity: 0.05;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 .hero-vignette {

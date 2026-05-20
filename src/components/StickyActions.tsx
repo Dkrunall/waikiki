@@ -1,22 +1,17 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Calendar, Phone, Menu } from "lucide-react";
 import { useState } from "react";
-import Image from "next/image";
 import MenuOverlay from "./MenuOverlay";
-import BookingForm from "./BookingForm";
-
 
 export default function StickyActions() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isBookingOpen, setIsBookingOpen] = useState(false);
 
   return (
     <>
       <MenuOverlay isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
-      <BookingForm isOpen={isBookingOpen} onClose={() => setIsBookingOpen(false)} />
-      
+
       <motion.div
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -26,38 +21,39 @@ export default function StickyActions() {
 
           {/* Left icon group */}
           <div className="flex items-center gap-1">
-            <button 
+            <button
               onClick={() => setIsMenuOpen(true)}
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/5 text-brand-beige hover:bg-brand-magenta transition-colors flex-shrink-0"
             >
               <Menu size={18} />
             </button>
 
-            <a 
+            <a
               href="tel:+918150000345"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/5 text-brand-beige hover:bg-brand-magenta transition-colors flex-shrink-0"
             >
               <Phone size={16} />
             </a>
           </div>
-          
-          {/* Book A Table — grows to fill remaining space on mobile */}
-          <button onClick={() => setIsBookingOpen(true)} className="flex-1 sm:flex-none bg-brand-beige text-brand-maroon font-sans text-[10px] uppercase tracking-[0.2em] px-6 sm:px-10 py-4 rounded-full hover:bg-white transition-all flex items-center justify-center gap-2">
+
+          {/* Book A Table — links to dedicated page */}
+          <a
+            href="/book-a-table"
+            className="flex-1 sm:flex-none bg-brand-beige text-brand-maroon font-sans text-[10px] uppercase tracking-[0.2em] px-6 sm:px-10 py-4 rounded-full hover:bg-white transition-all flex items-center justify-center gap-2"
+          >
             <Calendar size={13} />
             <span>Book A Table</span>
-          </button>
-          
+          </a>
+
           {/* Status Indicator - desktop only */}
           <div className="hidden md:flex items-center px-6 border-l border-white/10 flex-shrink-0">
-             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse mr-3" />
-             <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-brand-beige opacity-60 whitespace-nowrap">
-               The Jungle is Open
-             </span>
+            <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse mr-3" />
+            <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-brand-beige opacity-60 whitespace-nowrap">
+              The Jungle is Open
+            </span>
           </div>
         </div>
-
       </motion.div>
     </>
   );
 }
-

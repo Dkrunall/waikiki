@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { scrollY } = useScroll();
-  
+
   // Transform values for scroll-driven animations
   const navPadding = useTransform(scrollY, [0, 50], ["24px", "12px"]);
   const navWidth = useTransform(scrollY, [0, 50], ["100%", "90%"]);
@@ -32,10 +32,10 @@ export default function Navbar() {
         <div className="flex items-center space-x-6">
           <a href="#" className="flex items-center space-x-3 group">
             <div className="relative w-10 h-10 overflow-hidden rounded-full border border-brand-green/20">
-              <Image 
-                src="/waikiki.jpg" 
-                alt="Waikiki Logo" 
-                fill 
+              <Image
+                src="/waikiki.jpg"
+                alt="Waikiki Logo"
+                fill
                 className="object-cover group-hover:scale-110 transition-transform"
               />
             </div>
@@ -59,14 +59,14 @@ export default function Navbar() {
               whileHover={{ y: -2 }}
             >
               {item.name}
-              <motion.span 
+              <motion.span
                 className="absolute bottom-0 left-0 w-full h-[1px] bg-brand-magenta origin-left"
                 initial={{ scaleX: 0 }}
                 whileHover={{ scaleX: 1 }}
               />
             </motion.a>
           ))}
-          
+
           <button className="bg-brand-magenta text-white font-sans text-[10px] uppercase tracking-[0.2em] px-6 py-2.5 rounded-full hover:bg-brand-maroon transition-colors">
             Book Now
           </button>

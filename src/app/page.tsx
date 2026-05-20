@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import AboutWaikiki from "@/components/AboutWaikiki";
@@ -17,6 +18,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
+    <SmoothScroll>
     <main className="relative">
       <LoadingSplash />
       <CustomCursor />
@@ -63,5 +65,6 @@ export default function Home() {
 
       <Footer />
     </main>
+    </SmoothScroll>
   );
 }
