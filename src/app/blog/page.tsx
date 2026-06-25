@@ -46,6 +46,24 @@ const POSTS = [
     tag: "Sushi & Japanese",
     readTime: "7 min read",
   },
+  {
+    slug: "/restaurants-in-andheri-east-waikiki",
+    title: "Restaurants in Andheri East: Why Waikiki Is Redefining Mumbai's Dining and Cocktail Scene",
+    excerpt:
+      "Discover why Waikiki is among the top restaurants in Andheri East. Enjoy premium dining, handcrafted cocktails, vibrant nightlife, and exceptional hospitality.",
+    image: "/new/Waikiki_001.jpg",
+    tag: "Dining Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "/signature-cocktails-mumbai",
+    title: "Where Mumbai Unwinds: Discover Signature Cocktails That Turn Every Evening Into an Experience",
+    excerpt:
+      "Discover signature cocktails Mumbai loves at Waikiki. Experience premium mixology, tiki-inspired vibes, and one of the best cocktail bars in Andheri East.",
+    image: "/new/Waikiki_035.jpg",
+    tag: "Cocktail Guide",
+    readTime: "5 min read",
+  },
 ];
 
 export default function BlogIndex() {
