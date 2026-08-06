@@ -64,6 +64,24 @@ const POSTS = [
     tag: "Cocktail Guide",
     readTime: "5 min read",
   },
+  {
+    slug: "/best-hawaiian-restaurant-in-mumbai",
+    title: "Best Hawaiian Restaurant in Mumbai: Where Tropical Flavors Meet an Unforgettable Dining Experience",
+    excerpt:
+      "Experience authentic island flavors at the best Hawaiian restaurant in Mumbai. Discover tropical dining, handcrafted cocktails, and more at Waikiki.",
+    image: "/new/Waikiki_014.jpg",
+    tag: "Dining Guide",
+    readTime: "6 min read",
+  },
+  {
+    slug: "/best-cocktail-bar-in-andheri",
+    title: "Best Cocktail Bar in Andheri: Where Every Sip Tells a Story",
+    excerpt:
+      "Looking for the best cocktail bar in Andheri? Discover handcrafted cocktails, tropical vibes, and an unforgettable nightlife experience at Waikiki.",
+    image: "/new/Waikiki_040.jpg",
+    tag: "Cocktail Guide",
+    readTime: "6 min read",
+  },
 ];
 
 export default function BlogIndex() {
