@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import StickyActions from "@/components/StickyActions";
 import Marquee from "@/components/Marquee";
+import PostDate from "@/components/PostDate";
 
 const WHAT_DEFINES = [
   "Premium ambiance",
@@ -142,11 +143,12 @@ export default function BlogPage2() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-3 mb-6"
+            className="flex flex-wrap items-center gap-3 mb-6"
           >
             <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Guide</span>
             <div className="h-px w-8 bg-brand-beige/30" />
             <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Mumbai · Sushi · Japanese</span>
+            <PostDate slug="/best-restaurants-in-mumbai-sushi-japanese" />
           </motion.div>
 
           <motion.h1

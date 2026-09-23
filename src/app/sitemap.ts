@@ -1,74 +1,37 @@
 import type { MetadataRoute } from "next";
+import { POSTS } from "@/lib/posts";
 
 export const dynamic = "force-static";
 
+const SITE_URL = "https://waikikiexperience.com";
+
 export default function sitemap(): MetadataRoute.Sitemap {
+  const latestPost = new Date(POSTS[0].date);
+
   return [
     {
-      url: "https://waikikiexperience.com",
-      lastModified: new Date(),
+      url: SITE_URL,
+      lastModified: latestPost,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
-      url: "https://waikikiexperience.com/book-a-table",
-      lastModified: new Date(),
+      url: `${SITE_URL}/book-a-table`,
+      lastModified: new Date("2026-05-20"),
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
-      url: "https://waikikiexperience.com/blog",
-      lastModified: new Date(),
+      url: `${SITE_URL}/blog`,
+      lastModified: latestPost,
       changeFrequency: "weekly",
       priority: 0.9,
     },
-    {
-      url: "https://waikikiexperience.com/best-restaurants-in-andheri-east",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+    ...POSTS.map((post) => ({
+      url: `${SITE_URL}${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
       priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/best-restaurants-in-mumbai-sushi-japanese",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/restaurants-in-andheri-east-mumbai",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/best-bar-in-mumbai",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/restaurants-in-andheri-east-waikiki",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/signature-cocktails-mumbai",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/best-hawaiian-restaurant-in-mumbai",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: "https://waikikiexperience.com/best-cocktail-bar-in-andheri",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+    })),
   ];
 }

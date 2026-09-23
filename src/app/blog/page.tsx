@@ -8,81 +8,7 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import StickyActions from "@/components/StickyActions";
 import Marquee from "@/components/Marquee";
-
-const POSTS = [
-  {
-    slug: "/best-bar-in-mumbai",
-    title: "Best Bar in Mumbai for Nights You’ll Never Want to End",
-    excerpt:
-      "Discover Waikiki, the Best bar in Mumbai for cocktails, nightlife, rooftop vibes, and late-night parties in Andheri East Mumbai.",
-    image: "/new/Waikiki_033.jpg",
-    tag: "Nightlife Guide",
-    readTime: "5 min read",
-  },
-  {
-    slug: "/restaurants-in-andheri-east-mumbai",
-    title: "Your Next Favorite Dining Spot in Mumbai Might Be in Andheri East",
-    excerpt:
-      "Explore Waikiki, one of the top Restaurants in Andheri East for Japanese cuisine, cocktails, nightlife, and premium dining experiences in Mumbai.",
-    image: "/new/Waikiki_013.jpg",
-    tag: "Dining Guide",
-    readTime: "5 min read",
-  },
-  {
-    slug: "/best-restaurants-in-andheri-east",
-    title: "Best Restaurants in Andheri East: Where to Dine, Drink & Experience the Best of Mumbai",
-    excerpt:
-      "Andheri East has quickly become one of Mumbai's most exciting dining and nightlife destinations. Explore sushi, tiki cocktails, rooftop lounges and Pan-Asian cuisine.",
-    image: "/new/Waikiki_022.jpg",
-    tag: "Dining Guide",
-    readTime: "6 min read",
-  },
-  {
-    slug: "/best-restaurants-in-mumbai-sushi-japanese",
-    title: "Best Restaurants in Mumbai for Dining, Sushi & Japanese Cuisine Experiences",
-    excerpt:
-      "Mumbai is one of India's most vibrant culinary capitals. Discover where to find the best sushi, Japanese dining, craft cocktails and immersive nightlife in the city.",
-    image: "/new/Waikiki_028.jpg",
-    tag: "Sushi & Japanese",
-    readTime: "7 min read",
-  },
-  {
-    slug: "/restaurants-in-andheri-east-waikiki",
-    title: "Restaurants in Andheri East: Why Waikiki Is Redefining Mumbai's Dining and Cocktail Scene",
-    excerpt:
-      "Discover why Waikiki is among the top restaurants in Andheri East. Enjoy premium dining, handcrafted cocktails, vibrant nightlife, and exceptional hospitality.",
-    image: "/new/Waikiki_001.jpg",
-    tag: "Dining Guide",
-    readTime: "6 min read",
-  },
-  {
-    slug: "/signature-cocktails-mumbai",
-    title: "Where Mumbai Unwinds: Discover Signature Cocktails That Turn Every Evening Into an Experience",
-    excerpt:
-      "Discover signature cocktails Mumbai loves at Waikiki. Experience premium mixology, tiki-inspired vibes, and one of the best cocktail bars in Andheri East.",
-    image: "/new/Waikiki_035.jpg",
-    tag: "Cocktail Guide",
-    readTime: "5 min read",
-  },
-  {
-    slug: "/best-hawaiian-restaurant-in-mumbai",
-    title: "Best Hawaiian Restaurant in Mumbai: Where Tropical Flavors Meet an Unforgettable Dining Experience",
-    excerpt:
-      "Experience authentic island flavors at the best Hawaiian restaurant in Mumbai. Discover tropical dining, handcrafted cocktails, and more at Waikiki.",
-    image: "/new/Waikiki_014.jpg",
-    tag: "Dining Guide",
-    readTime: "6 min read",
-  },
-  {
-    slug: "/best-cocktail-bar-in-andheri",
-    title: "Best Cocktail Bar in Andheri: Where Every Sip Tells a Story",
-    excerpt:
-      "Looking for the best cocktail bar in Andheri? Discover handcrafted cocktails, tropical vibes, and an unforgettable nightlife experience at Waikiki.",
-    image: "/new/Waikiki_040.jpg",
-    tag: "Cocktail Guide",
-    readTime: "6 min read",
-  },
-];
+import { POSTS, formatPostDate } from "@/lib/posts";
 
 export default function BlogIndex() {
   return (
@@ -169,6 +95,12 @@ export default function BlogIndex() {
 
                 {/* Content */}
                 <div className="p-7 sm:p-8 space-y-4">
+                  <time
+                    dateTime={post.date}
+                    className="block font-sans text-[10px] uppercase tracking-[0.3em] text-brand-maroon/40"
+                  >
+                    {formatPostDate(post.date)}
+                  </time>
                   <h2 className="font-serif text-2xl sm:text-3xl leading-tight tracking-tight group-hover:text-brand-maroon/70 transition-colors">
                     {post.title}
                   </h2>

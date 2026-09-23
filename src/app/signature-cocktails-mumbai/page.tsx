@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import StickyActions from "@/components/StickyActions";
 import Marquee from "@/components/Marquee";
+import PostDate from "@/components/PostDate";
 
 const HIGHLIGHTS = [
   { icon: <Wine className="w-5 h-5" />, title: "Creative Flavor Profiles", body: "Every cocktail is designed to surprise and delight guests through unique combinations and perfectly balanced ingredients." },
@@ -123,11 +124,12 @@ export default function SignatureCocktailsMumbaiPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-3 mb-6"
+            className="flex flex-wrap items-center gap-3 mb-6"
           >
             <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
             <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Cocktails · Mixology · Nightlife</span>
+            <PostDate slug="/signature-cocktails-mumbai" />
           </motion.div>
 
           <motion.h1

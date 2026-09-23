@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import StickyActions from "@/components/StickyActions";
 import Marquee from "@/components/Marquee";
+import PostDate from "@/components/PostDate";
 
 const CUISINE_ELEMENTS = [
   { icon: <Fish className="w-5 h-5" />, title: "Fresh Seafood & Premium Meats", body: "Every dish is built around quality ingredients, prepared to highlight natural flavor rather than mask it." },
@@ -133,11 +134,12 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-3 mb-6"
+            className="flex flex-wrap items-center gap-3 mb-6"
           >
             <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
             <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Hawaiian Cuisine · Tropical Dining</span>
+            <PostDate slug="/best-hawaiian-restaurant-in-mumbai" />
           </motion.div>
 
           <motion.h1
