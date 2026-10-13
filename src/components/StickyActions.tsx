@@ -23,6 +23,7 @@ export default function StickyActions() {
           <div className="flex items-center gap-1">
             <button
               onClick={() => setIsMenuOpen(true)}
+              aria-label="Open menu"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/5 text-brand-beige hover:bg-brand-magenta transition-colors flex-shrink-0"
             >
               <Menu size={18} />
@@ -30,6 +31,7 @@ export default function StickyActions() {
 
             <a
               href="tel:+918150000345"
+              aria-label="Call Waikiki"
               className="w-11 h-11 flex items-center justify-center rounded-full bg-white/5 text-brand-beige hover:bg-brand-magenta transition-colors flex-shrink-0"
             >
               <Phone size={16} />
@@ -48,7 +50,7 @@ export default function StickyActions() {
           {/* Status Indicator - desktop only */}
           <div className="hidden md:flex items-center px-6 border-l border-white/10 flex-shrink-0">
             <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse mr-3" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-brand-beige opacity-60 whitespace-nowrap">
+            <span className="font-sans text-[9px] uppercase tracking-[0.2em] text-brand-beige opacity-80 whitespace-nowrap">
               The Jungle is Open
             </span>
           </div>

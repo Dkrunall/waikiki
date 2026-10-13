@@ -33,7 +33,7 @@ export default function LoadingSplash() {
             className="relative w-[280px] h-[120px] sm:w-[380px] sm:h-[160px] md:w-[480px] md:h-[200px] mb-6"
           >
             <Image
-              src="/waikiki.png"
+              src="/waikiki.webp"
               alt="Waikiki Logo"
               fill
               className="object-contain brightness-0 invert"

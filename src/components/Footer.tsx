@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="relative bg-brand-maroon text-brand-beige pt-24 pb-12 overflow-hidden">
       {/* Subtle Background Pattern - Bleeding over the top edge for immersive flow */}
       <div className="absolute -top-32 right-0 w-[60%] h-full opacity-[0.015] pointer-events-none grayscale invert">
-        <Image src="/tiki-pattern-light.png" alt="" fill className="object-contain object-right-top" />
+        <Image src="/tiki-pattern-light.webp" alt="" fill className="object-contain object-right-top" />
       </div>
 
 
@@ -28,19 +28,19 @@ export default function Footer() {
           <div className="lg:col-span-5 space-y-8 sm:space-y-10">
             <div className="relative w-54 sm:w-52 h-24 sm:h-20">
               <Image
-                src="/waikiki.png"
+                src="/waikiki.webp"
                 alt="Waikiki Logo"
                 fill
                 className="object-contain object-left brightness-0 invert"
               />
             </div>
 
-            <p className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-sm">
+            <p className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-sm">
               Mumbai&apos;s best Hawaiian tiki bar &amp; restaurant — exotic sushi, Pan-Asian cuisine, Polynesian cocktails, and electrifying late-night DJ vibes in Andheri East.
             </p>
 
             <div className="space-y-4">
-              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Join the Experience</p>
+              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Join the Experience</p>
               <div className="flex max-w-md">
                 <input
                   type="email"
@@ -58,7 +58,7 @@ export default function Footer() {
           {/* Navigation Columns */}
           <div className="lg:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-12">
             <div className="space-y-6">
-              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">Explore</p>
+              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Explore</p>
               <ul className="space-y-4">
                 {["Experience", "Menu", "Gallery", "Events"].map((item) => (
                   <li key={item}>
@@ -71,17 +71,17 @@ export default function Footer() {
             </div>
 
             <div className="space-y-6">
-              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">Contact</p>
+              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Contact</p>
               <div className="space-y-6">
                 <a href="tel:+918150000345" className="group block space-y-2">
-                  <div className="flex items-center text-brand-beige/60 group-hover:text-white transition-colors">
+                  <div className="flex items-center text-brand-beige/70 group-hover:text-white transition-colors">
                     <Phone className="w-4 h-4 mr-2" />
                     <span className="font-sans text-[10px] uppercase tracking-widest">Call Us</span>
                   </div>
                   <p className="font-sans text-sm tracking-wide">+91 81500 00345</p>
                 </a>
                 <a href="mailto:mumbaiwaikiki@gmail.com" className="group block space-y-2">
-                  <div className="flex items-center text-brand-beige/60 group-hover:text-white transition-colors">
+                  <div className="flex items-center text-brand-beige/70 group-hover:text-white transition-colors">
                     <Mail className="w-4 h-4 mr-2" />
                     <span className="font-sans text-[10px] uppercase tracking-widest">Email</span>
                   </div>
@@ -91,13 +91,13 @@ export default function Footer() {
             </div>
 
             <div className="space-y-6 col-span-2 md:col-span-1">
-              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">Find Us</p>
+              <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Find Us</p>
               <div className="space-y-2">
                 <a
                   href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRuZbZFnyec7Me9-oLpRFyVZ&daddr=1st+Floor,+Hotel+Peninsula+Grand+Metro+Station,+near+Saki+Naka,+Lokmanya+Tilak+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400072"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-center text-brand-beige/60 hover:text-white transition-colors"
+                  className="group flex items-center text-brand-beige/70 hover:text-white transition-colors"
                 >
                   <MapPin className="w-4 h-4 mr-2" />
                   <span className="font-sans text-[10px] uppercase tracking-widest">Get Directions</span>
@@ -108,7 +108,7 @@ export default function Footer() {
                   Saki Naka, Andheri East,<br />
                   Mumbai 400072
                 </p>
-                <p className="font-sans text-[10px] text-brand-beige/30 pt-2 tracking-widest">
+                <p className="font-sans text-[10px] text-brand-beige/70 pt-2 tracking-widest">
                   TUE–SUN · 6 PM – 3 AM
                 </p>
               </div>
@@ -119,20 +119,20 @@ export default function Footer() {
         {/* Footer Bottom / Massive Brand Anchor */}
         <div className="pt-12 border-t border-white/10 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
           <div className="flex space-x-8">
-            <a href="https://www.instagram.com/waikiki.mumbai/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-brand-beige/40 hover:text-white transition-colors group">
+            <a href="https://www.instagram.com/waikiki.mumbai/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-brand-beige/70 hover:text-white transition-colors group">
               <span className="font-sans text-[10px] uppercase tracking-widest">Instagram</span>
               <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
-            <a href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRuZbZFnyec7Me9-oLpRFyVZ&daddr=1st+Floor,+Hotel+Peninsula+Grand+Metro+Station,+near+Saki+Naka,+Lokmanya+Tilak+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400072" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-brand-beige/40 hover:text-white transition-colors group">
+            <a href="https://www.google.com/maps?um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KRuZbZFnyec7Me9-oLpRFyVZ&daddr=1st+Floor,+Hotel+Peninsula+Grand+Metro+Station,+near+Saki+Naka,+Lokmanya+Tilak+Nagar,+Andheri+East,+Mumbai,+Maharashtra+400072" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-brand-beige/70 hover:text-white transition-colors group">
               <span className="font-sans text-[10px] uppercase tracking-widest">Map</span>
               <ArrowUpRight className="w-3 h-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
           </div>
           <div className="text-center md:text-right">
-            <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/40">
+            <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
               © {currentYear} Waikiki Experience. All Rights Reserved.
             </p>
-            <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/20 mt-2">
+            <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/70 mt-2">
               Crafted with Aloha in Mumbai
             </p>
           </div>
@@ -141,9 +141,8 @@ export default function Footer() {
 
         {/* Massive Backdrop Branding - Responsive size, no cropping */}
         <div className="relative mt-12 sm:mt-20 flex justify-center pointer-events-none overflow-hidden w-full">
-          <h2 className="font-serif text-[18vw] sm:text-[16vw] md:text-[14vw] leading-none text-white/[0.015] uppercase tracking-tight select-none whitespace-nowrap">
-            WAIKIKI
-          </h2>
+          {/* Decorative watermark: drawn via pseudo-element so it isn't treated as page text */}
+          <div aria-hidden="true" className="font-serif text-[18vw] sm:text-[16vw] md:text-[14vw] leading-none text-white/[0.015] uppercase tracking-tight select-none whitespace-nowrap before:content-['WAIKIKI']" />
         </div>
 
 

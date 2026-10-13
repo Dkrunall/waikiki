@@ -93,7 +93,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 mt-1 text-brand-maroon/40"
+          className="flex-shrink-0 mt-1 text-brand-maroon/70"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.span>
@@ -108,7 +108,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed pb-6">
+            <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed pb-6">
               {a}
             </p>
           </motion.div>
@@ -122,7 +122,7 @@ function SectionLabel({ label }: { label: string }) {
   return (
     <div className="flex items-center gap-4">
       <div className="h-px w-8 bg-brand-maroon/30" />
-      <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">{label}</span>
+      <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">{label}</span>
     </div>
   );
 }
@@ -131,11 +131,11 @@ function CheckList({ heading, items }: { heading: string; items: string[] }) {
   return (
     <div className="border border-brand-maroon/10 divide-y divide-brand-maroon/10">
       <div className="px-6 py-4">
-        <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">{heading}</p>
+        <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">{heading}</p>
       </div>
       {items.map((item) => (
         <div key={item} className="flex items-start gap-3 px-6 py-4">
-          <Fish className="w-4 h-4 flex-shrink-0 mt-0.5 text-brand-maroon/30" />
+          <Fish className="w-4 h-4 flex-shrink-0 mt-0.5 text-brand-maroon/60" />
           <span className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{item}</span>
         </div>
       ))}
@@ -159,7 +159,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
       <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_012.jpg"
+            src="/new/Waikiki_012.webp"
             alt="Best Japanese Restaurant in Mumbai — Tropical Sushi at Waikiki"
             fill
             className="object-cover"
@@ -175,9 +175,9 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 mb-6"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Mumbai · Sushi · Pan-Asian</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Mumbai · Sushi · Pan-Asian</span>
             <PostDate slug="/best-japanese-restaurant-in-mumbai" />
           </motion.div>
 
@@ -196,7 +196,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-xs sm:text-sm text-brand-beige/60 max-w-xl leading-relaxed tracking-[0.15em]"
+            className="font-sans text-xs sm:text-sm text-brand-beige/70 max-w-xl leading-relaxed tracking-[0.15em]"
           >
             Discover Sushi, Pan-Asian Flavours and Island Dining
           </motion.p>
@@ -222,7 +222,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   But choosing the best Japanese restaurant in Mumbai is not always about finding the most traditional menu.
                 </p>
               </div>
@@ -240,7 +240,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Should Diners Look for
                 <br />
-                <span className="italic text-brand-maroon/60">in a Japanese Restaurant?</span>
+                <span className="italic text-brand-maroon/70">in a Japanese Restaurant?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 A memorable Japanese dining experience begins with the food.
@@ -255,7 +255,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Many guests now prefer restaurants where they can enjoy multiple Asian influences, cocktails, music, and social energy in one destination.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 That is where Waikiki offers a different proposition.
               </p>
             </motion.div>
@@ -266,7 +266,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Is Waikiki a Traditional
                 <br />
-                <span className="italic text-brand-maroon/60">Japanese Restaurant?</span>
+                <span className="italic text-brand-maroon/70">Japanese Restaurant?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 This distinction matters.
@@ -280,7 +280,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 For diners who want sushi, Pan-Asian flavours, cocktails, tropical ambience, and nightlife in one destination, however, the broader concept can be particularly appealing.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 This makes Waikiki an interesting option for people searching for a Japanese restaurant in Andheri while also looking for a more immersive evening.
               </p>
             </motion.div>
@@ -291,7 +291,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 A Tropical Take
                 <br />
-                <span className="italic text-brand-maroon/60">on Sushi</span>
+                <span className="italic text-brand-maroon/70">on Sushi</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Sushi is one of the world's most recognizable Japanese culinary traditions.
@@ -302,7 +302,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
 
               <div className="relative h-[280px] sm:h-[380px] overflow-hidden border border-brand-maroon/10 my-8">
                 <Image
-                  src="/new/Waikiki_028.jpg"
+                  src="/new/Waikiki_028.webp"
                   alt="Tropical sushi and Pan-Asian dishes at Waikiki Mumbai"
                   fill
                   className="object-cover"
@@ -311,7 +311,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                 <div className="absolute inset-0 flex items-end p-8 sm:p-10">
                   <div className="space-y-2">
                     <div className="h-px w-8 bg-brand-beige/40 mb-4" />
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Tropical Sushi · Waikiki</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Tropical Sushi · Waikiki</p>
                     <p className="font-serif text-2xl sm:text-3xl italic text-brand-beige leading-tight">Familiar flavours,<br />island spirit.</p>
                   </div>
                 </div>
@@ -323,7 +323,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The menu combines tropical sushi with seafood, grilled preparations, vibrant spices, and other Pan-Asian flavours.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 For guests searching for a{" "}
                 <a href="/best-restaurants-in-mumbai-sushi-japanese" className={INLINE_LINK}>sushi restaurant in Mumbai</a>, this creates an opportunity to enjoy familiar Japanese-inspired elements in a setting that feels distinctly different from a conventional sushi restaurant.
               </p>
@@ -335,7 +335,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Andheri East Is Becoming
                 <br />
-                <span className="italic text-brand-maroon/60">a Dining Hotspot</span>
+                <span className="italic text-brand-maroon/70">a Dining Hotspot</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Andheri East has developed into one of Mumbai's active commercial and hospitality zones.
@@ -353,14 +353,14 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               </p>
 
               <div className="flex items-start gap-4 border border-brand-maroon/10 px-6 py-5">
-                <Clock className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-maroon/40" />
+                <Clock className="w-5 h-5 flex-shrink-0 mt-0.5 text-brand-maroon/70" />
                 <div className="space-y-1">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Opening Hours</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Opening Hours</p>
                   <p className="font-serif text-xl sm:text-2xl">Tuesday – Sunday · 6 PM – 3 AM</p>
                 </div>
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 That makes Waikiki suitable for early dinners, post-work meals, weekend dining, cocktails, and late-night outings.
               </p>
             </motion.div>
@@ -371,7 +371,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Sushi, Cocktails and
                 <br />
-                <span className="italic text-brand-maroon/60">a Complete Night Out</span>
+                <span className="italic text-brand-maroon/70">a Complete Night Out</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 One of Waikiki's strongest differentiators is the combination of food and drinks.
@@ -385,17 +385,17 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
 
               <div className="border border-brand-maroon/10 divide-y divide-brand-maroon/10">
                 <div className="px-6 py-4">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">From the Tiki Cocktail Menu</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">From the Tiki Cocktail Menu</p>
                 </div>
                 {TIKI_COCKTAILS.map((c) => (
                   <div key={c} className="flex items-start gap-3 px-6 py-4">
-                    <Martini className="w-4 h-4 flex-shrink-0 mt-0.5 text-brand-maroon/30" />
+                    <Martini className="w-4 h-4 flex-shrink-0 mt-0.5 text-brand-maroon/60" />
                     <span className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{c}</span>
                   </div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 For guests searching for a Pan Asian restaurant in Mumbai, this combination provides an opportunity to explore food and cocktails within the same experience.
               </p>
             </motion.div>
@@ -406,7 +406,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 A More Contemporary
                 <br />
-                <span className="italic text-brand-maroon/60">Luxury Dining Experience</span>
+                <span className="italic text-brand-maroon/70">Luxury Dining Experience</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Luxury dining in Mumbai is no longer limited to formal restaurants.
@@ -425,7 +425,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   The venue feels social and energetic rather than overly formal, making it suitable for both casual premium dining and special occasions.
                 </p>
               </div>
@@ -437,7 +437,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Japanese-Inspired Dining
                 <br />
-                <span className="italic text-brand-maroon/60">for Different Occasions</span>
+                <span className="italic text-brand-maroon/70">for Different Occasions</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 A versatile restaurant should be able to accommodate more than one type of guest or occasion. Sushi and Pan-Asian cuisine can work particularly well for:
@@ -462,7 +462,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 For people researching party places in Andheri Mumbai, a restaurant that transitions naturally into nightlife can simplify the entire evening.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Guests can start with food and continue with cocktails and music rather than moving from one venue to another.
               </p>
             </motion.div>
@@ -473,7 +473,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Makes Waikiki Different From
                 <br />
-                <span className="italic text-brand-maroon/60">a Conventional Sushi Restaurant?</span>
+                <span className="italic text-brand-maroon/70">a Conventional Sushi Restaurant?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The biggest difference is the overall concept.
@@ -484,7 +484,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
 
               <div className="relative h-[260px] sm:h-[360px] overflow-hidden border border-brand-maroon/10 my-6">
                 <Image
-                  src="/new/Waikiki_003.jpg"
+                  src="/new/Waikiki_003.webp"
                   alt="Island-inspired dining and interiors at Waikiki Andheri East"
                   fill
                   className="object-cover"
@@ -501,7 +501,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 This makes it particularly attractive to guests who want the flavours of Asia within a more experiential nightlife environment.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The restaurant is therefore better understood as a Pan-Asian and Polynesian dining destination with tropical sushi, rather than a traditional Japanese restaurant.
               </p>
             </motion.div>
@@ -512,7 +512,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Frequently Asked
                 <br />
-                <span className="italic text-brand-maroon/60">Questions</span>
+                <span className="italic text-brand-maroon/70">Questions</span>
               </h2>
               <div className="border-t border-brand-maroon/10">
                 {FAQS.map((faq) => (
@@ -534,19 +534,19 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                 className="relative bg-brand-maroon text-brand-beige overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative p-7 sm:p-8 space-y-6">
                   <div className="relative w-28 h-12">
                     <Image
-                      src="/waikiki.png"
+                      src="/waikiki.webp"
                       alt="Waikiki logo"
                       fill
                       className="object-contain object-left brightness-0 invert"
                     />
                   </div>
                   <div className="space-y-2">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
                       Andheri East's
                     </p>
                     <h3 className="font-serif text-3xl sm:text-4xl leading-tight tracking-tight">
@@ -555,7 +555,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                       <span className="italic text-brand-beige/70">&amp; Pan-Asian</span>
                     </h3>
                   </div>
-                  <p className="font-sans text-sm text-brand-beige/60 leading-relaxed">
+                  <p className="font-sans text-sm text-brand-beige/70 leading-relaxed">
                     Tropical sushi, Pan-Asian flavours, Tiki cocktails and island-inspired dining — all under one roof.
                   </p>
                   <div className="h-px bg-brand-beige/10" />
@@ -578,11 +578,11 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                     </a>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <div className="flex items-center gap-2 text-brand-beige/40">
+                    <div className="flex items-center gap-2 text-brand-beige/70">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
                       <span className="font-sans text-[10px] uppercase tracking-widest">Tue–Sun · 6 PM – 3 AM</span>
                     </div>
-                    <div className="flex items-start gap-2 text-brand-beige/40">
+                    <div className="flex items-start gap-2 text-brand-beige/70">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
                       <span className="font-sans text-[10px] uppercase tracking-widest leading-relaxed">Hotel Peninsula Grand, Saki Naka, Andheri East</span>
                     </div>
@@ -599,7 +599,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                 className="relative h-60 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_013.jpg"
+                  src="/new/Waikiki_013.webp"
                   alt="Pan-Asian dining at Waikiki Andheri East"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -619,7 +619,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                 className="border border-brand-maroon/10 divide-y divide-brand-maroon/10"
               >
                 <div className="px-5 py-3">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Quick Facts</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Quick Facts</p>
                 </div>
                 {[
                   ["Cuisine", "Pan-Asian · Polynesian"],
@@ -629,7 +629,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                   ["Hours", "Tue–Sun, 6 PM – 3 AM"],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between px-5 py-3 gap-4">
-                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/40 flex-shrink-0">{label}</span>
+                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/70 flex-shrink-0">{label}</span>
                     <span className="font-sans text-xs text-brand-maroon/70 text-right">{value}</span>
                   </div>
                 ))}
@@ -644,7 +644,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
                 className="border border-brand-maroon/10"
               >
                 <div className="px-5 py-3 border-b border-brand-maroon/10">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Also Read</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Also Read</p>
                 </div>
                 <a
                   href="/best-cocktail-bar-in-mumbai"
@@ -673,7 +673,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
       {/* ── CTA FULL-WIDTH BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -682,7 +682,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Plan Your Next Evening</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Plan Your Next Evening</span>
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[0.9] tracking-tighter">
               A Different Side of
               <br />
@@ -696,7 +696,7 @@ export default function BestJapaneseRestaurantInMumbaiPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-xl mx-auto leading-relaxed"
+            className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-xl mx-auto leading-relaxed"
           >
             The search for the best Japanese restaurant in Mumbai can mean different things to different diners. Explore Waikiki's dining and nightlife experience and plan your next evening.
           </motion.p>

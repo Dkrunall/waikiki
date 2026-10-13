@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Looking for Japanese food in Mumbai? Discover Waikiki in Andheri East for tropical sushi, Pan-Asian flavours, cocktails and island-inspired dining.",
     images: [
       {
-        url: "/new/Waikiki_012.jpg",
+        url: "/new/Waikiki_012.webp",
         width: 1200,
         height: 630,
         alt: "Best Japanese Restaurant in Mumbai — Tropical Sushi at Waikiki",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Japanese Restaurant in Mumbai | Waikiki",
     description:
       "Looking for Japanese food in Mumbai? Discover Waikiki in Andheri East for tropical sushi, Pan-Asian flavours, cocktails and island-inspired dining.",
-    images: ["/new/Waikiki_012.jpg"],
+    images: ["/new/Waikiki_012.webp"],
   },
 };
 

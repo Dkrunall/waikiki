@@ -83,7 +83,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 mt-1 text-brand-maroon/40"
+          className="flex-shrink-0 mt-1 text-brand-maroon/70"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.span>
@@ -98,7 +98,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed pb-6">
+            <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed pb-6">
               {a}
             </p>
           </motion.div>
@@ -118,7 +118,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
       <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_001.jpg"
+            src="/new/Waikiki_001.webp"
             alt="Restaurants in Andheri East — Waikiki Dining & Cocktails Mumbai"
             fill
             className="object-cover"
@@ -134,9 +134,9 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 mb-6"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Andheri East · Dining · Cocktails</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Andheri East · Dining · Cocktails</span>
             <PostDate slug="/restaurants-in-andheri-east-waikiki" />
           </motion.div>
 
@@ -155,7 +155,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-xs sm:text-sm text-brand-beige/60 max-w-xl leading-relaxed tracking-[0.15em]"
+            className="font-sans text-xs sm:text-sm text-brand-beige/70 max-w-xl leading-relaxed tracking-[0.15em]"
           >
             Why Waikiki Is Redefining Mumbai's Dining and Cocktail Scene
           </motion.p>
@@ -186,7 +186,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   Guests searching for the best restaurants in Andheri East are looking for more than just good food — they want immersive experiences, expertly crafted beverages, and memorable moments.
                 </p>
               </div>
@@ -204,12 +204,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 01</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 01</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 The Evolution of
                 <br />
-                <span className="italic text-brand-maroon/60">Dining in Andheri East</span>
+                <span className="italic text-brand-maroon/70">Dining in Andheri East</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Over the last few years, Andheri East has become one of Mumbai's fastest-growing lifestyle destinations. Its strategic location near major business hubs, residential neighborhoods, and the international airport has created demand for high-quality dining and entertainment venues.
@@ -217,7 +217,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 As a result, the area now features some of the most exciting culinary concepts in the city. However, among the many top restaurants in Andheri East, only a select few successfully combine exceptional cuisine, innovative beverages, and immersive hospitality under one roof.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Modern diners expect curated food experiences, creative cocktail programs, stylish interiors, live entertainment, exceptional service, and memorable social experiences. These evolving expectations have transformed what it means to be one of the leading restaurants in Andheri East.
               </p>
             </motion.div>
@@ -231,12 +231,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 02</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 02</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Guests
                 <br />
-                <span className="italic text-brand-maroon/60">Choose Waikiki</span>
+                <span className="italic text-brand-maroon/70">Choose Waikiki</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 At Waikiki, dining is designed to be an experience rather than simply a meal. Inspired by the energy of tropical destinations and contemporary urban culture, Waikiki blends vibrant aesthetics, exceptional culinary craftsmanship, and world-class hospitality to create an environment where every visit feels special.
@@ -244,7 +244,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
 
               <div className="relative h-[280px] sm:h-[380px] overflow-hidden border border-brand-maroon/10 my-8">
                 <Image
-                  src="/new/Waikiki_022.jpg"
+                  src="/new/Waikiki_022.webp"
                   alt="Premium dining experience at Waikiki Andheri East Mumbai"
                   fill
                   className="object-cover"
@@ -253,7 +253,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                 <div className="absolute inset-0 flex items-end p-8 sm:p-10">
                   <div className="space-y-2">
                     <div className="h-px w-8 bg-brand-beige/40 mb-4" />
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Premium Dining · Cocktails</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Premium Dining · Cocktails</p>
                     <p className="font-serif text-2xl sm:text-3xl italic text-brand-beige leading-tight">Every visit<br />feels special.</p>
                   </div>
                 </div>
@@ -269,16 +269,16 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                     transition={{ delay: i * 0.08 }}
                     className="bg-brand-beige p-6 sm:p-8 space-y-3 group hover:bg-brand-maroon/[0.03] transition-colors"
                   >
-                    <div className="text-brand-maroon/40 group-hover:text-brand-maroon transition-colors">
+                    <div className="text-brand-maroon/70 group-hover:text-brand-maroon transition-colors">
                       {h.icon}
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl">{h.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{h.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{h.body}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 These elements have helped Waikiki earn recognition among the most talked-about top restaurants in Andheri East.
               </p>
             </motion.div>
@@ -292,12 +292,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 03</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 03</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 A Destination for
                 <br />
-                <span className="italic text-brand-maroon/60">Cocktail Lovers</span>
+                <span className="italic text-brand-maroon/70">Cocktail Lovers</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Mumbai's cocktail culture has matured significantly, with guests increasingly seeking venues that offer creativity, craftsmanship, and premium beverage experiences. For those searching for the best cocktail bar in Mumbai, Waikiki delivers a beverage program designed to elevate every visit.
@@ -305,7 +305,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Every cocktail is prepared using premium ingredients, innovative techniques, and balanced flavor profiles. From tropical-inspired creations to modern classics, Waikiki's cocktail selection appeals to both seasoned enthusiasts and casual guests looking to explore new flavors.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The perfect cocktail experience extends beyond the glass. Lighting, music, design, and service all contribute to creating an environment that encourages guests to unwind, celebrate, and connect — positioning Waikiki among conversations surrounding the best cocktail bar in Mumbai.
               </p>
             </motion.div>
@@ -319,12 +319,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 04</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 04</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Recognized by
                 <br />
-                <span className="italic text-brand-maroon/60">Leading Publications</span>
+                <span className="italic text-brand-maroon/70">Leading Publications</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 A strong hospitality brand is built on guest experiences, consistency, and industry recognition. Waikiki has earned attention from reputed lifestyle and food publications that regularly highlight noteworthy dining destinations across Mumbai.
@@ -332,7 +332,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
 
               <div className="border border-brand-maroon/10 divide-y divide-brand-maroon/10">
                 <div className="px-6 py-4">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Featured In</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Featured In</p>
                 </div>
                 <a
                   href="https://www.femina.in/food/instant-fix/options-for-relishing-a-delicious-spread-in-mumbai-284318.html"
@@ -342,13 +342,13 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                 >
                   <div className="space-y-0.5">
                     <p className="font-serif text-lg group-hover:text-brand-maroon/70 transition-colors">Femina</p>
-                    <p className="font-sans text-xs text-brand-maroon/40">Leading lifestyle &amp; food publication</p>
+                    <p className="font-sans text-xs text-brand-maroon/70">Leading lifestyle &amp; food publication</p>
                   </div>
-                  <ArrowUpRight className="w-4 h-4 flex-shrink-0 text-brand-maroon/30 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-maroon" />
+                  <ArrowUpRight className="w-4 h-4 flex-shrink-0 text-brand-maroon/60 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-brand-maroon" />
                 </a>
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 For diners researching the best restaurants in Andheri East, third-party recognition from established media outlets serves as an additional signal of trust and credibility.
               </p>
             </motion.div>
@@ -362,12 +362,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 05</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 05</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 A Standout Among
                 <br />
-                <span className="italic text-brand-maroon/60">Bars in Andheri East</span>
+                <span className="italic text-brand-maroon/70">Bars in Andheri East</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The nightlife scene in Mumbai continues to evolve, and guests now seek venues that combine food, drinks, music, and ambiance into a seamless experience. Among the many bars in Andheri East, Waikiki stands out by offering more than just beverages.
@@ -385,12 +385,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                   >
                     <span className="block font-serif text-3xl italic text-brand-maroon/15 leading-none">{o.num}</span>
                     <h3 className="font-serif text-xl sm:text-2xl">{o.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{o.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{o.body}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 These qualities continue to position Waikiki among the preferred bars in Andheri East for those seeking a premium nightlife destination.
               </p>
             </motion.div>
@@ -404,17 +404,17 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 06</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 06</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Experience
                 <br />
-                <span className="italic text-brand-maroon/60">Waikiki</span>
+                <span className="italic text-brand-maroon/70">Waikiki</span>
               </h2>
 
               <div className="relative h-[260px] sm:h-[360px] overflow-hidden border border-brand-maroon/10 my-6">
                 <Image
-                  src="/new/Waikiki_028.jpg"
+                  src="/new/Waikiki_028.webp"
                   alt="Waikiki nightlife and dining experience Andheri East Mumbai"
                   fill
                   className="object-cover"
@@ -434,7 +434,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
               </p>
               <a
                 href="https://waikikiexperience.com/book-a-table/"
-                className="inline-flex items-center gap-2 group font-sans text-xs uppercase tracking-[0.2em] text-brand-maroon/60 hover:text-brand-maroon transition-colors"
+                className="inline-flex items-center gap-2 group font-sans text-xs uppercase tracking-[0.2em] text-brand-maroon/70 hover:text-brand-maroon transition-colors"
               >
                 <span>Book your table today</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -450,12 +450,12 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">FAQs</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">FAQs</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Frequently Asked
                 <br />
-                <span className="italic text-brand-maroon/60">Questions</span>
+                <span className="italic text-brand-maroon/70">Questions</span>
               </h2>
               <div className="border-t border-brand-maroon/10">
                 {FAQS.map((faq) => (
@@ -477,19 +477,19 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                 className="relative bg-brand-maroon text-brand-beige overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative p-7 sm:p-8 space-y-6">
                   <div className="relative w-28 h-12">
                     <Image
-                      src="/waikiki.png"
+                      src="/waikiki.webp"
                       alt="Waikiki logo"
                       fill
                       className="object-contain object-left brightness-0 invert"
                     />
                   </div>
                   <div className="space-y-2">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
                       Redefining Mumbai's
                     </p>
                     <h3 className="font-serif text-3xl sm:text-4xl leading-tight tracking-tight">
@@ -497,7 +497,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                       <span className="italic text-brand-beige/70">Cocktail Scene</span>
                     </h3>
                   </div>
-                  <p className="font-sans text-sm text-brand-beige/60 leading-relaxed">
+                  <p className="font-sans text-sm text-brand-beige/70 leading-relaxed">
                     Premium cuisine, handcrafted cocktails, vibrant nightlife, and exceptional hospitality — all in the heart of Andheri East.
                   </p>
                   <div className="h-px bg-brand-beige/10" />
@@ -520,11 +520,11 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                     </a>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <div className="flex items-center gap-2 text-brand-beige/40">
+                    <div className="flex items-center gap-2 text-brand-beige/70">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
                       <span className="font-sans text-[10px] uppercase tracking-widest">Tue–Sun · 6 PM – 3 AM</span>
                     </div>
-                    <div className="flex items-start gap-2 text-brand-beige/40">
+                    <div className="flex items-start gap-2 text-brand-beige/70">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
                       <span className="font-sans text-[10px] uppercase tracking-widest leading-relaxed">Hotel Peninsula Grand, Saki Naka, Andheri East</span>
                     </div>
@@ -541,7 +541,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                 className="relative h-60 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_005.jpg"
+                  src="/new/Waikiki_005.webp"
                   alt="Waikiki cocktails and dining ambiance Andheri East"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -561,7 +561,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                 className="border border-brand-maroon/10 divide-y divide-brand-maroon/10"
               >
                 <div className="px-5 py-3">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Quick Facts</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Quick Facts</p>
                 </div>
                 {[
                   ["Cuisine", "Global · Signature Dishes · Sharing Plates"],
@@ -571,7 +571,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                   ["Hours", "Tue–Sun, 6 PM – 3 AM"],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between px-5 py-3 gap-4">
-                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/40 flex-shrink-0">{label}</span>
+                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/70 flex-shrink-0">{label}</span>
                     <span className="font-sans text-xs text-brand-maroon/70 text-right">{value}</span>
                   </div>
                 ))}
@@ -586,7 +586,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
                 className="border border-brand-maroon/10"
               >
                 <div className="px-5 py-3 border-b border-brand-maroon/10">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Also Read</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Also Read</p>
                 </div>
                 <a
                   href="/best-bar-in-mumbai"
@@ -615,7 +615,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
       {/* ── CTA FULL-WIDTH BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -624,7 +624,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Plan Your Visit</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Plan Your Visit</span>
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[0.9] tracking-tighter">
               Experience One of the
               <br />
@@ -638,7 +638,7 @@ export default function RestaurantsInAndheriEastWaikikiPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-xl mx-auto leading-relaxed"
+            className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-xl mx-auto leading-relaxed"
           >
             Premium dining, handcrafted cocktails, vibrant nightlife, and exceptional hospitality — all at Waikiki, Andheri East.
           </motion.p>

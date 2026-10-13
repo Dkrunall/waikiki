@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Explore the best restaurants in Mumbai for sushi, Japanese cuisine and cocktails. Visit Waikiki for Pan Asian dining, nightlife and signature tiki drinks.",
     images: [
       {
-        url: "/new/Waikiki_028.jpg",
+        url: "/new/Waikiki_028.webp",
         width: 1200,
         height: 630,
         alt: "Best restaurants in Mumbai for sushi and Japanese cuisine — Waikiki Experience",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Restaurants in Mumbai for Sushi, Japanese & Cocktails",
     description:
       "Explore the best restaurants in Mumbai for sushi, Japanese cuisine and cocktails. Visit Waikiki.",
-    images: ["/new/Waikiki_028.jpg"],
+    images: ["/new/Waikiki_028.webp"],
   },
 };
 

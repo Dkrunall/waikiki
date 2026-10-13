@@ -68,7 +68,7 @@ export default function BookATablePage() {
       <section className="relative h-[55vh] sm:h-[65vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_014.jpg"
+            src="/new/Waikiki_014.webp"
             alt="Book a table at Waikiki — best restaurant Andheri East Mumbai"
             fill
             className="object-cover"
@@ -83,9 +83,9 @@ export default function BookATablePage() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-3 mb-5"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Waikiki Experience</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Waikiki Experience</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/40">Andheri East · Mumbai</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Andheri East · Mumbai</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -119,14 +119,14 @@ export default function BookATablePage() {
                   </div>
                   <div className="space-y-2">
                     <h2 className="font-serif text-4xl sm:text-5xl tracking-tighter">
-                      Booking<br /><span className="italic text-brand-maroon/60">Received</span>
+                      Booking<br /><span className="italic text-brand-maroon/70">Received</span>
                     </h2>
-                    <p className="font-sans text-sm text-brand-maroon/60 max-w-sm mx-auto leading-relaxed">
+                    <p className="font-sans text-sm text-brand-maroon/70 max-w-sm mx-auto leading-relaxed">
                       Thank you, <strong>{form.name}</strong>. We'll confirm your reservation at <strong>{form.phone}</strong> shortly.
                     </p>
                   </div>
                   <div className="h-px w-12 bg-brand-maroon/20" />
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Aloha · Waikiki Mumbai</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Aloha · Waikiki Mumbai</p>
                   <button
                     onClick={() => { setSubmitted(false); setForm({ name: "", phone: "", date: "", time: "", guests: "2", occasion: "", notes: "" }); }}
                     className="font-sans text-xs uppercase tracking-[0.3em] border border-brand-maroon/20 px-6 py-3 hover:bg-brand-maroon hover:text-brand-beige transition-colors"
@@ -143,11 +143,11 @@ export default function BookATablePage() {
                   {/* Form header */}
                   <div className="flex items-center gap-4 mb-8">
                     <div className="h-px w-8 bg-brand-maroon/30" />
-                    <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Reservation</span>
+                    <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Reservation</span>
                   </div>
                   <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight mb-10">
                     Book Your<br />
-                    <span className="italic text-brand-maroon/60">Experience</span>
+                    <span className="italic text-brand-maroon/70">Experience</span>
                   </h2>
 
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -155,23 +155,23 @@ export default function BookATablePage() {
                     {/* Name + Phone */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                           <User size={10} /> Full Name
                         </label>
                         <input
                           required name="name" value={form.name} onChange={handleChange}
                           placeholder="Your name"
-                          className="w-full bg-white/70 border border-brand-maroon/15 px-4 py-3.5 font-sans text-base placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/50 transition-colors"
+                          className="w-full bg-white/70 border border-brand-maroon/15 px-4 py-3.5 font-sans text-base placeholder:text-brand-maroon/60 focus:outline-none focus:border-brand-maroon/50 transition-colors"
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                           <Phone size={10} /> Phone Number
                         </label>
                         <input
                           required name="phone" value={form.phone} onChange={handleChange}
                           placeholder="+91 XXXXX XXXXX" type="tel"
-                          className="w-full bg-white/70 border border-brand-maroon/15 px-4 py-3.5 font-sans text-base placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/50 transition-colors"
+                          className="w-full bg-white/70 border border-brand-maroon/15 px-4 py-3.5 font-sans text-base placeholder:text-brand-maroon/60 focus:outline-none focus:border-brand-maroon/50 transition-colors"
                         />
                       </div>
                     </div>
@@ -179,7 +179,7 @@ export default function BookATablePage() {
                     {/* Date + Time */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div className="space-y-2">
-                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                           <Calendar size={10} /> Date
                         </label>
                         <input
@@ -188,7 +188,7 @@ export default function BookATablePage() {
                         />
                       </div>
                       <div className="space-y-2">
-                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                           <Clock size={10} /> Time
                         </label>
                         <select
@@ -203,7 +203,7 @@ export default function BookATablePage() {
 
                     {/* Guests */}
                     <div className="space-y-3">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                         <Users size={10} /> Number of Guests
                       </label>
                       <div className="grid grid-cols-8 gap-2">
@@ -225,8 +225,8 @@ export default function BookATablePage() {
 
                     {/* Occasion */}
                     <div className="space-y-3">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50">
-                        Occasion <span className="text-brand-maroon/30">(optional)</span>
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70">
+                        Occasion <span className="text-brand-maroon/60">(optional)</span>
                       </label>
                       <div className="flex flex-wrap gap-2">
                         {OCCASIONS.map(o => (
@@ -247,13 +247,13 @@ export default function BookATablePage() {
 
                     {/* Notes */}
                     <div className="space-y-2">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
-                        <MessageSquare size={10} /> Special Requests <span className="text-brand-maroon/30">(optional)</span>
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
+                        <MessageSquare size={10} /> Special Requests <span className="text-brand-maroon/60">(optional)</span>
                       </label>
                       <textarea
                         name="notes" value={form.notes} onChange={handleChange} rows={3}
                         placeholder="Dietary requirements, seating preference, celebration details…"
-                        className="w-full bg-white/70 border border-brand-maroon/15 px-4 py-3.5 font-sans text-base placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/50 transition-colors resize-none"
+                        className="w-full bg-white/70 border border-brand-maroon/15 px-4 py-3.5 font-sans text-base placeholder:text-brand-maroon/60 focus:outline-none focus:border-brand-maroon/50 transition-colors resize-none"
                       />
                     </div>
 
@@ -266,7 +266,7 @@ export default function BookATablePage() {
                       Confirm Reservation via WhatsApp
                     </button>
 
-                    <p className="text-center font-sans text-[9px] text-brand-maroon/40 tracking-wide">
+                    <p className="text-center font-sans text-[9px] text-brand-maroon/70 tracking-wide">
                       Or call us directly at{" "}
                       <a href="tel:+918150000345" className="underline underline-offset-2 hover:text-brand-maroon transition-colors">
                         +91 81500 00345
@@ -290,7 +290,7 @@ export default function BookATablePage() {
                 className="relative h-64 sm:h-80 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_013.jpg"
+                  src="/new/Waikiki_013.webp"
                   alt="Waikiki interior — dining room Andheri East"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -298,7 +298,7 @@ export default function BookATablePage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-maroon/70 to-transparent" />
                 <div className="absolute bottom-6 left-6 space-y-1">
                   <div className="h-px w-8 bg-brand-beige/40 mb-3" />
-                  <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/50">Mumbai's Tropical Escape</p>
+                  <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/70">Mumbai's Tropical Escape</p>
                   <p className="font-serif text-xl italic text-brand-beige leading-tight">An island-inspired<br />dining destination.</p>
                 </div>
               </motion.div>
@@ -312,9 +312,9 @@ export default function BookATablePage() {
               >
                 {INFO_ITEMS.map(item => (
                   <div key={item.label} className="flex items-start gap-4 px-5 py-4">
-                    <div className="text-brand-maroon/40 mt-0.5 flex-shrink-0">{item.icon}</div>
+                    <div className="text-brand-maroon/70 mt-0.5 flex-shrink-0">{item.icon}</div>
                     <div className="space-y-0.5">
-                      <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/40">{item.label}</p>
+                      <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70">{item.label}</p>
                       {item.href ? (
                         <a href={item.href} className="font-sans text-sm text-brand-maroon/80 hover:text-brand-maroon transition-colors">
                           {item.value}
@@ -335,10 +335,10 @@ export default function BookATablePage() {
                 className="bg-brand-maroon text-brand-beige p-6 sm:p-8 space-y-5 relative overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative space-y-4">
-                  <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/40">What to Expect</p>
+                  <p className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/70">What to Expect</p>
                   <ul className="space-y-3">
                     {[
                       "Pan-Asian & Hawaiian cuisine",
@@ -358,7 +358,7 @@ export default function BookATablePage() {
                     href="https://share.google/e3c0MaDRDKot85D9s"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center justify-between text-brand-beige/60 hover:text-brand-beige transition-colors pt-1"
+                    className="group flex items-center justify-between text-brand-beige/70 hover:text-brand-beige transition-colors pt-1"
                   >
                     <span className="font-sans text-[10px] uppercase tracking-[0.3em]">View Google Reviews</span>
                     <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -377,10 +377,10 @@ export default function BookATablePage() {
                 className="group flex items-center justify-between border border-brand-maroon/10 px-5 py-4 hover:bg-brand-maroon/[0.03] transition-colors"
               >
                 <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-brand-maroon/40" />
+                  <MapPin className="w-4 h-4 text-brand-maroon/70" />
                   <span className="font-sans text-xs uppercase tracking-[0.25em] text-brand-maroon/70">Get Directions</span>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-brand-maroon/40 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <ArrowUpRight className="w-4 h-4 text-brand-maroon/70 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </motion.a>
             </div>
           </aside>

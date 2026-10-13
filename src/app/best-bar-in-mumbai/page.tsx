@@ -64,7 +64,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 mt-1 text-brand-maroon/40"
+          className="flex-shrink-0 mt-1 text-brand-maroon/70"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.span>
@@ -79,7 +79,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed pb-6">
+            <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed pb-6">
               {a}
             </p>
           </motion.div>
@@ -99,7 +99,7 @@ export default function BlogPage() {
       <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_033.jpg"
+            src="/new/Waikiki_033.webp"
             alt="Best bar in Mumbai for cocktails and nightlife — Waikiki Lounge"
             fill
             className="object-cover"
@@ -115,9 +115,9 @@ export default function BlogPage() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 mb-6"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Mumbai · Cocktails · Lounge</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Mumbai · Cocktails · Lounge</span>
             <PostDate slug="/best-bar-in-mumbai" />
           </motion.div>
 
@@ -136,7 +136,7 @@ export default function BlogPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-xs sm:text-sm text-brand-beige/60 max-w-xl leading-relaxed tracking-[0.15em]"
+            className="font-sans text-xs sm:text-sm text-brand-beige/70 max-w-xl leading-relaxed tracking-[0.15em]"
           >
             Best Bar in Mumbai for Nights You’ll Never Want to End
           </motion.p>
@@ -167,7 +167,7 @@ export default function BlogPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   In a city that never truly slows down, finding the Best bar in Mumbai is about more than cocktails or music. It’s about discovering a place where the vibe feels effortless, the crowd feels energetic, and every evening turns into an experience.
                 </p>
               </div>
@@ -185,12 +185,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 01</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 01</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Not Every Night Out
                 <br />
-                <span className="italic text-brand-maroon/60">Needs a Reason</span>
+                <span className="italic text-brand-maroon/70">Needs a Reason</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Mumbai’s nightlife culture has changed. People no longer wait for birthdays or special occasions to go out. Sometimes, all you need is good music, great cocktails, and the right company.
@@ -198,7 +198,7 @@ export default function BlogPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 That’s why Waikiki has become one of the most talked-about late night bars in Andheri East Mumbai.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The atmosphere feels alive from the moment you walk in. The lighting, the music, the crowd, and the energy all come together to create a space where people naturally relax, socialize, and stay longer than they planned. Unlike overly formal lounges or crowded pubs, Waikiki balances premium nightlife with comfort, making every visit feel exciting without trying too hard.
               </p>
             </motion.div>
@@ -212,12 +212,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 02</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 02</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Cocktails That Deserve
                 <br />
-                <span className="italic text-brand-maroon/60">a Second Round</span>
+                <span className="italic text-brand-maroon/70">a Second Round</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 A great cocktail bar isn’t just about serving drinks — it’s about creating flavors people remember. At Waikiki, cocktails are crafted to match the mood of the night. Whether you enjoy tropical blends, classic mixes, or bold signature creations, the menu offers something for every kind of guest.
@@ -225,7 +225,7 @@ export default function BlogPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 That’s one reason Waikiki is becoming known as the best cocktail bar in Andheri East Mumbai.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 From visually stunning presentations to perfectly balanced flavors, every drink is designed to elevate the overall experience. The bartenders understand how to combine creativity with quality, giving guests cocktails that feel premium yet approachable. For cocktail lovers exploring the Best cocktail bar in Andheri, Waikiki offers the kind of variety that keeps people coming back to try something new every visit.
               </p>
             </motion.div>
@@ -239,12 +239,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 03</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 03</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Tropical Vibes in the
                 <br />
-                <span className="italic text-brand-maroon/60">Middle of Mumbai</span>
+                <span className="italic text-brand-maroon/70">Middle of Mumbai</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Most bars in Mumbai follow the same formula. Waikiki chose a different direction. Inspired by vibrant island nightlife and tropical aesthetics, the space brings a refreshing energy that instantly stands out. The décor, lighting, music, and cocktail menu all work together to create an escape from the city’s routine nightlife scene.
@@ -262,7 +262,7 @@ export default function BlogPage() {
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 It’s the kind of place where people naturally pull out their phones for pictures, order another round, and extend the evening.
               </p>
             </motion.div>
@@ -276,17 +276,17 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 04</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 04</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Rooftop Energy
                 <br />
-                <span className="italic text-brand-maroon/60">Without Leaving the City Buzz</span>
+                <span className="italic text-brand-maroon/70">Without Leaving the City Buzz</span>
               </h2>
 
               <div className="relative h-[280px] sm:h-[380px] overflow-hidden border border-brand-maroon/10 my-8">
                 <Image
-                  src="/new/Waikiki_012.jpg"
+                  src="/new/Waikiki_012.webp"
                   alt="Elevated tropical bar atmosphere at Waikiki Mumbai"
                   fill
                   className="object-cover"
@@ -295,7 +295,7 @@ export default function BlogPage() {
                 <div className="absolute inset-0 flex items-end p-8 sm:p-10">
                   <div className="space-y-2">
                     <div className="h-px w-8 bg-brand-beige/40 mb-4" />
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Upscale Lounge · Rooftop Vibe</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Upscale Lounge · Rooftop Vibe</p>
                     <p className="font-serif text-2xl sm:text-3xl italic text-brand-beige leading-tight">Spacious views,<br />unmatched energy.</p>
                   </div>
                 </div>
@@ -304,7 +304,7 @@ export default function BlogPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 There’s something special about bars that combine nightlife energy with an open, social atmosphere. People today love venues that feel spacious, vibrant, and visually appealing. That’s why searches for the Best Rooftop Bar in Andheri East Mumbai continue to grow.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Waikiki captures that elevated nightlife vibe with stylish interiors, immersive music, and a setting designed for modern social experiences. The ambience creates the perfect balance between upscale lounge culture and relaxed nightlife energy. Whether you’re planning a Friday night outing or simply looking for a place to unwind after work, Waikiki offers the perfect atmosphere to disconnect from routine and enjoy the moment.
               </p>
             </motion.div>
@@ -318,12 +318,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 05</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 05</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Waikiki Is Becoming
                 <br />
-                <span className="italic text-brand-maroon/60">a Mumbai Favorite</span>
+                <span className="italic text-brand-maroon/70">a Mumbai Favorite</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Mumbai has endless nightlife options, but only a few places manage to leave a lasting impression. Waikiki stands out because it focuses on the complete experience instead of just food or drinks. Guests come here for the energy, stay for the ambience, and return for the memories.
@@ -343,12 +343,12 @@ export default function BlogPage() {
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <h3 className="font-serif text-xl sm:text-2xl">{h.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{h.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{h.body}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 These experiences are exactly why many guests now consider Waikiki among the contenders for the Best bar in Mumbai.
               </p>
             </motion.div>
@@ -362,17 +362,17 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 06</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 06</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 More Than
                 <br />
-                <span className="italic text-brand-maroon/60">Just Drinks</span>
+                <span className="italic text-brand-maroon/70">Just Drinks</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 What truly makes a nightlife venue memorable is how it makes people feel. At Waikiki, the atmosphere encourages conversations, celebrations, laughter, and spontaneous moments. Some guests arrive for one drink and end up spending the entire evening enjoying music, food, and cocktails with friends.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The menu complements the nightlife perfectly, offering flavorful dishes designed to pair beautifully with drinks and social gatherings. For people searching online for the best cocktail bar in Andheri East Mumbai, Waikiki delivers far more than just cocktails — it creates an entire nightlife experience.
               </p>
             </motion.div>
@@ -386,17 +386,17 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 07</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 07</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Your Next Night
                 <br />
-                <span className="italic text-brand-maroon/60">Out Starts Here</span>
+                <span className="italic text-brand-maroon/70">Out Starts Here</span>
               </h2>
 
               <div className="relative h-[260px] sm:h-[360px] overflow-hidden border border-brand-maroon/10 my-6">
                 <Image
-                  src="/new/Waikiki_040.jpg"
+                  src="/new/Waikiki_040.webp"
                   alt="Waikiki cocktail and late night parties Mumbai"
                   fill
                   className="object-cover"
@@ -414,7 +414,7 @@ export default function BlogPage() {
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Whether you’re exploring the Best cocktail bar in Andheri, searching for exciting late night bars in Andheri East Mumbai, or planning a weekend outing with friends, Waikiki gives you every reason to step out and enjoy Mumbai nights differently.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Visit Waikiki and experience why guests continue to call it one of the most exciting nightlife destinations in the city.
               </p>
             </motion.div>
@@ -428,12 +428,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">FAQs</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">FAQs</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Frequently Asked
                 <br />
-                <span className="italic text-brand-maroon/60">Questions</span>
+                <span className="italic text-brand-maroon/70">Questions</span>
               </h2>
               <div className="border-t border-brand-maroon/10">
                 {FAQS.map((faq) => (
@@ -455,19 +455,19 @@ export default function BlogPage() {
                 className="relative bg-brand-maroon text-brand-beige overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative p-7 sm:p-8 space-y-6">
                   <div className="relative w-28 h-12">
                     <Image
-                      src="/waikiki.png"
+                      src="/waikiki.webp"
                       alt="Waikiki logo"
                       fill
                       className="object-contain object-left brightness-0 invert"
                     />
                   </div>
                   <div className="space-y-2">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
                       Experience One of the Best
                     </p>
                     <h3 className="font-serif text-3xl sm:text-4xl leading-tight tracking-tight">
@@ -475,7 +475,7 @@ export default function BlogPage() {
                       <span className="italic text-brand-beige/70">Cocktail Lounges</span>
                     </h3>
                   </div>
-                  <p className="font-sans text-sm text-brand-beige/60 leading-relaxed">
+                  <p className="font-sans text-sm text-brand-beige/70 leading-relaxed">
                     From custom tiki mixes and Pan Asian food to energetic playlists and late-night DJ sets, Waikiki delivers Mumbai's ultimate bar experience.
                   </p>
                   <div className="h-px bg-brand-beige/10" />
@@ -498,11 +498,11 @@ export default function BlogPage() {
                     </a>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <div className="flex items-center gap-2 text-brand-beige/40">
+                    <div className="flex items-center gap-2 text-brand-beige/70">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
                       <span className="font-sans text-[10px] uppercase tracking-widest">Tue–Sun · 6 PM – 3 AM</span>
                     </div>
-                    <div className="flex items-start gap-2 text-brand-beige/40">
+                    <div className="flex items-start gap-2 text-brand-beige/70">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
                       <span className="font-sans text-[10px] uppercase tracking-widest leading-relaxed">Hotel Peninsula Grand, Saki Naka, Andheri East</span>
                     </div>
@@ -519,7 +519,7 @@ export default function BlogPage() {
                 className="relative h-60 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_005.jpg"
+                  src="/new/Waikiki_005.webp"
                   alt="Cocktail selection at Waikiki Mumbai"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -539,7 +539,7 @@ export default function BlogPage() {
                 className="border border-brand-maroon/10 divide-y divide-brand-maroon/10"
               >
                 <div className="px-5 py-3">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Quick Facts</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Quick Facts</p>
                 </div>
                 {[
                   ["Bar Style", "Tiki Cocktail & Lounge"],
@@ -549,7 +549,7 @@ export default function BlogPage() {
                   ["Vibe", "Vibrant, Upscale, Social"],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between px-5 py-3 gap-4">
-                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/40 flex-shrink-0">{label}</span>
+                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/70 flex-shrink-0">{label}</span>
                     <span className="font-sans text-xs text-brand-maroon/70 text-right">{value}</span>
                   </div>
                 ))}
@@ -564,7 +564,7 @@ export default function BlogPage() {
                 className="border border-brand-maroon/10"
               >
                 <div className="px-5 py-3 border-b border-brand-maroon/10">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Also Read</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Also Read</p>
                 </div>
                 <a
                   href="/best-restaurants-in-andheri-east"
@@ -584,7 +584,7 @@ export default function BlogPage() {
       {/* ── CTA FULL-WIDTH BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -593,7 +593,7 @@ export default function BlogPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Plan Your Outing</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Plan Your Outing</span>
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[0.9] tracking-tighter">
               Experience the Best
               <br />
@@ -607,7 +607,7 @@ export default function BlogPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-xl mx-auto leading-relaxed"
+            className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-xl mx-auto leading-relaxed"
           >
             Sip premium cocktails, enjoy ambient music, and immerse yourself in the city's finest tropical lounge.
           </motion.p>

@@ -15,7 +15,7 @@ export default function AboutWaikiki() {
 
       {/* Decorative background tiki pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-        <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+        <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-28">
@@ -27,9 +27,9 @@ export default function AboutWaikiki() {
           viewport={{ once: true }}
           className="flex items-center gap-4 mb-12 sm:mb-16"
         >
-          <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/50">Our Story</span>
+          <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Our Story</span>
           <div className="flex-1 h-px bg-brand-beige/10" />
-          <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/30">Est. 2024, Mumbai</span>
+          <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Est. 2024, Mumbai</span>
         </motion.div>
 
         {/* Main grid */}
@@ -47,7 +47,7 @@ export default function AboutWaikiki() {
               {/* Main image */}
               <div className="relative h-[420px] sm:h-[520px] lg:h-[600px] overflow-hidden border border-brand-beige/10">
                 <Image
-                  src="/new/Waikiki_013.jpg"
+                  src="/new/Waikiki_013.webp"
                   alt="Waikiki interior — chandelier lounge, best restaurant Andheri East Mumbai"
                   fill
                   className="object-cover"
@@ -74,7 +74,7 @@ export default function AboutWaikiki() {
                 {/* Bottom caption */}
                 <div className="absolute bottom-6 left-6 right-6">
                   <div className="h-px w-8 bg-brand-magenta mb-3" />
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-white/50 mb-1">Mumbai, India</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-white/70 mb-1">Mumbai, India</p>
                   <p className="font-serif text-xl italic text-white">Hawaii in the heart of the city.</p>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function AboutWaikiki() {
               {/* Pull-quote accent */}
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-beige/25 flex-shrink-0" />
-                <p className="font-serif text-base sm:text-lg italic text-brand-beige/60 leading-relaxed">
+                <p className="font-serif text-base sm:text-lg italic text-brand-beige/70 leading-relaxed">
                   Drawing inspiration from Waikiki&apos;s lush jungles and serene vistas, celebrating two distinct ambiances that reflect the beauty and spirit of the Hawaiian islands.
                 </p>
               </div>

@@ -46,7 +46,7 @@ export default function ExperienceGrid() {
           </div>
 
           <div className="lg:col-span-3 hidden lg:block">
-            <p className="font-sans text-sm tracking-wide leading-relaxed text-brand-maroon/55">
+            <p className="font-sans text-sm tracking-wide leading-relaxed text-brand-maroon/70">
               Crafted for the bold. Designed for the curious. Waikiki is more than a bar; it is a complete island world built inside the heart of Mumbai.
             </p>
           </div>
@@ -59,7 +59,7 @@ export default function ExperienceGrid() {
             className="lg:col-span-3 hidden lg:block relative h-40 overflow-hidden border border-brand-maroon/15 shadow-lg"
           >
             <Image
-              src="/new/Waikiki_003.jpg"
+              src="/new/Waikiki_003.webp"
               alt="Waikiki tiki mask — island-inspired decor, Andheri East Mumbai"
               fill
               className="object-cover hover:scale-110 transition-transform duration-1000"
@@ -68,7 +68,7 @@ export default function ExperienceGrid() {
           </motion.div>
 
           {/* Mobile description */}
-          <p className="lg:hidden font-sans text-sm tracking-wide leading-relaxed text-brand-maroon/55">
+          <p className="lg:hidden font-sans text-sm tracking-wide leading-relaxed text-brand-maroon/70">
             Crafted for the bold. Designed for the curious. Waikiki is more than a bar; it is a complete island world built inside the heart of Mumbai.
           </p>
         </div>
@@ -94,14 +94,14 @@ export default function ExperienceGrid() {
                 </span>
 
                 <div className="space-y-3">
-                  <span className="font-sans text-[10px] uppercase tracking-[0.45em] text-brand-magenta group-hover:text-brand-beige/55 block transition-colors duration-500">
+                  <span className="font-sans text-[10px] uppercase tracking-[0.45em] text-brand-magenta group-hover:text-brand-beige/70 block transition-colors duration-500">
                     {pillar.subtitle}
                   </span>
                   <h3 className="font-serif text-2xl sm:text-3xl tracking-tighter group-hover:text-brand-beige transition-colors duration-500">
                     {pillar.title}
                   </h3>
                   <div className="h-px w-8 bg-brand-maroon/20 group-hover:bg-brand-beige/20 transition-colors duration-500" />
-                  <p className="font-sans text-xs sm:text-sm text-brand-maroon/58 group-hover:text-brand-beige/68 leading-relaxed tracking-wide transition-colors duration-500">
+                  <p className="font-sans text-xs sm:text-sm text-brand-maroon/70 group-hover:text-brand-beige/68 leading-relaxed tracking-wide transition-colors duration-500">
                     {pillar.description}
                   </p>
                 </div>

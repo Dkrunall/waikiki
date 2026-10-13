@@ -84,7 +84,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 mt-1 text-brand-maroon/40"
+          className="flex-shrink-0 mt-1 text-brand-maroon/70"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.span>
@@ -99,7 +99,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed pb-6">
+            <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed pb-6">
               {a}
             </p>
           </motion.div>
@@ -119,7 +119,7 @@ export default function BestCocktailBarInAndheriPage() {
       <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_035.jpg"
+            src="/new/Waikiki_035.webp"
             alt="Best Cocktail Bar in Andheri — Waikiki Handcrafted Cocktails"
             fill
             className="object-cover"
@@ -135,9 +135,9 @@ export default function BestCocktailBarInAndheriPage() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 mb-6"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Andheri · Cocktails · Nightlife</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Andheri · Cocktails · Nightlife</span>
             <PostDate slug="/best-cocktail-bar-in-andheri" />
           </motion.div>
 
@@ -156,7 +156,7 @@ export default function BestCocktailBarInAndheriPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-xs sm:text-sm text-brand-beige/60 max-w-xl leading-relaxed tracking-[0.15em]"
+            className="font-sans text-xs sm:text-sm text-brand-beige/70 max-w-xl leading-relaxed tracking-[0.15em]"
           >
             Where Every Sip Tells a Story
           </motion.p>
@@ -187,7 +187,7 @@ export default function BestCocktailBarInAndheriPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   Finding the best cocktail bar in Andheri is about discovering a venue that combines expertly crafted drinks, exceptional hospitality, and an atmosphere that keeps guests coming back.
                 </p>
               </div>
@@ -205,12 +205,12 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 01</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 01</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Makes a
                 <br />
-                <span className="italic text-brand-maroon/60">Great Cocktail Bar?</span>
+                <span className="italic text-brand-maroon/70">Great Cocktail Bar?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 A truly exceptional cocktail bar isn't measured by the number of drinks on its menu — it is defined by the quality of its experience. When craftsmanship, ambience, and hospitality come together, every visit becomes more than just another night out.
@@ -226,11 +226,11 @@ export default function BestCocktailBarInAndheriPage() {
                     transition={{ delay: i * 0.08 }}
                     className="bg-brand-beige p-6 sm:p-8 space-y-3 group hover:bg-brand-maroon/[0.03] transition-colors"
                   >
-                    <div className="text-brand-maroon/40 group-hover:text-brand-maroon transition-colors">
+                    <div className="text-brand-maroon/70 group-hover:text-brand-maroon transition-colors">
                       {h.icon}
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl">{h.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{h.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{h.body}</p>
                   </motion.div>
                 ))}
               </div>
@@ -245,12 +245,12 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 02</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 02</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 The Growing Cocktail
                 <br />
-                <span className="italic text-brand-maroon/60">Culture in Andheri</span>
+                <span className="italic text-brand-maroon/70">Culture in Andheri</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Mumbai's cocktail scene has witnessed remarkable growth over the last few years. Guests are increasingly looking for unique beverage experiences rather than conventional drinks.
@@ -268,12 +268,12 @@ export default function BestCocktailBarInAndheriPage() {
                   >
                     <span className="block font-serif text-3xl italic text-brand-maroon/15 leading-none">{o.num}</span>
                     <h3 className="font-serif text-xl sm:text-2xl">{o.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{o.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{o.body}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 These evolving preferences have made cocktail bars in Andheri increasingly popular among professionals, food enthusiasts, and nightlife lovers.
               </p>
             </motion.div>
@@ -287,12 +287,12 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 03</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 03</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Waikiki Is Becoming the
                 <br />
-                <span className="italic text-brand-maroon/60">Best Cocktail Bar in Andheri</span>
+                <span className="italic text-brand-maroon/70">Best Cocktail Bar in Andheri</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Every memorable evening begins with the right atmosphere. Waikiki brings together tropical aesthetics, lively energy, and world-class hospitality to create a destination unlike any other. Inspired by island living, the venue offers guests a refreshing escape from the city's fast-paced lifestyle while delivering a premium nightlife experience.
@@ -300,7 +300,7 @@ export default function BestCocktailBarInAndheriPage() {
 
               <div className="relative h-[280px] sm:h-[380px] overflow-hidden border border-brand-maroon/10 my-8">
                 <Image
-                  src="/new/Waikiki_033.jpg"
+                  src="/new/Waikiki_033.webp"
                   alt="Signature cocktails and nightlife at Waikiki Andheri"
                   fill
                   className="object-cover"
@@ -309,13 +309,13 @@ export default function BestCocktailBarInAndheriPage() {
                 <div className="absolute inset-0 flex items-end p-8 sm:p-10">
                   <div className="space-y-2">
                     <div className="h-px w-8 bg-brand-beige/40 mb-4" />
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Handcrafted · Waikiki</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Handcrafted · Waikiki</p>
                     <p className="font-serif text-2xl sm:text-3xl italic text-brand-beige leading-tight">Every sip,<br />tells a story.</p>
                   </div>
                 </div>
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Visitors can expect signature handcrafted cocktails, creative seasonal beverage menus, premium spirits, fresh ingredients and tropical flavors, stylish interiors, vibrant music, comfortable seating, and warm and attentive service — every detail curated to ensure an elevated experience from the first sip to the last.
               </p>
             </motion.div>
@@ -329,17 +329,17 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 04</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 04</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Makes Handcrafted
                 <br />
-                <span className="italic text-brand-maroon/60">Cocktails Special?</span>
+                <span className="italic text-brand-maroon/70">Cocktails Special?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Unlike standard mixed drinks, handcrafted cocktails focus on precision and balance. Professional mixologists carefully select fresh citrus, seasonal fruits, premium spirits, house-made syrups, fresh herbs, and unique garnishes.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The result is a cocktail that delivers complexity, freshness, and a memorable drinking experience — a commitment to quality that keeps cocktail enthusiasts searching for the best cocktail bar in Andheri.
               </p>
             </motion.div>
@@ -353,12 +353,12 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 05</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 05</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 The Perfect Place for
                 <br />
-                <span className="italic text-brand-maroon/60">Every Celebration</span>
+                <span className="italic text-brand-maroon/70">Every Celebration</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Great cocktails are best enjoyed in great company. Waikiki's tropical-inspired interiors create an energetic yet relaxed environment where every occasion feels special.
@@ -376,7 +376,7 @@ export default function BestCocktailBarInAndheriPage() {
                   >
                     <span className="block font-serif text-3xl italic text-brand-maroon/15 leading-none">{o.num}</span>
                     <h3 className="font-serif text-xl sm:text-2xl">{o.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{o.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{o.body}</p>
                   </motion.div>
                 ))}
               </div>
@@ -391,12 +391,12 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 06</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 06</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Cocktails and Cuisine:
                 <br />
-                <span className="italic text-brand-maroon/60">The Perfect Pairing</span>
+                <span className="italic text-brand-maroon/70">The Perfect Pairing</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 A premium cocktail experience is incomplete without exceptional food. Waikiki complements its handcrafted beverage program with a carefully curated menu featuring globally inspired flavors and tropical influences.
@@ -404,17 +404,17 @@ export default function BestCocktailBarInAndheriPage() {
 
               <div className="border border-brand-maroon/10 divide-y divide-brand-maroon/10">
                 <div className="px-6 py-4">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Popular Pairings</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Popular Pairings</p>
                 </div>
                 {PAIRINGS.map((p) => (
                   <div key={p} className="flex items-start gap-3 px-6 py-4">
-                    <Wine className="w-4 h-4 flex-shrink-0 mt-0.5 text-brand-maroon/30" />
+                    <Wine className="w-4 h-4 flex-shrink-0 mt-0.5 text-brand-maroon/60" />
                     <span className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{p}</span>
                   </div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The harmony between food and drinks enhances every aspect of the dining experience.
               </p>
             </motion.div>
@@ -428,17 +428,17 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 07</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 07</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 More Than
                 <br />
-                <span className="italic text-brand-maroon/60">Just a Bar</span>
+                <span className="italic text-brand-maroon/70">Just a Bar</span>
               </h2>
 
               <div className="relative h-[260px] sm:h-[360px] overflow-hidden border border-brand-maroon/10 my-6">
                 <Image
-                  src="/new/Waikiki_038.jpg"
+                  src="/new/Waikiki_038.webp"
                   alt="Nightlife and handcrafted cocktails at Waikiki Andheri"
                   fill
                   className="object-cover"
@@ -458,7 +458,7 @@ export default function BestCocktailBarInAndheriPage() {
               </p>
               <a
                 href="https://waikikiexperience.com/book-a-table/"
-                className="inline-flex items-center gap-2 group font-sans text-xs uppercase tracking-[0.2em] text-brand-maroon/60 hover:text-brand-maroon transition-colors"
+                className="inline-flex items-center gap-2 group font-sans text-xs uppercase tracking-[0.2em] text-brand-maroon/70 hover:text-brand-maroon transition-colors"
               >
                 <span>Book your table today</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -474,12 +474,12 @@ export default function BestCocktailBarInAndheriPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">FAQs</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">FAQs</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Frequently Asked
                 <br />
-                <span className="italic text-brand-maroon/60">Questions</span>
+                <span className="italic text-brand-maroon/70">Questions</span>
               </h2>
               <div className="border-t border-brand-maroon/10">
                 {FAQS.map((faq) => (
@@ -501,19 +501,19 @@ export default function BestCocktailBarInAndheriPage() {
                 className="relative bg-brand-maroon text-brand-beige overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative p-7 sm:p-8 space-y-6">
                   <div className="relative w-28 h-12">
                     <Image
-                      src="/waikiki.png"
+                      src="/waikiki.webp"
                       alt="Waikiki logo"
                       fill
                       className="object-contain object-left brightness-0 invert"
                     />
                   </div>
                   <div className="space-y-2">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
                       Andheri's Premium
                     </p>
                     <h3 className="font-serif text-3xl sm:text-4xl leading-tight tracking-tight">
@@ -522,7 +522,7 @@ export default function BestCocktailBarInAndheriPage() {
                       <span className="italic text-brand-beige/70">Destination</span>
                     </h3>
                   </div>
-                  <p className="font-sans text-sm text-brand-beige/60 leading-relaxed">
+                  <p className="font-sans text-sm text-brand-beige/70 leading-relaxed">
                     Handcrafted cocktails, tropical-inspired interiors, and premium cuisine — all in the heart of Andheri East.
                   </p>
                   <div className="h-px bg-brand-beige/10" />
@@ -545,11 +545,11 @@ export default function BestCocktailBarInAndheriPage() {
                     </a>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <div className="flex items-center gap-2 text-brand-beige/40">
+                    <div className="flex items-center gap-2 text-brand-beige/70">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
                       <span className="font-sans text-[10px] uppercase tracking-widest">Tue–Sun · 6 PM – 3 AM</span>
                     </div>
-                    <div className="flex items-start gap-2 text-brand-beige/40">
+                    <div className="flex items-start gap-2 text-brand-beige/70">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
                       <span className="font-sans text-[10px] uppercase tracking-widest leading-relaxed">Hotel Peninsula Grand, Saki Naka, Andheri East</span>
                     </div>
@@ -566,7 +566,7 @@ export default function BestCocktailBarInAndheriPage() {
                 className="relative h-60 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_040.jpg"
+                  src="/new/Waikiki_040.webp"
                   alt="Handcrafted cocktails and mixology at Waikiki Andheri"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -586,7 +586,7 @@ export default function BestCocktailBarInAndheriPage() {
                 className="border border-brand-maroon/10 divide-y divide-brand-maroon/10"
               >
                 <div className="px-5 py-3">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Quick Facts</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Quick Facts</p>
                 </div>
                 {[
                   ["Bar", "Handcrafted Cocktails · Premium Spirits"],
@@ -596,7 +596,7 @@ export default function BestCocktailBarInAndheriPage() {
                   ["Hours", "Tue–Sun, 6 PM – 3 AM"],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between px-5 py-3 gap-4">
-                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/40 flex-shrink-0">{label}</span>
+                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/70 flex-shrink-0">{label}</span>
                     <span className="font-sans text-xs text-brand-maroon/70 text-right">{value}</span>
                   </div>
                 ))}
@@ -611,7 +611,7 @@ export default function BestCocktailBarInAndheriPage() {
                 className="border border-brand-maroon/10"
               >
                 <div className="px-5 py-3 border-b border-brand-maroon/10">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Also Read</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Also Read</p>
                 </div>
                 <a
                   href="/best-hawaiian-restaurant-in-mumbai"
@@ -640,7 +640,7 @@ export default function BestCocktailBarInAndheriPage() {
       {/* ── CTA FULL-WIDTH BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -649,7 +649,7 @@ export default function BestCocktailBarInAndheriPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Your Next Great Night Out</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Your Next Great Night Out</span>
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[0.9] tracking-tighter">
               Experience the Best
               <br />
@@ -663,7 +663,7 @@ export default function BestCocktailBarInAndheriPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-xl mx-auto leading-relaxed"
+            className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-xl mx-auto leading-relaxed"
           >
             Innovative mixology, delicious food, and an energetic atmosphere — all at Waikiki, Andheri East.
           </motion.p>

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Discover Waikiki, the Best bar in Mumbai for cocktails, nightlife, rooftop vibes, and late-night parties in Andheri East Mumbai.",
     images: [
       {
-        url: "/new/Waikiki_033.jpg",
+        url: "/new/Waikiki_033.webp",
         width: 1200,
         height: 630,
         alt: "Best Bar in Mumbai — Waikiki Experience",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Bar in Mumbai | Waikiki Andheri East",
     description:
       "Discover Waikiki, the Best bar in Mumbai for cocktails, nightlife, rooftop vibes, and late-night parties in Andheri East Mumbai.",
-    images: ["/new/Waikiki_033.jpg"],
+    images: ["/new/Waikiki_033.webp"],
   },
 };
 
