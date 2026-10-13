@@ -10,7 +10,7 @@ const SPACES = [
     subtitle: "Best Bar in Andheri East",
     description:
       "Step into Waikiki's vibrant ground-floor lounge, a high-energy tropical sanctuary where island spirit meets Mumbai nightlife. The perfect start to your evening.",
-    image: "/lounge.jpg",
+    image: "/lounge.webp",
     tag: "Lounge",
   },
   {
@@ -19,7 +19,7 @@ const SPACES = [
     subtitle: "Best Pan-Asian Restaurant Andheri",
     description:
       "First-floor formal dining with air conditioning and lush tropical views. Chef Kai's Pan-Asian and Polynesian menu shines in this serene, beautifully designed setting.",
-    image: "/new/Waikiki_028.jpg",
+    image: "/new/Waikiki_028.webp",
     tag: "Dining",
   },
   {
@@ -28,7 +28,7 @@ const SPACES = [
     subtitle: "Best Rooftop Bar in Andheri East",
     description:
       "Our expansive rooftop lounge features low island-inspired seating, handcrafted cocktails and fine cigars under the open Mumbai sky. A relaxed escape above the city.",
-    image: "/new/Waikiki_005.jpg",
+    image: "/new/Waikiki_005.webp",
     tag: "Rooftop",
   },
   {
@@ -37,7 +37,7 @@ const SPACES = [
     subtitle: "Private Venue Mumbai",
     description:
       "From intimate celebrations to corporate gatherings, our dedicated private spaces offer bespoke menus, personalised service and a tropical ambiance unlike anywhere else in Mumbai.",
-    image: "/pdr.jpg",
+    image: "/pdr.webp",
     tag: "Events",
   },
 ];
@@ -60,7 +60,7 @@ export default function TheSpaces() {
             </h2>
           </div>
           <div className="lg:col-span-5">
-            <p className="font-sans text-sm tracking-wide text-brand-maroon/55 leading-relaxed max-w-sm">
+            <p className="font-sans text-sm tracking-wide text-brand-maroon/70 leading-relaxed max-w-sm">
               Open from early dinner through late night, each space at Waikiki offers a different facet of the Hawaiian island experience.
             </p>
           </div>
@@ -93,10 +93,10 @@ export default function TheSpaces() {
 
                 {/* Number + tag — overlaid bottom-left */}
                 <div className="absolute bottom-5 left-5 flex items-end gap-3">
-                  <span className="font-serif text-5xl sm:text-6xl italic text-white/20 leading-none select-none">
+                  <span className="font-serif text-5xl sm:text-6xl italic text-white/70 leading-none select-none">
                     {space.number}
                   </span>
-                  <span className="font-sans text-[9px] uppercase tracking-[0.4em] text-white/50 pb-1">
+                  <span className="font-sans text-[9px] uppercase tracking-[0.4em] text-white/70 pb-1">
                     {space.tag}
                   </span>
                 </div>
@@ -106,7 +106,7 @@ export default function TheSpaces() {
               <div className="p-6 sm:p-8 group-hover:bg-brand-maroon transition-colors duration-500 space-y-3">
                 <div className="flex items-start justify-between gap-4">
                   <div className="space-y-1">
-                    <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-magenta group-hover:text-brand-beige/55 block transition-colors duration-500">
+                    <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-magenta group-hover:text-brand-beige/70 block transition-colors duration-500">
                       {space.subtitle}
                     </span>
                     <h3 className="font-serif text-2xl sm:text-3xl tracking-tighter group-hover:text-brand-beige transition-colors duration-500">
@@ -118,7 +118,7 @@ export default function TheSpaces() {
                     ↗
                   </span>
                 </div>
-                <p className="font-sans text-xs sm:text-sm tracking-wide leading-relaxed text-brand-maroon/60 group-hover:text-brand-beige/70 transition-colors duration-500">
+                <p className="font-sans text-xs sm:text-sm tracking-wide leading-relaxed text-brand-maroon/70 group-hover:text-brand-beige/70 transition-colors duration-500">
                   {space.description}
                 </p>
               </div>

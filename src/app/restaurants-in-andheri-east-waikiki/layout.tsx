@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Discover why Waikiki is among the top restaurants in Andheri East. Enjoy premium dining, handcrafted cocktails, vibrant nightlife, and exceptional hospitality.",
     images: [
       {
-        url: "/new/Waikiki_001.jpg",
+        url: "/new/Waikiki_001.webp",
         width: 1200,
         height: 630,
         alt: "Restaurants in Andheri East — Waikiki Dining & Cocktails",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Restaurants in Andheri East | Dining & Cocktails at Waikiki",
     description:
       "Discover why Waikiki is among the top restaurants in Andheri East. Enjoy premium dining, handcrafted cocktails, vibrant nightlife, and exceptional hospitality.",
-    images: ["/new/Waikiki_001.jpg"],
+    images: ["/new/Waikiki_001.webp"],
   },
 };
 

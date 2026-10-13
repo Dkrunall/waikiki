@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Explore Waikiki, one of the top Restaurants in Andheri East for Japanese cuisine, cocktails, nightlife, and premium dining experiences in Mumbai.",
     images: [
       {
-        url: "/new/Waikiki_013.jpg",
+        url: "/new/Waikiki_013.webp",
         width: 1200,
         height: 630,
         alt: "Restaurants in Andheri East Mumbai — Waikiki Experience",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Restaurants in Andheri East | Waikiki Mumbai",
     description:
       "Explore Waikiki, one of the top Restaurants in Andheri East for Japanese cuisine, cocktails, nightlife, and premium dining experiences in Mumbai.",
-    images: ["/new/Waikiki_013.jpg"],
+    images: ["/new/Waikiki_013.webp"],
   },
 };
 

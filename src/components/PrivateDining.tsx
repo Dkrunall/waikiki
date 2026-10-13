@@ -58,7 +58,7 @@ export default function PrivateDining() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed tracking-wide max-w-md"
+              className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed tracking-wide max-w-md"
             >
               Waikiki is the best restaurant in Andheri for those seeking the perfect blend of relaxation and sophistication. Our spaces are built for every kind of occasion, curated with the spirit of Aloha.
             </motion.p>
@@ -85,7 +85,7 @@ export default function PrivateDining() {
                     <h3 className="font-serif text-xl sm:text-2xl tracking-tighter text-brand-maroon group-hover:text-brand-maroon transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-sans text-xs sm:text-sm text-brand-maroon/55 leading-relaxed tracking-wide">
+                    <p className="font-sans text-xs sm:text-sm text-brand-maroon/70 leading-relaxed tracking-wide">
                       {item.description}
                     </p>
                   </div>
@@ -122,7 +122,7 @@ export default function PrivateDining() {
             {/* Main image */}
             <div className="relative h-[380px] sm:h-[520px] lg:h-[680px] overflow-hidden border border-brand-maroon/15 shadow-2xl">
               <Image
-                src="/pdr.jpg"
+                src="/pdr.webp"
                 alt="Waikiki Private Dining and Events Mumbai"
                 fill
                 className="object-cover"
@@ -134,7 +134,7 @@ export default function PrivateDining() {
               {/* Caption */}
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="h-px w-6 bg-brand-magenta mb-4" />
-                <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-white/50 mb-1">Available for</p>
+                <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-white/70 mb-1">Available for</p>
                 <p className="font-serif text-2xl sm:text-3xl italic text-white leading-snug">
                   Private Events &amp;<br />Intimate Dining
                 </p>
@@ -149,7 +149,7 @@ export default function PrivateDining() {
               transition={{ delay: 0.5 }}
               className="absolute bottom-4 left-4 sm:left-6 bg-brand-maroon text-brand-beige px-5 py-4 shadow-2xl"
             >
-              <span className="block font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/40 mb-1">Contact</span>
+              <span className="block font-sans text-[9px] uppercase tracking-[0.4em] text-brand-beige/70 mb-1">Contact</span>
               <span className="block font-serif text-sm italic text-brand-beige/90">mumbaiwaikiki@gmail.com</span>
             </motion.div>
           </motion.div>

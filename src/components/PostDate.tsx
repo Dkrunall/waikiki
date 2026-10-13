@@ -5,7 +5,7 @@ export default function PostDate({ slug }: { slug: string }) {
   return (
     <>
       <div className="h-px w-8 bg-brand-beige/30" />
-      <time dateTime={date} className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">
+      <time dateTime={date} className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">
         {formatPostDate(date)}
       </time>
     </>

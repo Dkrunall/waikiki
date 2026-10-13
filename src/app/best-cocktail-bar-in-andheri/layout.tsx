@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Looking for the best cocktail bar in Andheri? Discover handcrafted cocktails, tropical vibes, and an unforgettable nightlife experience at Waikiki.",
     images: [
       {
-        url: "/new/Waikiki_035.jpg",
+        url: "/new/Waikiki_035.webp",
         width: 1200,
         height: 630,
         alt: "Best Cocktail Bar in Andheri — Waikiki Handcrafted Cocktails",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Cocktail Bar in Andheri | Waikiki Experience",
     description:
       "Looking for the best cocktail bar in Andheri? Discover handcrafted cocktails, tropical vibes, and an unforgettable nightlife experience at Waikiki.",
-    images: ["/new/Waikiki_035.jpg"],
+    images: ["/new/Waikiki_035.webp"],
   },
 };
 

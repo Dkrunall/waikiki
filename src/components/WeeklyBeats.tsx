@@ -27,7 +27,7 @@ export default function WeeklyBeats() {
 
           {/* Authentic Nightlife Imagery */}
           <div className="grid grid-cols-2 gap-2">
-            {["/night-life/2.JPG", "/night-life/3.JPG", "/night-life/4.JPG", "/night-life/5.JPG"].map((src, i) => (
+            {["/night-life/2.webp", "/night-life/3.webp", "/night-life/4.webp", "/night-life/5.webp"].map((src, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -42,7 +42,7 @@ export default function WeeklyBeats() {
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <span className="absolute bottom-2 left-2 font-serif text-xl italic text-white/30 leading-none select-none">{i + 1}</span>
+                <span className="absolute bottom-2 left-2 font-serif text-xl italic text-white/80 leading-none select-none">{i + 1}</span>
               </motion.div>
             ))}
           </div>

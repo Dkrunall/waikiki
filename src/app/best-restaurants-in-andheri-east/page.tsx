@@ -94,7 +94,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 mt-1 text-brand-maroon/40"
+          className="flex-shrink-0 mt-1 text-brand-maroon/70"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.span>
@@ -109,7 +109,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed pb-6">
+            <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed pb-6">
               {a}
             </p>
           </motion.div>
@@ -129,7 +129,7 @@ export default function BlogPage() {
       <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_022.jpg"
+            src="/new/Waikiki_022.webp"
             alt="Best restaurants in Andheri East Mumbai — Waikiki rooftop lounge"
             fill
             className="object-cover"
@@ -147,9 +147,9 @@ export default function BlogPage() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 mb-6"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Guide</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Guide</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Andheri East · Mumbai</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Andheri East · Mumbai</span>
             <PostDate slug="/best-restaurants-in-andheri-east" />
           </motion.div>
 
@@ -168,7 +168,7 @@ export default function BlogPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-xs sm:text-sm text-brand-beige/60 max-w-xl leading-relaxed tracking-[0.15em]"
+            className="font-sans text-xs sm:text-sm text-brand-beige/70 max-w-xl leading-relaxed tracking-[0.15em]"
           >
             Where to Dine, Drink &amp; Experience the Best of Mumbai
           </motion.p>
@@ -199,7 +199,7 @@ export default function BlogPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   From sushi and handcrafted cocktails to DJ nights and rooftop dining, the top restaurants in Andheri East combine food, ambiance and entertainment into unforgettable evenings.
                 </p>
               </div>
@@ -214,17 +214,17 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 01</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 01</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Andheri East is Mumbai's
                 <br />
-                <span className="italic text-brand-maroon/60">Fastest Growing Dining Hub</span>
+                <span className="italic text-brand-maroon/70">Fastest Growing Dining Hub</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Andheri East is strategically located near Mumbai airport, corporate hubs and premium hotels, making it a preferred dining destination. Over the past few years, the restaurant scene has evolved from casual eateries to immersive experiences featuring international cuisines, mixology-driven bars and nightlife venues.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Today, visitors search for:
               </p>
               <ul className="space-y-3">
@@ -255,12 +255,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 02</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 02</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Makes the Best Restaurants
                 <br />
-                <span className="italic text-brand-maroon/60">in Andheri East Stand Out</span>
+                <span className="italic text-brand-maroon/70">in Andheri East Stand Out</span>
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-brand-maroon/10 border border-brand-maroon/10">
                 {FEATURES.map((f, i) => (
@@ -272,16 +272,16 @@ export default function BlogPage() {
                     transition={{ delay: i * 0.08 }}
                     className="bg-brand-beige p-6 sm:p-8 space-y-3 group hover:bg-brand-maroon/[0.03] transition-colors"
                   >
-                    <div className="text-brand-maroon/40 group-hover:text-brand-maroon transition-colors">
+                    <div className="text-brand-maroon/70 group-hover:text-brand-maroon transition-colors">
                       {f.icon}
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl">{f.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{f.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{f.body}</p>
                   </motion.div>
                 ))}
                 {/* Last cell filler with pull quote */}
                 <div className="bg-brand-maroon p-6 sm:p-8 flex items-end">
-                  <p className="font-serif text-lg italic text-brand-beige/60 leading-relaxed">
+                  <p className="font-serif text-lg italic text-brand-beige/70 leading-relaxed">
                     "The finest venues combine cuisine, atmosphere, cocktails and nightlife into one complete experience."
                   </p>
                 </div>
@@ -297,17 +297,17 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 03</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 03</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 A Standout Dining
                 <br />
-                <span className="italic text-brand-maroon/60">Experience in Andheri East</span>
+                <span className="italic text-brand-maroon/70">Experience in Andheri East</span>
               </h2>
 
               <div className="relative h-[300px] sm:h-[420px] overflow-hidden border border-brand-maroon/10">
                 <Image
-                  src="/new/Waikiki_033.jpg"
+                  src="/new/Waikiki_033.webp"
                   alt="Waikiki — standout dining experience Andheri East Mumbai"
                   fill
                   className="object-cover"
@@ -316,7 +316,7 @@ export default function BlogPage() {
                 <div className="absolute inset-0 flex items-end p-8 sm:p-12">
                   <div className="space-y-2">
                     <div className="h-px w-8 bg-brand-beige/40 mb-4" />
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Mumbai's Tropical Escape</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Mumbai's Tropical Escape</p>
                     <p className="font-serif text-2xl sm:text-3xl italic text-brand-beige leading-tight">Island-inspired dining,<br />cocktails & DJ nights.</p>
                   </div>
                 </div>
@@ -326,7 +326,7 @@ export default function BlogPage() {
                 Designed as a tropical escape, Waikiki blends Hawaiian inspiration with Pan-Asian cuisine, sushi selections and handcrafted tiki cocktails. With multiple spaces including a high-energy lounge, formal dining area and rooftop terrace, it caters to both relaxed dinners and late-night celebrations.
               </p>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Guests looking for the best restaurants in Andheri East often prioritize:
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -348,12 +348,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 04</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 04</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Best Occasions to Visit
                 <br />
-                <span className="italic text-brand-maroon/60">Restaurants in Andheri East</span>
+                <span className="italic text-brand-maroon/70">Restaurants in Andheri East</span>
               </h2>
               <div className="space-y-0 border border-brand-maroon/10 divide-y divide-brand-maroon/10">
                 {OCCASIONS.map((o, i) => (
@@ -370,7 +370,7 @@ export default function BlogPage() {
                     </span>
                     <div className="space-y-1">
                       <h3 className="font-serif text-xl sm:text-2xl">{o.title}</h3>
-                      <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{o.body}</p>
+                      <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{o.body}</p>
                     </div>
                   </motion.div>
                 ))}
@@ -386,12 +386,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 05</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 05</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Popular Food Trends
                 <br />
-                <span className="italic text-brand-maroon/60">in Andheri East Restaurants</span>
+                <span className="italic text-brand-maroon/70">in Andheri East Restaurants</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 The top restaurants in Andheri East are known for:
@@ -414,12 +414,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 06</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 06</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 How to Choose the Best
                 <br />
-                <span className="italic text-brand-maroon/60">Restaurant in Andheri East</span>
+                <span className="italic text-brand-maroon/70">Restaurant in Andheri East</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 When selecting among the best restaurants in Andheri East, consider:
@@ -432,7 +432,7 @@ export default function BlogPage() {
                   </li>
                 ))}
               </ul>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Restaurants that combine all these factors tend to rank among the most popular choices.
               </p>
             </motion.div>
@@ -446,12 +446,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 07</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 07</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Andheri East is Perfect
                 <br />
-                <span className="italic text-brand-maroon/60">for Nightlife &amp; Dining</span>
+                <span className="italic text-brand-maroon/70">for Nightlife &amp; Dining</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Unlike other parts of Mumbai, Andheri East offers:
@@ -473,7 +473,7 @@ export default function BlogPage() {
                   </motion.div>
                 ))}
               </div>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 This combination makes it one of Mumbai's most versatile dining destinations.
               </p>
             </motion.div>
@@ -487,12 +487,12 @@ export default function BlogPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">FAQs</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">FAQs</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Frequently Asked
                 <br />
-                <span className="italic text-brand-maroon/60">Questions</span>
+                <span className="italic text-brand-maroon/70">Questions</span>
               </h2>
               <div className="border-t border-brand-maroon/10">
                 {FAQS.map((faq) => (
@@ -514,19 +514,19 @@ export default function BlogPage() {
                 className="relative bg-brand-maroon text-brand-beige overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative p-7 sm:p-8 space-y-6">
                   <div className="relative w-28 h-12">
                     <Image
-                      src="/waikiki.png"
+                      src="/waikiki.webp"
                       alt="Waikiki logo"
                       fill
                       className="object-contain object-left brightness-0 invert"
                     />
                   </div>
                   <div className="space-y-2">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
                       Experience One of the Best
                     </p>
                     <h3 className="font-serif text-3xl sm:text-4xl leading-tight tracking-tight">
@@ -534,7 +534,7 @@ export default function BlogPage() {
                       <span className="italic text-brand-beige/70">Waikiki</span>
                     </h3>
                   </div>
-                  <p className="font-sans text-sm text-brand-beige/60 leading-relaxed">
+                  <p className="font-sans text-sm text-brand-beige/70 leading-relaxed">
                     From sushi and Pan Asian cuisine to handcrafted cocktails and DJ nights, Waikiki delivers a complete experience in Andheri East.
                   </p>
                   <div className="h-px bg-brand-beige/10" />
@@ -557,11 +557,11 @@ export default function BlogPage() {
                     </a>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <div className="flex items-center gap-2 text-brand-beige/40">
+                    <div className="flex items-center gap-2 text-brand-beige/70">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
                       <span className="font-sans text-[10px] uppercase tracking-widest">Tue–Sun · 6 PM – 3 AM</span>
                     </div>
-                    <div className="flex items-start gap-2 text-brand-beige/40">
+                    <div className="flex items-start gap-2 text-brand-beige/70">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
                       <span className="font-sans text-[10px] uppercase tracking-widest leading-relaxed">Hotel Peninsula Grand, Saki Naka, Andheri East</span>
                     </div>
@@ -578,7 +578,7 @@ export default function BlogPage() {
                 className="relative h-60 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_035.jpg"
+                  src="/new/Waikiki_035.webp"
                   alt="Waikiki cocktails — best cocktail bar Andheri East"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -598,7 +598,7 @@ export default function BlogPage() {
                 className="border border-brand-maroon/10 divide-y divide-brand-maroon/10"
               >
                 <div className="px-5 py-3">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Quick Facts</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Quick Facts</p>
                 </div>
                 {[
                   ["Cuisine", "Pan-Asian · Hawaiian · Sushi"],
@@ -608,7 +608,7 @@ export default function BlogPage() {
                   ["Hours", "Tue–Sun, 6 PM – 3 AM"],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between px-5 py-3 gap-4">
-                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/40 flex-shrink-0">{label}</span>
+                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/70 flex-shrink-0">{label}</span>
                     <span className="font-sans text-xs text-brand-maroon/70 text-right">{value}</span>
                   </div>
                 ))}
@@ -621,7 +621,7 @@ export default function BlogPage() {
       {/* ── CTA FULL-WIDTH BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -630,7 +630,7 @@ export default function BlogPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Plan Your Visit</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Plan Your Visit</span>
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[0.9] tracking-tighter">
               Experience One of the
               <br />
@@ -644,7 +644,7 @@ export default function BlogPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-xl mx-auto leading-relaxed"
+            className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-xl mx-auto leading-relaxed"
           >
             If you're planning dinner, drinks or a celebration, explore Waikiki — an island-inspired dining and nightlife destination in Andheri East.
           </motion.p>

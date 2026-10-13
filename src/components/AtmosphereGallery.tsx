@@ -6,20 +6,20 @@ import Image from "next/image";
 const GALLERY_ROWS = [
   // Row 1: 1 large + 1 portrait
   [
-    { src: "/new/Waikiki_001.jpg", alt: "Waikiki main dining room — arched ceiling, best restaurant Andheri East", span: "md:col-span-8", height: "h-[280px] sm:h-[420px] md:h-[580px]", label: "The Dining Room" },
-    { src: "/new/Waikiki_013.jpg", alt: "Waikiki chandelier lounge interior Mumbai", span: "md:col-span-4", height: "h-[280px] sm:h-[420px] md:h-[580px]", label: "Island Soul" },
+    { src: "/new/Waikiki_001.webp", alt: "Waikiki main dining room — arched ceiling, best restaurant Andheri East", span: "md:col-span-8", height: "h-[280px] sm:h-[420px] md:h-[580px]", label: "The Dining Room" },
+    { src: "/new/Waikiki_013.webp", alt: "Waikiki chandelier lounge interior Mumbai", span: "md:col-span-4", height: "h-[280px] sm:h-[420px] md:h-[580px]", label: "Island Soul" },
   ],
   // Row 2: 3 equal ambiance columns
   [
-    { src: "/new/Waikiki_028.jpg", alt: "Waikiki ground floor lounge bar — best bar Andheri", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "The Lounge" },
-    { src: "/new/Waikiki_038.jpg", alt: "Waikiki bar seating with string lights Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "The Bar" },
-    { src: "/new/Waikiki_003.jpg", alt: "Waikiki tiki mask sculpture — island-inspired decor Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "The Spirit" },
+    { src: "/new/Waikiki_028.webp", alt: "Waikiki ground floor lounge bar — best bar Andheri", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "The Lounge" },
+    { src: "/new/Waikiki_038.webp", alt: "Waikiki bar seating with string lights Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "The Bar" },
+    { src: "/new/Waikiki_003.webp", alt: "Waikiki tiki mask sculpture — island-inspired decor Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "The Spirit" },
   ],
   // Row 3: food & cocktails
   [
-    { src: "/food/SSP-32.jpg", alt: "Waikiki shrimp fried rice — Pan-Asian cuisine Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "Pan-Asian Kitchen" },
-    { src: "/food/SSP-35.jpg", alt: "Waikiki noodles — best Pan-Asian restaurant Andheri East", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "Chef Kai's Craft" },
-    { src: "/food/SSP-41.jpg", alt: "Waikiki vegetable stir-fry bowl — Polynesian cuisine Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "Seasonal Flavours" },
+    { src: "/food/SSP-32.webp", alt: "Waikiki shrimp fried rice — Pan-Asian cuisine Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "Pan-Asian Kitchen" },
+    { src: "/food/SSP-35.webp", alt: "Waikiki noodles — best Pan-Asian restaurant Andheri East", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "Chef Kai's Craft" },
+    { src: "/food/SSP-41.webp", alt: "Waikiki vegetable stir-fry bowl — Polynesian cuisine Mumbai", span: "md:col-span-4", height: "h-[220px] sm:h-[300px]", label: "Seasonal Flavours" },
   ],
 ];
 
@@ -40,7 +40,7 @@ export default function AtmosphereGallery() {
             </h2>
           </div>
           <div className="space-y-3 max-w-xs">
-            <p className="font-sans text-sm tracking-wide text-brand-maroon/55 leading-relaxed">
+            <p className="font-sans text-sm tracking-wide text-brand-maroon/70 leading-relaxed">
               From the high-energy lounge to the island-inspired rooftop, Waikiki is Mumbai&apos;s ultimate tropical escape.
             </p>
             <a
@@ -74,7 +74,7 @@ export default function AtmosphereGallery() {
               <div className="absolute inset-0 bg-gradient-to-t from-brand-maroon/50 via-transparent to-transparent" />
               <div className="absolute inset-[8px] border border-white/10 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6">
-                <span className="font-sans text-[9px] uppercase tracking-[0.4em] text-white/50 block mb-1">Waikiki</span>
+                <span className="font-sans text-[9px] uppercase tracking-[0.4em] text-white/70 block mb-1">Waikiki</span>
                 <span className="font-serif text-lg sm:text-2xl italic text-white">{img.label}</span>
               </div>
             </motion.div>

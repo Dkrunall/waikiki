@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Discover the best restaurants in Andheri East Mumbai for dining, sushi, cocktails and nightlife. Visit Waikiki for Pan Asian cuisine, DJ nights and rooftop vibes.",
     images: [
       {
-        url: "/new/Waikiki_022.jpg",
+        url: "/new/Waikiki_022.webp",
         width: 1200,
         height: 630,
         alt: "Best restaurants in Andheri East Mumbai — Waikiki Experience",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Restaurants in Andheri East for Dining & Nightlife Mumbai",
     description:
       "Discover the best restaurants in Andheri East Mumbai for dining, sushi, cocktails and nightlife. Visit Waikiki.",
-    images: ["/new/Waikiki_022.jpg"],
+    images: ["/new/Waikiki_022.webp"],
   },
 };
 

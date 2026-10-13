@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Discover Waikiki, an island-inspired cocktail destination in Mumbai with Tiki cocktails, Pan-Asian cuisine, rooftop vibes and late-night energy.",
     images: [
       {
-        url: "/new/Waikiki_038.jpg",
+        url: "/new/Waikiki_038.webp",
         width: 1200,
         height: 630,
         alt: "Best Cocktail Bar in Mumbai — Tiki Cocktails at Waikiki",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Cocktail Bar in Mumbai | Waikiki Experience",
     description:
       "Discover Waikiki, an island-inspired cocktail destination in Mumbai with Tiki cocktails, Pan-Asian cuisine, rooftop vibes and late-night energy.",
-    images: ["/new/Waikiki_038.jpg"],
+    images: ["/new/Waikiki_038.webp"],
   },
 };
 

@@ -49,14 +49,14 @@ export default function CulinaryShowcase() {
               className="relative aspect-[4/3] border border-brand-maroon/15 shadow-2xl overflow-hidden group"
             >
               <Image
-                src="/food/SSP-01.jpg"
+                src="/food/SSP-01.webp"
                 alt="Waikiki Pan-Asian spread — sushi, poke and tiki cocktails, best restaurant Andheri East"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-[8px] border border-white/10 pointer-events-none" />
               <div className="absolute bottom-5 left-5 space-y-1">
-                <span className="block font-sans text-[9px] uppercase tracking-[0.4em] text-white/50">Chef Kai</span>
+                <span className="block font-sans text-[9px] uppercase tracking-[0.4em] text-white/70">Chef Kai</span>
                 <span className="block font-serif text-xl italic text-white">The Signature Spread</span>
               </div>
             </motion.div>
@@ -64,8 +64,8 @@ export default function CulinaryShowcase() {
             {/* Two small food shots */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                { src: "/food/SSP-08.jpg", label: "Signature Sushi" },
-                { src: "/food/SSP-41.jpg", label: "Pan-Asian Bowl" },
+                { src: "/food/SSP-08.webp", label: "Signature Sushi" },
+                { src: "/food/SSP-41.webp", label: "Pan-Asian Bowl" },
               ].map((img, i) => (
                 <motion.div
                   key={i}

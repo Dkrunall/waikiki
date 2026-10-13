@@ -85,7 +85,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
         <motion.span
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
-          className="flex-shrink-0 mt-1 text-brand-maroon/40"
+          className="flex-shrink-0 mt-1 text-brand-maroon/70"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.span>
@@ -100,7 +100,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
             transition={{ duration: 0.35, ease: "easeInOut" }}
             className="overflow-hidden"
           >
-            <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed pb-6">
+            <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed pb-6">
               {a}
             </p>
           </motion.div>
@@ -120,7 +120,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
       <section className="relative min-h-[70vh] sm:min-h-[80vh] flex flex-col justify-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/new/Waikiki_014.jpg"
+            src="/new/Waikiki_014.webp"
             alt="Best Hawaiian Restaurant in Mumbai — Waikiki Tropical Dining"
             fill
             className="object-cover"
@@ -136,9 +136,9 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             transition={{ duration: 0.6 }}
             className="flex flex-wrap items-center gap-3 mb-6"
           >
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Journal</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Journal</span>
             <div className="h-px w-8 bg-brand-beige/30" />
-            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/50">Hawaiian Cuisine · Tropical Dining</span>
+            <span className="font-sans text-[9px] uppercase tracking-[0.5em] text-brand-beige/70">Hawaiian Cuisine · Tropical Dining</span>
             <PostDate slug="/best-hawaiian-restaurant-in-mumbai" />
           </motion.div>
 
@@ -157,7 +157,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-sans text-xs sm:text-sm text-brand-beige/60 max-w-xl leading-relaxed tracking-[0.15em]"
+            className="font-sans text-xs sm:text-sm text-brand-beige/70 max-w-xl leading-relaxed tracking-[0.15em]"
           >
             Where Tropical Flavors Meet an Unforgettable Dining Experience
           </motion.p>
@@ -188,7 +188,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
               </p>
               <div className="flex gap-4 py-2">
                 <div className="w-px bg-brand-maroon/20 flex-shrink-0" />
-                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/60 leading-relaxed">
+                <p className="font-serif text-xl sm:text-2xl italic text-brand-maroon/70 leading-relaxed">
                   For those searching for the best Hawaiian restaurant in Mumbai, finding a place that combines authentic island-inspired flavors, tropical ambience, and exceptional hospitality can transform an ordinary meal into a memorable experience.
                 </p>
               </div>
@@ -206,12 +206,12 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 01</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 01</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Makes
                 <br />
-                <span className="italic text-brand-maroon/60">Hawaiian Cuisine So Unique?</span>
+                <span className="italic text-brand-maroon/70">Hawaiian Cuisine So Unique?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Unlike many international cuisines that focus on rich gravies or heavy spices, Hawaiian food celebrates freshness. Every ingredient is chosen to create balanced flavors while maintaining its natural character.
@@ -227,16 +227,16 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                     transition={{ delay: i * 0.08 }}
                     className="bg-brand-beige p-6 sm:p-8 space-y-3 group hover:bg-brand-maroon/[0.03] transition-colors"
                   >
-                    <div className="text-brand-maroon/40 group-hover:text-brand-maroon transition-colors">
+                    <div className="text-brand-maroon/70 group-hover:text-brand-maroon transition-colors">
                       {h.icon}
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl">{h.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{h.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{h.body}</p>
                   </motion.div>
                 ))}
               </div>
 
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 This balance of freshness and flavor is one of the reasons Hawaiian cuisine continues to grow in popularity among food lovers looking for something different.
               </p>
             </motion.div>
@@ -250,12 +250,12 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 02</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 02</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why More People Search for the
                 <br />
-                <span className="italic text-brand-maroon/60">Best Hawaiian Restaurant in Mumbai</span>
+                <span className="italic text-brand-maroon/70">Best Hawaiian Restaurant in Mumbai</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Today's diners are looking beyond simply eating out — they're seeking memorable experiences. Restaurants that combine exceptional food with immersive ambience have become the preferred choice for celebrations, social gatherings, and weekend outings.
@@ -273,7 +273,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                   >
                     <span className="block font-serif text-3xl italic text-brand-maroon/15 leading-none">{o.num}</span>
                     <h3 className="font-serif text-xl sm:text-2xl">{o.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{o.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{o.body}</p>
                   </motion.div>
                 ))}
               </div>
@@ -288,12 +288,12 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 03</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 03</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 What Defines the Best
                 <br />
-                <span className="italic text-brand-maroon/60">Hawaiian Restaurant in Mumbai?</span>
+                <span className="italic text-brand-maroon/70">Hawaiian Restaurant in Mumbai?</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Choosing the right restaurant goes beyond the menu. A truly exceptional Hawaiian dining experience should offer the perfect combination of cuisine, ambience, and hospitality.
@@ -301,7 +301,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
 
               <div className="relative h-[280px] sm:h-[380px] overflow-hidden border border-brand-maroon/10 my-8">
                 <Image
-                  src="/new/Waikiki_022.jpg"
+                  src="/new/Waikiki_022.webp"
                   alt="Tropical dining ambience at Waikiki Mumbai"
                   fill
                   className="object-cover"
@@ -310,7 +310,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                 <div className="absolute inset-0 flex items-end p-8 sm:p-10">
                   <div className="space-y-2">
                     <div className="h-px w-8 bg-brand-beige/40 mb-4" />
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">Island-Inspired · Waikiki</p>
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">Island-Inspired · Waikiki</p>
                     <p className="font-serif text-2xl sm:text-3xl italic text-brand-beige leading-tight">A short vacation,<br />one dinner at a time.</p>
                   </div>
                 </div>
@@ -326,11 +326,11 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                     transition={{ delay: i * 0.08 }}
                     className="bg-brand-beige p-6 sm:p-8 space-y-3 group hover:bg-brand-maroon/[0.03] transition-colors"
                   >
-                    <div className="text-brand-maroon/40 group-hover:text-brand-maroon transition-colors">
+                    <div className="text-brand-maroon/70 group-hover:text-brand-maroon transition-colors">
                       {h.icon}
                     </div>
                     <h3 className="font-serif text-xl sm:text-2xl">{h.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{h.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{h.body}</p>
                   </motion.div>
                 ))}
               </div>
@@ -345,17 +345,17 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 04</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 04</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Experience Tropical
                 <br />
-                <span className="italic text-brand-maroon/60">Dining at Waikiki</span>
+                <span className="italic text-brand-maroon/70">Dining at Waikiki</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Located in Mumbai, Waikiki has established itself as a destination for guests looking to enjoy an elevated island-inspired dining experience. Every detail — from the interiors to the carefully curated menu — captures the vibrant energy of Hawaii while offering a premium experience tailored for Mumbai's modern diners.
               </p>
-              <p className="font-sans text-sm sm:text-base text-brand-maroon/60 leading-relaxed">
+              <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Guests visiting Waikiki can expect freshly prepared island-inspired cuisine, premium seafood and signature specialties, beautiful tropical interiors, handcrafted cocktails and refreshing mocktails, friendly hospitality, and an atmosphere ideal for celebrations, casual dinners, and special occasions. This combination makes Waikiki one of the leading destinations for anyone searching for the best Hawaiian restaurant in Mumbai.
               </p>
             </motion.div>
@@ -369,12 +369,12 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 05</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 05</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Ambience Is Just as
                 <br />
-                <span className="italic text-brand-maroon/60">Important as the Food</span>
+                <span className="italic text-brand-maroon/70">Important as the Food</span>
               </h2>
               <p className="font-sans text-sm sm:text-base text-brand-maroon/70 leading-relaxed">
                 Dining is no longer only about taste — it's about the complete experience. Waikiki embraces this philosophy by offering an immersive tropical setting where every corner reflects the relaxed charm of island life, creating the perfect backdrop for unforgettable moments.
@@ -392,7 +392,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                   >
                     <span className="block font-serif text-3xl italic text-brand-maroon/15 leading-none">{o.num}</span>
                     <h3 className="font-serif text-xl sm:text-2xl">{o.title}</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed">{o.body}</p>
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed">{o.body}</p>
                   </motion.div>
                 ))}
               </div>
@@ -407,17 +407,17 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Section 06</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Section 06</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Why Waikiki
                 <br />
-                <span className="italic text-brand-maroon/60">Stands Out</span>
+                <span className="italic text-brand-maroon/70">Stands Out</span>
               </h2>
 
               <div className="relative h-[260px] sm:h-[360px] overflow-hidden border border-brand-maroon/10 my-6">
                 <Image
-                  src="/new/Waikiki_028.jpg"
+                  src="/new/Waikiki_028.webp"
                   alt="Signature cocktails and Hawaiian dining at Waikiki Mumbai"
                   fill
                   className="object-cover"
@@ -437,7 +437,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
               </p>
               <a
                 href="https://waikikiexperience.com/book-a-table/"
-                className="inline-flex items-center gap-2 group font-sans text-xs uppercase tracking-[0.2em] text-brand-maroon/60 hover:text-brand-maroon transition-colors"
+                className="inline-flex items-center gap-2 group font-sans text-xs uppercase tracking-[0.2em] text-brand-maroon/70 hover:text-brand-maroon transition-colors"
               >
                 <span>Reserve your table today</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -453,12 +453,12 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             >
               <div className="flex items-center gap-4">
                 <div className="h-px w-8 bg-brand-maroon/30" />
-                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">FAQs</span>
+                <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">FAQs</span>
               </div>
               <h2 className="font-serif text-4xl sm:text-5xl leading-tight tracking-tight">
                 Frequently Asked
                 <br />
-                <span className="italic text-brand-maroon/60">Questions</span>
+                <span className="italic text-brand-maroon/70">Questions</span>
               </h2>
               <div className="border-t border-brand-maroon/10">
                 {FAQS.map((faq) => (
@@ -480,19 +480,19 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                 className="relative bg-brand-maroon text-brand-beige overflow-hidden"
               >
                 <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                  <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+                  <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
                 </div>
                 <div className="relative p-7 sm:p-8 space-y-6">
                   <div className="relative w-28 h-12">
                     <Image
-                      src="/waikiki.png"
+                      src="/waikiki.webp"
                       alt="Waikiki logo"
                       fill
                       className="object-contain object-left brightness-0 invert"
                     />
                   </div>
                   <div className="space-y-2">
-                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/50">
+                    <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-beige/70">
                       Mumbai's Tropical
                     </p>
                     <h3 className="font-serif text-3xl sm:text-4xl leading-tight tracking-tight">
@@ -501,7 +501,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                       <span className="italic text-brand-beige/70">Escape</span>
                     </h3>
                   </div>
-                  <p className="font-sans text-sm text-brand-beige/60 leading-relaxed">
+                  <p className="font-sans text-sm text-brand-beige/70 leading-relaxed">
                     Authentic island-inspired cuisine, handcrafted cocktails, and vibrant tropical ambience — all in the heart of Andheri East.
                   </p>
                   <div className="h-px bg-brand-beige/10" />
@@ -524,11 +524,11 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                     </a>
                   </div>
                   <div className="space-y-1 pt-2">
-                    <div className="flex items-center gap-2 text-brand-beige/40">
+                    <div className="flex items-center gap-2 text-brand-beige/70">
                       <Clock className="w-3.5 h-3.5 flex-shrink-0" />
                       <span className="font-sans text-[10px] uppercase tracking-widest">Tue–Sun · 6 PM – 3 AM</span>
                     </div>
-                    <div className="flex items-start gap-2 text-brand-beige/40">
+                    <div className="flex items-start gap-2 text-brand-beige/70">
                       <MapPin className="w-3.5 h-3.5 flex-shrink-0 mt-0.5" />
                       <span className="font-sans text-[10px] uppercase tracking-widest leading-relaxed">Hotel Peninsula Grand, Saki Naka, Andheri East</span>
                     </div>
@@ -545,7 +545,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                 className="relative h-60 overflow-hidden border border-brand-maroon/10 group"
               >
                 <Image
-                  src="/new/Waikiki_005.jpg"
+                  src="/new/Waikiki_005.webp"
                   alt="Tropical cocktails and island-inspired cuisine at Waikiki"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -565,7 +565,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                 className="border border-brand-maroon/10 divide-y divide-brand-maroon/10"
               >
                 <div className="px-5 py-3">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Quick Facts</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Quick Facts</p>
                 </div>
                 {[
                   ["Cuisine", "Hawaiian · Island-Inspired · Fusion"],
@@ -575,7 +575,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                   ["Hours", "Tue–Sun, 6 PM – 3 AM"],
                 ].map(([label, value]) => (
                   <div key={label} className="flex justify-between px-5 py-3 gap-4">
-                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/40 flex-shrink-0">{label}</span>
+                    <span className="font-sans text-[11px] uppercase tracking-widest text-brand-maroon/70 flex-shrink-0">{label}</span>
                     <span className="font-sans text-xs text-brand-maroon/70 text-right">{value}</span>
                   </div>
                 ))}
@@ -590,7 +590,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
                 className="border border-brand-maroon/10"
               >
                 <div className="px-5 py-3 border-b border-brand-maroon/10">
-                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/40">Also Read</p>
+                  <p className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/70">Also Read</p>
                 </div>
                 <a
                   href="/best-cocktail-bar-in-andheri"
@@ -619,7 +619,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
       {/* ── CTA FULL-WIDTH BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -628,7 +628,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Plan Your Visit</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Plan Your Visit</span>
             <h2 className="font-serif text-5xl sm:text-6xl md:text-7xl leading-[0.9] tracking-tighter">
               Experience the Best
               <br />
@@ -642,7 +642,7 @@ export default function BestHawaiianRestaurantInMumbaiPage() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm sm:text-base text-brand-beige/60 max-w-xl mx-auto leading-relaxed"
+            className="font-sans text-sm sm:text-base text-brand-beige/70 max-w-xl mx-auto leading-relaxed"
           >
             Authentic island flavors, handcrafted cocktails, and tropical ambience — all at Waikiki, Andheri East.
           </motion.p>

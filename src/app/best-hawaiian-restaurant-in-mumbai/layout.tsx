@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Experience authentic island flavors at the best Hawaiian restaurant in Mumbai. Discover tropical dining, handcrafted cocktails, and more at Waikiki.",
     images: [
       {
-        url: "/new/Waikiki_014.jpg",
+        url: "/new/Waikiki_014.webp",
         width: 1200,
         height: 630,
         alt: "Best Hawaiian Restaurant in Mumbai — Waikiki Tropical Dining",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Best Hawaiian Restaurant in Mumbai | Waikiki Experience",
     description:
       "Experience authentic island flavors at the best Hawaiian restaurant in Mumbai. Discover tropical dining, handcrafted cocktails, and more at Waikiki.",
-    images: ["/new/Waikiki_014.jpg"],
+    images: ["/new/Waikiki_014.webp"],
   },
 };
 

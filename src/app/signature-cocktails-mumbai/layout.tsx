@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Discover signature cocktails Mumbai loves at Waikiki. Experience premium mixology, tiki-inspired vibes, and one of the best cocktail bars in Andheri East.",
     images: [
       {
-        url: "/new/Waikiki_035.jpg",
+        url: "/new/Waikiki_035.webp",
         width: 1200,
         height: 630,
         alt: "Signature Cocktails Mumbai — Waikiki Tiki Cocktail Bar Andheri East",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Signature Cocktails Mumbai | Waikiki Andheri East",
     description:
       "Discover signature cocktails Mumbai loves at Waikiki. Experience premium mixology, tiki-inspired vibes, and one of the best cocktail bars in Andheri East.",
-    images: ["/new/Waikiki_035.jpg"],
+    images: ["/new/Waikiki_035.webp"],
   },
 };
 

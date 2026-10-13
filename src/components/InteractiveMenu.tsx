@@ -8,41 +8,41 @@ const MENU_DATA = {
   Nightlife: {
     tag: "The Jungle Vibe",
     description: "Late-night rhythms, lush jungle escapism, and the spirit of Aloha. The best nightlife in Andheri East, Mumbai.",
-    image: "/night-life/1.JPG",
-    gallery: ["/night-life/1.JPG", "/night-life/2.JPG", "/night-life/3.JPG", "/night-life/4.JPG", "/night-life/5.JPG", "/night-life/6.JPG", "/night-life/7.JPG", "/night-life/8.JPG"],
+    image: "/night-life/1.webp",
+    gallery: ["/night-life/1.webp", "/night-life/2.webp", "/night-life/3.webp", "/night-life/4.webp", "/night-life/5.webp", "/night-life/6.webp", "/night-life/7.webp", "/night-life/8.webp"],
     items: [
-      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/night-life/1.JPG" },
-      { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/food/SSP-35.jpg" }
+      { name: "VIP Tables", price: "Enquire", desc: "Premium bottle service in the heart of the jungle.", image: "/night-life/1.webp" },
+      { name: "Late Night Bites", price: "₹650+", desc: "A curated selection of midnight snacks.", image: "/food/SSP-35.webp" }
     ],
   },
   "Rush Hours": {
     tag: "Buy One Get One Free",
     description: "Waikiki Rush Hours — BOGO on all alcoholic beverages. Sun–Thu throughout the night, Fri & Sat till 11 PM. T&C apply.",
-    image: "/rushhours.jpeg",
+    image: "/rushhours.webp",
     items: [
-      { name: "Sun – Thu", price: "All Night", desc: "Buy one get one free on all alcoholic beverages throughout the night.", image: "/rushhours.jpeg" },
-      { name: "Fri & Sat", price: "Till 11 PM", desc: "Rush hour offer valid on all alcoholic beverages till 11 PM.", image: "/rushhours.jpeg" },
+      { name: "Sun – Thu", price: "All Night", desc: "Buy one get one free on all alcoholic beverages throughout the night.", image: "/rushhours.webp" },
+      { name: "Fri & Sat", price: "Till 11 PM", desc: "Rush hour offer valid on all alcoholic beverages till 11 PM.", image: "/rushhours.webp" },
     ],
   },
   Culinary: {
     tag: "Pan-Asian & Polynesian",
     description: "Chef Kai's seasonal creations — from tropical sushi and poke bowls to raw seafood and grilled meats with vibrant Hawaiian spices.",
-    image: "/food/SSP-08.jpg",
+    image: "/food/SSP-08.webp",
     items: [
-      { name: "Chef's Signature Sushi", price: "₹1250", desc: "Hand-crafted with the finest catches of the day.", image: "/food/SSP-08.jpg" },
-      { name: "Tropical Poke Bowl", price: "₹850", desc: "Fresh tuna, avocado, and house-made ponzu.", image: "/food/SSP-32.jpg" },
-      { name: "Miso Glazed Black Cod", price: "₹1850", desc: "Slow-cooked to perfection over robata coals.", image: "/food/SSP-41.jpg" }
+      { name: "Chef's Signature Sushi", price: "₹1250", desc: "Hand-crafted with the finest catches of the day.", image: "/food/SSP-08.webp" },
+      { name: "Tropical Poke Bowl", price: "₹850", desc: "Fresh tuna, avocado, and house-made ponzu.", image: "/food/SSP-32.webp" },
+      { name: "Miso Glazed Black Cod", price: "₹1850", desc: "Slow-cooked to perfection over robata coals.", image: "/food/SSP-41.webp" }
     ],
   },
   Cocktails: {
     tag: "Tiki Mixology",
     description: "Hand-crafted tiki cocktails designed to transport you to an island paradise. The best cocktail bar in Andheri East.",
-    image: "/food/SSP-36.jpg",
+    image: "/food/SSP-36.webp",
     items: [
-      { name: "Island Grog", price: "₹950", desc: "A bold island blend of aged rum, citrus and tropical spice.", image: "/drinks/Island Grog.jpg" },
-      { name: "Zombie", price: "₹1100", desc: "The legendary tiki classic — three rums, passion fruit and absinthe.", image: "/drinks/Zombie.jpg" },
-      { name: "Luau Punch", price: "₹850", desc: "Light and festive — pineapple, coconut and a splash of grenadine.", image: "/drinks/Luau Punch.jpg" },
-      { name: "Hula Haze Negroni", price: "₹1100", desc: "A Hawaiian twist on the Negroni with hibiscus-infused Campari.", image: "/drinks/Hula Haze Negroni.jpg" }
+      { name: "Island Grog", price: "₹950", desc: "A bold island blend of aged rum, citrus and tropical spice.", image: "/drinks/Island Grog.webp" },
+      { name: "Zombie", price: "₹1100", desc: "The legendary tiki classic — three rums, passion fruit and absinthe.", image: "/drinks/Zombie.webp" },
+      { name: "Luau Punch", price: "₹850", desc: "Light and festive — pineapple, coconut and a splash of grenadine.", image: "/drinks/Luau Punch.webp" },
+      { name: "Hula Haze Negroni", price: "₹1100", desc: "A Hawaiian twist on the Negroni with hibiscus-infused Campari.", image: "/drinks/Hula Haze Negroni.webp" }
     ],
   },
 };
@@ -62,7 +62,7 @@ export default function InteractiveMenu() {
               Taste <br />
               <span className="italic text-brand-magenta">Paradise</span>
             </h2>
-            <p className="font-sans text-xs sm:text-sm tracking-wide text-brand-maroon/60 leading-relaxed max-w-md">
+            <p className="font-sans text-xs sm:text-sm tracking-wide text-brand-maroon/70 leading-relaxed max-w-md">
               A curated selection of Pan-Asian signatures and craft Tiki cocktails, designed for the adventurous palate.
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function InteractiveMenu() {
             className="hidden lg:block relative w-72 h-44 rounded-2xl overflow-hidden border border-brand-maroon/10 shadow-lg transition-all duration-700 flex-shrink-0"
           >
             <Image
-              src="/food/SSP-01.jpg"
+              src="/food/SSP-01.webp"
               alt="Waikiki Pan-Asian food spread — best restaurant Andheri East Mumbai"
               fill
               className="object-cover transform hover:scale-110 transition-transform duration-1000"
@@ -88,7 +88,7 @@ export default function InteractiveMenu() {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`font-sans text-xs uppercase tracking-[0.4em] transition-all relative py-3 sm:py-4 whitespace-nowrap flex-shrink-0 ${activeTab === tab ? "text-brand-magenta" : "text-brand-maroon/40"
+              className={`font-sans text-xs uppercase tracking-[0.4em] transition-all relative py-3 sm:py-4 whitespace-nowrap flex-shrink-0 ${activeTab === tab ? "text-brand-magenta" : "text-brand-maroon/70"
                 }`}
             >
               {tab}
@@ -179,7 +179,7 @@ export default function InteractiveMenu() {
                   className="relative w-full max-w-sm mx-auto border border-brand-maroon/10 overflow-hidden"
                 >
                   <Image
-                    src="/rushhours.jpeg"
+                    src="/rushhours.webp"
                     alt="Waikiki Rush Hours — Buy One Get One Free"
                     width={600}
                     height={900}

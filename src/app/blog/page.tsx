@@ -19,7 +19,7 @@ export default function BlogIndex() {
       {/* ── HERO ── */}
       <section className="relative pt-32 sm:pt-44 pb-16 sm:pb-24 overflow-hidden hero-vignette">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-dark.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-dark.webp" alt="" fill className="object-cover" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6">
@@ -28,9 +28,9 @@ export default function BlogIndex() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-4 mb-10"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/40">Waikiki</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-maroon/70">Waikiki</span>
             <div className="h-px flex-1 max-w-[60px] bg-brand-maroon/20" />
-            <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/30">Mumbai Guides</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.4em] text-brand-maroon/60">Mumbai Guides</span>
           </motion.div>
 
           <motion.h1
@@ -41,14 +41,14 @@ export default function BlogIndex() {
           >
             The
             <br />
-            <span className="italic text-brand-maroon/50">Journal</span>
+            <span className="italic text-brand-maroon/70">Journal</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="mt-6 font-sans text-xs sm:text-sm text-brand-maroon/50 tracking-[0.2em] max-w-md"
+            className="mt-6 font-sans text-xs sm:text-sm text-brand-maroon/70 tracking-[0.2em] max-w-md"
           >
             Dining guides, nightlife insights &amp; culinary stories from Mumbai's tropical sanctuary.
           </motion.p>
@@ -87,7 +87,7 @@ export default function BlogIndex() {
                     </span>
                   </div>
                   <div className="absolute bottom-5 right-5">
-                    <span className="font-sans text-[9px] uppercase tracking-widest text-brand-beige/60">
+                    <span className="font-sans text-[9px] uppercase tracking-widest text-brand-beige/70">
                       {post.readTime}
                     </span>
                   </div>
@@ -97,14 +97,14 @@ export default function BlogIndex() {
                 <div className="p-7 sm:p-8 space-y-4">
                   <time
                     dateTime={post.date}
-                    className="block font-sans text-[10px] uppercase tracking-[0.3em] text-brand-maroon/40"
+                    className="block font-sans text-[10px] uppercase tracking-[0.3em] text-brand-maroon/70"
                   >
                     {formatPostDate(post.date)}
                   </time>
                   <h2 className="font-serif text-2xl sm:text-3xl leading-tight tracking-tight group-hover:text-brand-maroon/70 transition-colors">
                     {post.title}
                   </h2>
-                  <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed line-clamp-3">
+                  <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed line-clamp-3">
                     {post.excerpt}
                   </p>
                   <div className="flex items-center gap-2 pt-2 text-brand-maroon font-sans text-[10px] uppercase tracking-[0.3em] group-hover:gap-3 transition-all">
@@ -121,7 +121,7 @@ export default function BlogIndex() {
       {/* ── CTA BANNER ── */}
       <section className="relative bg-brand-maroon text-brand-beige overflow-hidden py-20 sm:py-28">
         <div className="absolute inset-0 opacity-[0.025] pointer-events-none">
-          <Image src="/tiki-pattern-light.png" alt="" fill className="object-cover" />
+          <Image src="/tiki-pattern-light.webp" alt="" fill className="object-cover" />
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center space-y-8">
           <motion.div
@@ -130,7 +130,7 @@ export default function BlogIndex() {
             viewport={{ once: true }}
             className="space-y-4"
           >
-            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/40">Visit Us</span>
+            <span className="font-sans text-[10px] uppercase tracking-[0.5em] text-brand-beige/70">Visit Us</span>
             <h2 className="font-serif text-5xl sm:text-6xl leading-[0.9] tracking-tighter">
               Experience
               <br />
@@ -142,7 +142,7 @@ export default function BlogIndex() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.15 }}
-            className="font-sans text-sm text-brand-beige/60 leading-relaxed"
+            className="font-sans text-sm text-brand-beige/70 leading-relaxed"
           >
             Hotel Peninsula Grand, Saki Naka, Andheri East · Tue–Sun, 6 PM – 3 AM
           </motion.p>

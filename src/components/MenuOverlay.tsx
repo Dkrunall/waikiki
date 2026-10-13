@@ -33,7 +33,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
           <div className="flex justify-between items-center px-6 sm:px-10 md:px-12 py-6 sm:py-8 border-b border-brand-beige/10 flex-shrink-0">
             <div className="relative w-36 h-14 sm:w-52 sm:h-20 md:w-64 md:h-28">
               <Image 
-                src="/waikiki.png" 
+                src="/waikiki.webp" 
                 alt="Waikiki Logo" 
                 fill 
                 className="object-contain object-left"

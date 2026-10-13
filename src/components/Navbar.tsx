@@ -33,7 +33,7 @@ export default function Navbar() {
           <a href="#" className="flex items-center space-x-3 group">
             <div className="relative w-10 h-10 overflow-hidden rounded-full border border-brand-green/20">
               <Image
-                src="/waikiki.jpg"
+                src="/waikiki.webp"
                 alt="Waikiki Logo"
                 fill
                 className="object-cover group-hover:scale-110 transition-transform"

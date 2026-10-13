@@ -86,10 +86,10 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
                       <span className="text-brand-beige text-2xl">✓</span>
                     </div>
                     <h3 className="font-serif text-2xl italic tracking-tight">Booking Received</h3>
-                    <p className="font-sans text-sm text-brand-maroon/60 leading-relaxed max-w-xs mx-auto">
+                    <p className="font-sans text-sm text-brand-maroon/70 leading-relaxed max-w-xs mx-auto">
                       Thank you, {form.name}. We&apos;ll confirm your reservation at <span className="font-medium">{form.phone}</span> shortly. Aloha!
                     </p>
-                    <button onClick={handleClose} className="mt-4 font-sans text-[10px] uppercase tracking-[0.4em] underline underline-offset-4 text-brand-maroon/50 hover:text-brand-maroon transition-colors">
+                    <button onClick={handleClose} className="mt-4 font-sans text-[10px] uppercase tracking-[0.4em] underline underline-offset-4 text-brand-maroon/70 hover:text-brand-maroon transition-colors">
                       Close
                     </button>
                   </motion.div>
@@ -98,32 +98,32 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
 
                     {/* Name */}
                     <div className="space-y-1.5">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                         <User size={10} />Name
                       </label>
                       <input
                         required name="name" value={form.name} onChange={handleChange}
                         placeholder="Your name"
-                        className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-base placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/50 transition-colors"
+                        className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-base placeholder:text-brand-maroon/60 focus:outline-none focus:border-brand-maroon/50 transition-colors"
                       />
                     </div>
 
                     {/* Phone */}
                     <div className="space-y-1.5">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                         <Phone size={10} />Phone
                       </label>
                       <input
                         required name="phone" value={form.phone} onChange={handleChange}
                         placeholder="+91 XXXXX XXXXX" type="tel"
-                        className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-base placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/50 transition-colors"
+                        className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-base placeholder:text-brand-maroon/60 focus:outline-none focus:border-brand-maroon/50 transition-colors"
                       />
                     </div>
 
                     {/* Date + Time — 2 col on all sizes */}
                     <div className="grid grid-cols-2 gap-3">
                       <div className="space-y-1.5">
-                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                           <Calendar size={10} />Date
                         </label>
                         <input
@@ -132,7 +132,7 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
                         />
                       </div>
                       <div className="space-y-1.5">
-                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                        <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                           <Clock size={10} />Time
                         </label>
                         <select
@@ -147,7 +147,7 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
 
                     {/* Guests */}
                     <div className="space-y-2">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                         <Users size={10} />Guests
                       </label>
                       <div className="grid grid-cols-8 gap-1.5">
@@ -165,13 +165,13 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
 
                     {/* Notes */}
                     <div className="space-y-1.5">
-                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/50 flex items-center gap-1.5">
+                      <label className="font-sans text-[9px] uppercase tracking-[0.4em] text-brand-maroon/70 flex items-center gap-1.5">
                         <MessageSquare size={10} />Special Requests
                       </label>
                       <textarea
                         name="notes" value={form.notes} onChange={handleChange} rows={2}
                         placeholder="Dietary requirements, occasion, seating preference…"
-                        className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-base placeholder:text-brand-maroon/30 focus:outline-none focus:border-brand-maroon/50 transition-colors resize-none"
+                        className="w-full bg-white/60 border border-brand-maroon/15 px-4 py-3 font-sans text-base placeholder:text-brand-maroon/60 focus:outline-none focus:border-brand-maroon/50 transition-colors resize-none"
                       />
                     </div>
 
@@ -182,7 +182,7 @@ export default function BookingForm({ isOpen, onClose }: BookingFormProps) {
                       <Calendar size={12} /> Confirm Reservation
                     </button>
 
-                    <p className="text-center font-sans text-[9px] text-brand-maroon/40 tracking-wide pb-2">
+                    <p className="text-center font-sans text-[9px] text-brand-maroon/70 tracking-wide pb-2">
                       Or call us at{" "}
                       <a href="tel:+918150000345" className="underline hover:text-brand-maroon transition-colors">+91 81500 00345</a>
                     </p>

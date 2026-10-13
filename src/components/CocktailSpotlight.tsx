@@ -24,7 +24,7 @@ export default function CocktailSpotlight() {
             className="relative h-[600px] border border-brand-beige/20 overflow-hidden"
           >
             <Image
-              src="/picanate.jpg"
+              src="/picanate.webp"
               alt="Waikiki butterfly mosaic bar — best cocktail bar Andheri East Mumbai"
               fill
               className="object-cover"
@@ -44,10 +44,10 @@ export default function CocktailSpotlight() {
 
             <div className="grid grid-cols-2 gap-3">
               {[
-                { name: "Island Grog", src: "/drinks/Island Grog.jpg" },
-                { name: "Zombie", src: "/drinks/Zombie.jpg" },
-                { name: "Luau Punch", src: "/drinks/Luau Punch.jpg" },
-                { name: "Hula Haze Negroni", src: "/drinks/Hula Haze Negroni.jpg" },
+                { name: "Island Grog", src: "/drinks/Island Grog.webp" },
+                { name: "Zombie", src: "/drinks/Zombie.webp" },
+                { name: "Luau Punch", src: "/drinks/Luau Punch.webp" },
+                { name: "Hula Haze Negroni", src: "/drinks/Hula Haze Negroni.webp" },
               ].map((drink, i) => (
                 <motion.div
                   key={drink.name}

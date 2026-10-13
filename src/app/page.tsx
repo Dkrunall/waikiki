@@ -2,25 +2,25 @@ import Navbar from "@/components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
-import AboutWaikiki from "@/components/AboutWaikiki";
-import ExperienceGrid from "@/components/ExperienceGrid";
-import CulinaryShowcase from "@/components/CulinaryShowcase";
-import TheSpaces from "@/components/TheSpaces";
-import CocktailSpotlight from "@/components/CocktailSpotlight";
-import InteractiveMenu from "@/components/InteractiveMenu";
-import PrivateDining from "@/components/PrivateDining";
-import WeeklyBeats from "@/components/WeeklyBeats";
-import AtmosphereGallery from "@/components/AtmosphereGallery";
-import CustomCursor from "@/components/CustomCursor";
-import LoadingSplash from "@/components/LoadingSplash";
+import {
+  AboutWaikiki,
+  ExperienceGrid,
+  CulinaryShowcase,
+  TheSpaces,
+  CocktailSpotlight,
+  InteractiveMenu,
+  PrivateDining,
+  WeeklyBeats,
+  AtmosphereGallery,
+  CustomCursor,
+  Footer,
+} from "@/components/LazySections";
 import StickyActions from "@/components/StickyActions";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <SmoothScroll>
     <main className="relative">
-      <LoadingSplash />
       <CustomCursor />
       <StickyActions />
 
