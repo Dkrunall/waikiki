@@ -6,10 +6,6 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   poweredByHeader: false,
   reactStrictMode: true,
-  experimental: {
-    // Inline the (small) Tailwind CSS to remove the render-blocking stylesheet request
-    inlineCss: true,
-  },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",
   },
